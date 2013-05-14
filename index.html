@@ -1,0 +1,218 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+	<title>Oliver Roick</title>
+	<meta name="description" content="">
+	<meta name="author" content="Oliver Roick">
+	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/roick.css">
+
+	<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="css/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		function setOverviewMargins () {
+			var padding = ((($(window).height() - $('#overview').height()) / 2) >= 90) ? (($(window).height() - $('#overview').height()) / 2) : 90;
+
+			$('#overview').css('padding-top', padding);
+			$('#overview').css('padding-bottom', padding);
+
+		}
+
+		function handleNavbarDisplay () {
+			if ($(window).scrollTop() > ($('#overview').height() + (($(window).height() - $('#overview').height()) / 2) + 20)) {
+				//$('.navbar').css('display', 'block');
+				$('.navbar').fadeIn('slow');
+			} else {
+				$('.navbar').fadeOut('slow');
+			}
+		}
+
+		$(document).ready(setOverviewMargins);
+		$(window).resize(setOverviewMargins);
+		$(window).scroll(handleNavbarDisplay);
+	</script>
+	
+</head>
+<body data-spy="scroll" data-target=".navbar">
+		
+	<div class="container">
+		<!-- 
+		#
+		# OVERVIEW
+		#
+		-->
+		<section id="overview" class="row">
+			<div class="span8 page-header">
+				<h1><small>Hi, I'm</small> <span>Oliver Roick</span></h1>
+				<p class="lead">I'm a research assistant at <a href="http://www.geog.uni-heidelberg.de/lehrstuehle/gis/index_en.html">Chair of GIScience</a> at Heidelberg University. My research activities are focussed on crowd-sourced geographic information; especially quality, integration, and visualization of geographic data in social media.</p>
+
+				<p class="lead">I spend my days <a href="#coding">coding</a>, <a href="#writing">writing</a> and <a href="#teaching">teaching</a>.</p>
+			</div>
+		</section>
+
+		<nav class="row">
+			<div class="navbar span8">
+	  			<div class="navbar-inner">
+	    			<a class="brand" href="#overview">Oliver Roick</a>
+	    			<ul class="nav">
+	      				<li><a href="#coding">Coding</a></li>
+	      				<li class="divider-vertical"></li>
+	      				<li><a href="#writing">Writing</a></li>
+	      				<li class="divider-vertical"></li>
+	      				<li><a href="#teaching">Teaching</a></li>
+	    			</ul>
+	  			</div>
+			</div>
+		</nav>
+		
+		<!-- 
+		#
+		# PROJECTS
+		#
+		-->
+		
+		<section id="coding" class="row">
+			<div class="span6 offset1">
+				<h2><span><i class="icon-wrench"></i>Coding</span></h2>
+				
+				<h3>Where do you go? ... And when?</h3>
+				<img src="img/wheredoyougo.png" class="img-polaroid span6">
+				<p>As a result of some experiments I did with the Foursquare API, I implemented a litte <a href="./lab/foursquare/">web application</a> that visualizes your Foursquare check-ins and allows to filter for venue categories, day or hour of check-in.</p>
+
+				<h3>OSMatrix</h3>
+				<img src="img/osmatrix.png" class="img-polaroid span6">
+				<p><a href="http://osmatrix.uni-hd.de">OSMatrix</a> visualizes spatia-temporal information on OpenStreetMap that is usually not availlable in cartographic representations. This includes information on number of available features, the topicality of data and numbers of user contributions. </p>
+
+				<h3>OpenRouteService</h3>
+				<img src="img/openrouteservice.png" class="img-polaroid span6">
+				<p><a href="http://koenigstuhl.geog.uni-heidelberg.de/ors/">OpenRouteService</a> is an online route planning application that is solely based on open-source software, open standards and open data. I'm currently involved with the re-design and re-implemention of client-side components.</p>
+
+				<h3>Lightmap</h3>
+				<img src="img/lightmap.png" class="img-polaroid span6">
+				<p>The <a href="http://lightmap.uni-hd.de">Lightmap</a> visualizes the world-wide distribution of street lamps as they are available in OpenStreetMap.</p>
+				
+			</div>
+		</section>
+
+		<!-- 
+		#
+		# PUBLICATIONS
+		#
+		-->
+		
+		<section id="writing" class="row">
+			<div class="span6 offset1">
+				<h2><span><i class="icon-pencil"></i>Writing</span></h2>
+				<h3>Reviewed Journal Articles</h3>
+				<ul class="unstyled publications">
+					<li><span class="autoren">Roick, O. &amp; Heuser, S.</span> (2013): Location Based Social Networks &ndash; Definition, Current State of the Art and Research Agenda. Transactions in GIS. <a href="http://onlinelibrary.wiley.com/doi/10.1111/tgis.12032/abstract">DOI: 10.1111/tgis.12032</a></li>
+				</ul>
+
+				<h3>Reviewed Conference and Workshop Contributions</h3>
+				<ul class="unstyled publications">
+					<li><span class="autoren">Roick, O.; Loos, L. &amp; Zipf, A.</span> (2012): A Technical Framework for Visualizing Spatio-temporal Quality Metrics of Volunteered Geographic Information. In: <span class="autoren">Löwner, M.-O.; Hillen, F.; Wohlfahrt, R.</span>(Eds.): Geoinformatik 2012 "Mobilität und Umwelt", 263-270. Shaker Verlag, Aachen.</li>
+				</ul>
+				
+				<h3>Conference and Workshop Abstracts and Short Papers</h3>
+				<ul class="unstyled publications">
+					<li><span class="autoren">Roick, O.</span> (2012): Applying User Generated Geographic Information from Social Networks for the Creation of Maps – Towards a Research Agenda. Workshop on Map creation from user generated data. Hannover, October 2012.</li>
+					<li><span class="autoren">Roick, O.; Hagenauer, J. &amp; Zipf, A.</span> (2011): OSMatrix - Grid based analysis and visualization of OpenStreetMap. State of the Map EU. Wien, July 2011.</li> 
+					<li><span class="autoren">Roick, O.; Neis, P. &amp; Zipf, A.</span> (2011): Volunteered Geographic Information - Datenqualität und Nutzungspotentiale am Beispiel von OpenStreetMap. Kommission "Angewandte Kartographie - Geovisualisierung" der Deutschen Gesellschaft für Kartographie (DGfK) - Symposium Königslutter 2011.</li> 
+					<li><span class="autoren">Roick, O.; Kralisch S. &amp; Flügel, W.-A.</span> (2010): Design and implementation of a mobile client for the River Basin Information System (RBIS). In: <span class="autoren">Zipf, A; Behncke,K.; Hillen, F.; Schaefermeyer, J. </span>(Eds.): Geoinformatik 2010 "Die Welt im Netz", 239-240. Akademische Verlagsgesellschaft, Heidelberg.</span></li> 
+					<li><span class="autoren">Roick, O.; Vogel, A.; Busch, H. &amp; Flügel, W.-A.</span> (2008): Innovative Technologies and their Demonstration for Indoor Positioning. 5th International Symposium on Location Based Services and TeleCartography. Salzburg, November 2008. </li> 
+					<li><span class="autoren">Roick, O.; Gerlach, R. &amp; Lemmens, R.</span> (2008): Using Open Standards for Browser-based Integration and Visualization of Geo-Spatial Data. Geophysical Research Abstracts, Vol. 10(EGU2008-A-07829).</li> 
+				</ul>
+			</div>
+		</section>
+		
+		<!-- 
+		#
+		# Teaching
+		#
+		-->
+		
+		<section id="teaching" class="row">
+			<div class="span6 offset1">
+				<h2><span><i class="icon-bell"></i>Teaching</span></h2>
+				<h3>Courses (in German only)</h3>
+				<ul>
+					<li>Geosoziale Netzwerke &ndash; Theorien, Konzepte und Modelle (Summer terms 2012 ans 2013)</li>
+					<li>WebMapping &ndash; Grundlagen von WebGIS (Winter terms 2010/11, 2011/12 and 2012/13)</li> 
+				</ul>
+				<h3>Supervised Theses</h3>
+				<ul class="unstyled publications">
+					<li><span class="autoren">Heuser, S.</span> (2011): Geodaten aus sozialen Netzwerken - Überblick und Nutzungspotentiale. B.Sc. Thesis. Chair of GIScience, Heidelberg University.</li> 
+				</ul>
+			</div>
+		</section>
+
+		<!-- 
+		#
+		# CONTACT
+		#
+		-->
+		
+		<section id="socialmedia" class="row">
+			<div class="span6 offset1">
+				<h2><span><i class="icon-envelope"></i>Please get in touch</span></h2>
+
+				<div class="row">
+					<div id="hcard-Oliver-Roick" class="span4 vcard">
+						<span class="fn">Oliver Roick</span>
+						<div class="org">Heidelberg University<br>Chair of GIScience</div>
+						<div class="adr">
+							<div class="street-address">Berliner Straße 48</div>
+							<span class="postal-code">69120</span> <span class="locality">Heidelberg</span>
+						</div>
+						<div class="tel"><span class="type">Work</span><span class="value">+49 (6221) 54-5505</span></div>
+						<div class="tel"><span class="type">Fax</span><span class="value">+49 (6221) 54-4529</span></div>
+					</div>
+					<div class="span2">
+						<div class="media-item" id="mail">
+							<a href="mailto:oliver.roick@gmail.com">E-Mail</a>
+						</div>
+						<div class="media-item" id="twitter">
+							<a href="http://twitter.com/oliverroick">Twitter</a>
+						</div>
+						<div class="media-item" id="delicious">
+							<a href="http://delicious.com/oliverroick">Delicious</a>
+						</div>
+						<div class="media-item" id="slideshare">
+							<a href="http://slideshare.net/oliverroick">Slideshare</a>
+						</div>
+						<div class="media-item" id="foursquare">
+							<a href="http://de.foursquare.com/user/6729949">Foursquare</a>
+						</div>
+						<div class="media-item" id="github">
+							<a href="https://github.com/oliverroick/">GitHub</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- 
+		#
+		# FOOTER
+		#
+		-->
+		
+		<footer>
+				<p><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a> 2011-2012 Oliver Roick. The layout based on <a href="http://twitter.github.com/bootstrap/">Twitter's Bootstrap toolkit</a>. The icons are taken from <a href="http://icondock.com/free/vector-social-media-icons">Icondock's Vector Social Media Icons</a>.
+		</footer>
+	</div>
+</body>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://oliverroick.de/piwik/" : "http://oliverroick.de/piwik/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://oliverroick.de/piwik/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+</html>
