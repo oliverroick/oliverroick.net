@@ -27,41 +27,28 @@ a:focus {
 /* @group Overview */
 
 section#overview {
-	width: 620px;
-	margin-left: 170px;
+	margin: -45px 10px 270px 10px;
 }
 
 	section#overview > h1 {
 		text-align: center;
-		font-size: 63px;
+		font-size: 140px;
 		line-height: 1;
 		border-bottom: 1px solid #a9a9a9;
-		font-weight: 600;
+		font-weight: 900;
+		position: relative;
+		margin: 0;
+		letter-spacing: -7px;
+		text-transform: uppercase;
 	}
-	
-	
-		section#overview > h1 > span {
-			display: inline-block;
-			position: relative;
-			top: 25px;
-			background-color: #fff;
-			padding: 0 0.25em;
-			margin-top: -50px;
-		}
-		
-		section#overview > h1 > small {
-			display: block;
-			font-size: 36px;
-			font-weight: normal;
-			color: #a9a9a9;
-			line-height: 0;
-		}
 	
 	section#overview > p {
 		font-size: 26px;
 		text-align: center;
 		font-weight: 200;
 		line-height: 1.2;
+		margin-left: 170px;
+		margin-right: 170px;
 	}
 	
 	section#overview a[href="#coding"] {
@@ -151,7 +138,107 @@ section.content > ul.publications {
 	section.content > ul.publications li {
 		margin-bottom: 18px;
 		padding-left: 36px;
-		text-indent: -36px;
+		text-indent: -36px	;
 	}
+	
+		section.content > ul.publications li span.autoren {
+			font-variant: small-caps;
+		}
+		
+section.content > div#hcard-Oliver-Roick {
+	margin-left: 170px;
+	width: 460px;
+	float: left;
+}
+
+section.content > div#socialmedia {
+	margin-left: 20px;
+	width: 300px;
+	float: left;
+}
+
+.vcard .tel .type:after {
+	content: ": ";
+}
+
+		#socialmedia div.media-item a:link {
+			background: no-repeat 0 50%;
+			height: 24px;
+			display: block;
+			padding-left: 35px;
+			margin-bottom: 0.5em;
+		}
+		
+		#socialmedia div.media-item#mail a {
+			background-image: url(../img/email-grey.png);
+		}
+		
+		#socialmedia div.media-item#mail a:hover {
+			background-image: url(../img/email.png);
+		}
+		
+		#socialmedia div.media-item#twitter a {
+			background-image: url(../img/twitter-grey.png);
+		}
+		
+		#socialmedia div.media-item#twitter a:hover {
+			background-image: url(../img/twitter.png);
+		}
+		
+		#socialmedia div.media-item#slideshare a {
+			background-image: url(../img/slideshare-grey.png);
+		}
+		
+		#socialmedia div.media-item#slideshare a:hover {
+			background-image: url(../img/slideshare.png);
+		}
+		
+		#socialmedia div.media-item#linkedin a {
+			background-image: url(../img/linkedin-grey.png);
+		}
+		
+		#socialmedia div.media-item#linkedin a:hover {
+			background-image: url(../img/linkedin.png);
+		}
+		
+		#socialmedia div.media-item#foursquare a {
+			background-image: url(../img/foursquare-grey.png);
+		}
+		
+		#socialmedia div.media-item#foursquare a:hover {
+			background-image: url(../img/foursquare.png);
+		}
+		
+		#socialmedia div.media-item#delicious a {
+			background-image: url(../img/delicious-grey.png);
+		}
+		
+		#socialmedia div.media-item#delicious a:hover {
+			background-image: url(../img/delicious.png);
+		}
+		
+		#socialmedia div.media-item#google a {
+			background-image: url(../img/google-plus-grey.png);
+		}
+		
+		#socialmedia div.media-item#google a:hover {
+			background-image: url(../img/google-plus.png);
+		}
+		
+		#socialmedia div.media-item#github a {
+			background-image: url(../img/github.png);
+		}
 
 /* @end */
+
+
+footer {
+	clear: both;
+	margin-top: 108px;
+	border-top: 1px solid #a9a9a9;
+	color: #a9a9a9;
+	font-size: 14px;
+	text-align: right;
+	float: left;
+	width: 960px;
+}
