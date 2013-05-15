@@ -3,38 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<title>Oliver Roick</title>
-	<meta name="description" content="">
+	<meta name="description" content="Personal website of Oliver Roick, reserach assistant at Chair of GIScience, Heidelberg University.">
 	<meta name="author" content="Oliver Roick">
 	
-	<link rel="stylesheet" href="css/roick.css">
-
-<!--
-	<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
-	<script type="text/javascript" src="css/bootstrap/js/bootstrap.min.js"></script>
-	<script type="text/javascript">
-		function setOverviewMargins () {
-			var padding = ((($(window).height() - $('#overview').height()) / 2) >= 90) ? (($(window).height() - $('#overview').height()) / 2) : 90;
-
-			$('#overview').css('padding-top', padding);
-			$('#overview').css('padding-bottom', padding);
-
-		}
-
-		function handleNavbarDisplay () {
-			if ($(window).scrollTop() > ($('#overview').height() + (($(window).height() - $('#overview').height()) / 2) + 20)) {
-				//$('.navbar').css('display', 'block');
-				$('.navbar').fadeIn('slow');
-			} else {
-				$('.navbar').fadeOut('slow');
-			}
-		}
-
-		$(document).ready(setOverviewMargins);
-		$(window).resize(setOverviewMargins);
-		$(window).scroll(handleNavbarDisplay);
-	</script>
--->
-	
+	<link rel="stylesheet" href="css/roick.css">	
 </head>
 <body>
 		
@@ -50,6 +22,25 @@
 
 			<p>I spend my days <a href="#coding">coding</a>, <a href="#writing">writing</a> and <a href="#teaching">teaching</a>.</p>
 		</section>
+        
+        <!-- 
+		#
+		# News
+		#
+		-->
+        
+        <section class="content" id="news">
+            
+            <h2><span>News</span></h2>
+
+            <time datetime="2013-05-17T00:00:00+01:00" itemprop="published">May 17th, 2013</time>
+            <h3>New Version of OSMatrix</h3>
+            <p>A new interation of <a href="http://osmatrix.uni-hd.de">OSMatrix</a> has been released today. The client applications has been re-design and implemented from groud-up leveraging latest technologies (HTML5 and CSS3) and open-source frameworks (<a href="http://leafletjs.com/">Leaflet</a> and <a href="http://d3js.org/">D3</a>). We further rebuilt server-side components using <a href="http://nodejs.org/">Node.js</a> and its awesome ecosystem of extensions for processing stuff and <a href="http://mapnik.org/">Mapnik</a> for rendering purposes. For a detailed description of new features read my <a href="#">post on GIScience Blog.</a></p>
+            
+            <time datetime="2013-05-15T00:00:00+01:00" itemprop="published">May 15th, 2013</time>
+            <h3>Review Paper: Location Based Social Networks &mdash; Definition, Current State of the Art and Research Agenda</h3>
+            <p>An early view version of our review paper entitled <em>Location Based Social Networks &mdash; Definition, Current State of the Art and Research Agenda</em> has been <a href="http://onlinelibrary.wiley.com/doi/10.1111/tgis.12032/abstract">published by Transactions in GIS.</a> You may also download the <a href="/publications/2013/TGIS_LBSN_Review.pdf">final draft version</a> free of charge.</p>	
+		</section>
 		
 		<!-- 
 		#
@@ -63,7 +54,7 @@
 
             <h3>OSMatrix&mdash;visualizing spatio-temporal characteristics of OpenStreetMap</h3>
             <img src="img/osmatrix.png" width="960" height="320">
-            <p><a href="http://osmatrix.uni-hd.de">OSMatrix</a> visualizes spatia-temporal information on OpenStreetMap that is usually not availlable in cartographic representations. This includes information on number of available features, the topicality of data and numbers of user contributions. </p>
+            <p><a href="http://osmatrix.uni-hd.de">OSMatrix</a> characteristics of OpenStreetMap, which are usually not display in cartographic representations the data. The characteristics include information on the topicality of data, user contributions and the presence (or absence) of certain feature types. These characteristics enforce understanding of data quality and activities in the community.</p>
 
             <h3>OpenRouteService</h3>
             <img src="img/openrouteservice.png" width="960" height="320">
@@ -125,7 +116,7 @@
 				</ul>
 				<h3>Supervised Theses</h3>
 				<ul class="publications">
-					<li><span class="autoren">Heuser, S.</span> (2011): Geodaten aus sozialen Netzwerken - Überblick und Nutzungspotentiale. B.Sc. Thesis. Chair of GIScience, Heidelberg University.</li> 
+					<li><span class="autoren">Heuser, S.</span> (2011): Geodaten aus sozialen Netzwerken &mdash; Überblick und Nutzungspotentiale. B.Sc. Thesis. Chair of GIScience, Heidelberg University.</li> 
 				</ul>
 		</section>
 
