@@ -27,7 +27,7 @@ a:focus {
 /* @group Overview */
 
 section#overview {
-	margin: -45px 10px 270px 10px;
+	margin: -45px 10px 126px 10px;
 }
 
 	section#overview > h1 {
@@ -37,18 +37,23 @@ section#overview {
 		border-bottom: 1px solid #a9a9a9;
 		font-weight: 900;
 		position: relative;
-		margin: 0;
+		margin: 0 0 54px 0;
 		letter-spacing: -7px;
 		text-transform: uppercase;
 	}
 	
+	section#overview > img {
+		float: left;
+		border-radius: 110px;
+		margin-left: 80px;
+	}
+	
 	section#overview > p {
 		font-size: 26px;
-		text-align: center;
 		font-weight: 200;
 		line-height: 1.2;
-		margin-left: 170px;
-		margin-right: 170px;
+		margin-left: 320px;
+		margin-right: 80px;
 	}
 	
 	section#overview a[href="#coding"] {
@@ -73,7 +78,8 @@ section.content {
 }
 
 section.content > p,
-section.content > ul {
+section.content > ul,
+section.content > article > p {
 	margin: 18px 170px;
 }
 
@@ -111,7 +117,8 @@ section.content > h2 {
 
 
 
-section.content > h3 {
+section.content > h3,
+section.content > article > h3 {
 	font-weight: 300;
 	margin: 108px 170px 27px 170px;
 	font-size: 36px;
@@ -145,6 +152,14 @@ section.content > ul.publications {
 			font-variant: small-caps;
 		}
 		
+section#contact > h2 {
+	text-align: center;
+}
+
+section#contact > h2 > span {
+	padding-left: 9px;
+}
+		
 section.content > div#hcard-Oliver-Roick {
 	margin-left: 170px;
 	width: 460px;
@@ -152,21 +167,24 @@ section.content > div#hcard-Oliver-Roick {
 }
 
 section.content > div#socialmedia {
-	margin-left: 20px;
-	width: 300px;
-	float: left;
+	padding-top: 108px;
+	text-align: center;
 }
 
 .vcard .tel .type:after {
 	content: ": ";
 }
+	#socialmedia div.media-item {
+		display: inline-block;
+	}
 
 		#socialmedia div.media-item a:link {
 			background: no-repeat 0 50%;
 			height: 24px;
+			width: 24px;
 			display: block;
-			padding-left: 35px;
-			margin-bottom: 0.5em;
+			text-indent: -9999em;
+			margin: 0 5px;
 		}
 		
 		#socialmedia div.media-item#mail a {
@@ -229,18 +247,21 @@ section.content > div#socialmedia {
 			background-image: url(../img/github.png);
 		}
 
-section#news > h3 {
-	margin-top: 9px;
-}
-
-section#news > time {
-	display: block;
-	text-align: center;
-	color: #a9a9a9;
+section#news > article {
 	margin-top: 108px;
 }
 
-section#news > h2 + time {
+section#news > article > h3 {
+	margin-top: 9px;
+}
+
+section#news > article > time {
+	display: block;
+	text-align: center;
+	color: #a9a9a9;
+}
+
+section#news > h2 + article {
 	margin-top: 0;
 }
 
