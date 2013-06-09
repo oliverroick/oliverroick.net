@@ -179,72 +179,24 @@ section.content > div#socialmedia {
 	}
 
 		#socialmedia div.media-item a:link {
-			background: no-repeat 0 50%;
-			height: 24px;
-			width: 24px;
+			background: #fff no-repeat 50% 50%;
+			height: 32px;
+			width: 32px;
 			display: block;
 			text-indent: -9999em;
 			margin: 0 5px;
 		}
 		
 		#socialmedia div.media-item#mail a {
-			background-image: url(../img/email-grey.png);
-		}
-		
-		#socialmedia div.media-item#mail a:hover {
-			background-image: url(../img/email.png);
+			background-image: url(../img/mail4.svg);
 		}
 		
 		#socialmedia div.media-item#twitter a {
-			background-image: url(../img/twitter-grey.png);
-		}
-		
-		#socialmedia div.media-item#twitter a:hover {
-			background-image: url(../img/twitter.png);
-		}
-		
-		#socialmedia div.media-item#slideshare a {
-			background-image: url(../img/slideshare-grey.png);
-		}
-		
-		#socialmedia div.media-item#slideshare a:hover {
-			background-image: url(../img/slideshare.png);
-		}
-		
-		#socialmedia div.media-item#linkedin a {
-			background-image: url(../img/linkedin-grey.png);
-		}
-		
-		#socialmedia div.media-item#linkedin a:hover {
-			background-image: url(../img/linkedin.png);
-		}
-		
-		#socialmedia div.media-item#foursquare a {
-			background-image: url(../img/foursquare-grey.png);
-		}
-		
-		#socialmedia div.media-item#foursquare a:hover {
-			background-image: url(../img/foursquare.png);
-		}
-		
-		#socialmedia div.media-item#delicious a {
-			background-image: url(../img/delicious-grey.png);
-		}
-		
-		#socialmedia div.media-item#delicious a:hover {
-			background-image: url(../img/delicious.png);
-		}
-		
-		#socialmedia div.media-item#google a {
-			background-image: url(../img/google-plus-grey.png);
-		}
-		
-		#socialmedia div.media-item#google a:hover {
-			background-image: url(../img/google-plus.png);
+			background-image: url(../img/twitter3.svg);
 		}
 		
 		#socialmedia div.media-item#github a {
-			background-image: url(../img/github.png);
+			background-image: url(../img/github3.svg);
 		}
 
 section#news > article {
