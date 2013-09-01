@@ -27,20 +27,24 @@ a:focus {
 /* @group Overview */
 
 section#overview {
-	margin: -45px 10px 126px 10px;
+	margin: -25px 10px 126px 10px;
 }
 
 	section#overview > h1 {
 		text-align: center;
-		font-size: 140px;
+		font-size: 76px;
 		line-height: 1;
 		border-bottom: 1px solid #a9a9a9;
 		font-weight: 900;
 		position: relative;
 		margin: 0 0 54px 0;
-		letter-spacing: -7px;
+		letter-spacing: -4px;
 		text-transform: uppercase;
 	}
+
+    section#overview > h1 > span {
+        color: #a9a9a9;
+    }
 	
 	section#overview > img {
 		float: left;
