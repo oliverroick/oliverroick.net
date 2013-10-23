@@ -48,7 +48,7 @@ section#overview {
 	
 	section#overview > img {
 		float: left;
-		border-radius: 110px;
+		border-radius: 10px;
 		margin-left: 80px;
 	}
 	
@@ -59,6 +59,10 @@ section#overview {
 		margin-left: 320px;
 		margin-right: 80px;
 	}
+
+    section#overview > img + p {
+        margin-top: 57px;
+    }
 	
 	section#overview a[href="#coding"] {
 		color: #53b057;
