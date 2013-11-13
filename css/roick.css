@@ -27,29 +27,33 @@ a:focus {
 /* @group Overview */
 
 section#overview {
-	margin: -25px 10px 126px 10px;
+	margin: 20px 10px 126px 10px;
 }
 
 	section#overview > h1 {
-		text-align: center;
-		font-size: 76px;
-		line-height: 1;
-		border-bottom: 1px solid #a9a9a9;
+		font-size: 80px;
 		font-weight: 900;
+		line-height: 1;
+		letter-spacing: -3px;
 		position: relative;
-		margin: 0 0 54px 0;
-		letter-spacing: -4px;
+		margin: 0 80px 0 320px;
 		text-transform: uppercase;
 	}
 
     section#overview > h1 > span {
         color: #a9a9a9;
+        font-size: 40px;
+        letter-spacing: -1px;
+        display: block;
+        font-weight: normal;
+        text-transform: none;
     }
 	
 	section#overview > img {
 		float: left;
 		border-radius: 10px;
 		margin-left: 80px;
+		margin-top: 20px;
 	}
 	
 	section#overview > p {
@@ -59,10 +63,6 @@ section#overview {
 		margin-left: 320px;
 		margin-right: 80px;
 	}
-
-    section#overview > img + p {
-        margin-top: 57px;
-    }
 	
 	section#overview a[href="#coding"] {
 		color: #53b057;
