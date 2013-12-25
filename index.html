@@ -3,10 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<title>Oliver Roick</title>
-	<meta name="description" content="Personal website of Oliver Roick, reserach assistant at Chair of GIScience, Heidelberg University.">
+	<meta name="description" content="Personal website of Oliver Roick, Senior Developer at Extreme Citizen Science Reseacrh Group, University College London">
 	<meta name="author" content="Oliver Roick">
 	
-	<link rel="stylesheet" href="css/roick.css">	
+	<link rel="stylesheet" href="build/css/global.css">	
 </head>
 <body>
 		
@@ -17,8 +17,8 @@
 		#
 		-->
 		<section id="overview">
+            <img src="build/img/profile.png" width="220" height="220">
             <h1><span>Hello, I am </span>Oliver Roick</h1>
-            <img src="img/profile.png" width="220" height="220">
 			<p>I'm a Senior Developer at <a href="http://www.ucl.ac.uk/excites">Extreme Citizen Science Research Group</a> at University College London. I develop web-based geographic information systems for participatory mapping.</p>
 
 			<p>I spend my days <a href="#coding">coding</a> and formerly also <a href="#writing">writing</a> and <a href="#teaching">teaching</a>.</p>
@@ -31,7 +31,6 @@
 		-->
         
         <section class="content" id="news">
-            
             <h2><span>News</span></h2>
 			
             <article id="joining-excites">
@@ -72,19 +71,19 @@
             <h2><span>Coding</span></h2>
 
             <h3>OSMatrix&mdash;visualizing spatio-temporal characteristics of OpenStreetMap</h3>
-            <img src="img/osmatrix.png" width="960" height="320">
+            <img src="build/img/osmatrix.png" width="960" height="320">
             <p><a href="http://osmatrix.uni-hd.de">OSMatrix</a> visualizes characteristics of OpenStreetMap, which are usually not displayed in cartographic representations of the data. The characteristics include information on the topicality of data, user contributions and the presence (or absence) of certain feature types. These characteristics enforce understanding of data quality and activities in the community as well as their evolution over time.</p>
 
             <h3>OpenRouteService</h3>
-            <img src="img/openrouteservice.png" width="960" height="320">
+            <img src="build/img/openrouteservice.png" width="960" height="320">
             <p><a href="http://koenigstuhl.geog.uni-heidelberg.de/ors/">OpenRouteService</a> is an online route planning application that is solely based on open-source software, open standards and open data. I'm currently involved with the re-design and re-implemention of client-side components.</p>
 
             <h3>Lightmap</h3>
-			<img src="img/lightmap.png" width="960" height="320">
+			<img src="build/img/lightmap.png" width="960" height="320">
             <p>The <a href="http://lightmap.uni-hd.de">Lightmap</a> visualizes the world-wide distribution of street lamps as they are available in OpenStreetMap.</p>
             
             <h3>Where do you go? &hellip; And when?</h3>
-            <img src="img/wheredoyougo.png" width="960" height="320">
+            <img src="build/img/wheredoyougo.png" width="960" height="320">
             <p>As a result of some experiments I did with the Foursquare API, I implemented a litte <a href="./lab/foursquare/">web application</a> that visualizes your Foursquare check-ins and allows to filter for venue categories, day or hour of check-in.</p>
 				
 		</section>
@@ -145,7 +144,6 @@
 		-->
 		
 		<section class="content" id="contact">
-            
 				<div id="socialmedia">
 					<div class="media-item" id="mail">
 						<a href="mailto:oliver.roick@gmail.com">E-Mail</a>
@@ -171,15 +169,6 @@
 	</div>
 </body>
 <!-- Piwik --> 
-<script type="text/javascript">
-var pkBaseURL = (("https:" == document.location.protocol) ? "https://oliverroick.de/piwik/" : "http://oliverroick.de/piwik/");
-document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
-</script><script type="text/javascript">
-try {
-var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
-piwikTracker.trackPageView();
-piwikTracker.enableLinkTracking();
-} catch( err ) {}
-</script><noscript><p><img src="http://oliverroick.de/piwik/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
+
 <!-- End Piwik Tracking Code -->
 </html>
