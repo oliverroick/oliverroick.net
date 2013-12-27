@@ -141,8 +141,7 @@ section.content > h2 + h3 {
 section.content > img {
 	width: 960px;
 	border-radius: 20px;
-	-webkit-box-shadow:  0px 0px 5px 1px rgba(0, 0, 0, 0.3);
-    box-shadow:  0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+	
 }
 
 section.content > ul.publications {
