@@ -1,5 +1,13 @@
-$font-stack:    "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 $margin: 30px;
+$break-small: 768px; // 85/4/30
+$break-large: 992px; // 130/6/30
+
+$width-small: 660px;
+$width-large: 930px;
+$margin-large: 160px;
+
+$font-stack: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+
 $color-primary: #2d2d2d;
 $color-lightgray: #a9a9a9;
 $color-link: #006892;
@@ -23,6 +31,8 @@ body {
 	background-color: #fff;
 	font-weight: 200;
 	padding: $margin;
+
+	
 
 	a {
 		&:link,
@@ -103,6 +113,16 @@ div#socialmedia {
 }
 
 section.content {
+	margin: 0 auto;
+
+	@media screen and (min-width: $break-small) and (max-width: $break-large) {
+		width: $width-small;
+	}
+
+	@media screen and (min-width: $break-large) {
+		width: $width-large;
+	}
+
 	h2 {
 		font-size: 18px;
 		text-transform: uppercase;
@@ -150,14 +170,18 @@ section.content {
 
 	figure {
 		overflow: hidden;
-		max-width: 100%;
+		width: 100%;
 		height: 150px;
 		margin: 0;
-		@include border-radius(5px);
+		@include border-radius(10px);
 
-		img {
-			
-		}	
+		@media screen and (min-width: $break-small) and (max-width: $break-large) {
+			height: 225px;
+		}
+
+		@media screen and (min-width: $break-large) {
+			height: 300px;
+		}
 	}
 	
 
@@ -196,15 +220,35 @@ section.content {
 			}
 		}
 	}
+
+	@media screen and (min-width: $break-large) {
+		h3, ul, p {
+			margin-left: $margin-large;
+			margin-right: $margin-large;
+		}
+	}
 }
 
 footer {
 	clear: both;
 	margin-top: $margin * 9;
-	border-top: 1px solid $color-lightgray;
 	color: $color-lightgray;
 	font-size: 14px;
 	text-align: right;
 	float: left;
 	width: 100%;
+
+	p {
+		margin: 0 auto;
+		padding: ($margin / 2) 0;
+		border-top: 1px solid $color-lightgray;
+
+		@media screen and (min-width: $break-small) and (max-width: $break-large) {
+			width: $width-small;
+		}
+
+		@media screen and (min-width: $break-large) {
+			width: $width-large;
+		}
+	}
 }
