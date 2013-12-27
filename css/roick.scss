@@ -32,7 +32,9 @@ body {
 	font-weight: 200;
 	padding: $margin;
 
-	
+	@media screen and (min-width: $break-small) {
+		padding-top: 0;
+	}
 
 	a {
 		&:link,
@@ -51,14 +53,24 @@ body {
 	}
 }
 
+section {
+	margin: 0 auto;
+
+	@media screen and (min-width: $break-small) and (max-width: $break-large) {
+		width: $width-small;
+	}
+
+	@media screen and (min-width: $break-large) {
+		width: $width-large;
+	}
+}
+
 section#overview {
 	text-align: center;
 
 	img {
-		border: 1px solid $color-lightgray;
-		padding: 10px;
-		margin-top: -80px;
-		@include border-radius(120px);
+		margin-top: -50px;
+		@include border-radius(110px);
 	}
 
 	h1 {
@@ -88,7 +100,58 @@ section#overview {
 		&[href="#teaching"] { color: $color-teaching; }
 	}
 
-	
+	@media screen and (min-width: $break-small) {
+		text-align: left;
+
+		h1 {
+			font-size: 63px;
+			letter-spacing: -3px;
+			margin: 0 0 0 230px;
+
+			span {
+				font-size: 35px;
+        		letter-spacing: -1px;
+			}
+		}
+
+		p {
+			font-size: 23px;
+			line-height: 1.2;
+			margin-left: 230px;
+		}
+
+		img {
+			float: left;
+			margin-top: 125px;
+			width: 200px;
+			height: 200px;
+		}
+	}
+
+	@media screen and (min-width: $break-large) {
+		h1 {
+			font-size: 80px;
+			letter-spacing: -3px;
+			margin-left: 309px;
+
+			span {
+				font-size: 40px;
+			}
+		}
+
+		p {
+			font-size: 26px;
+			margin-left: 320px;
+
+		}
+
+		img {
+			margin-left: 70px;
+			margin-top: 143px;
+			width: 220px;
+			height: 220px;
+		}
+	}
 }
 
 div#socialmedia {
@@ -113,16 +176,6 @@ div#socialmedia {
 }
 
 section.content {
-	margin: 0 auto;
-
-	@media screen and (min-width: $break-small) and (max-width: $break-large) {
-		width: $width-small;
-	}
-
-	@media screen and (min-width: $break-large) {
-		width: $width-large;
-	}
-
 	h2 {
 		font-size: 18px;
 		text-transform: uppercase;
