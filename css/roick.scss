@@ -148,10 +148,18 @@ section.content {
 		margin-top: 0;
 	}
 
-	img {
+	figure {
+		overflow: hidden;
 		max-width: 100%;
+		height: 150px;
+		margin: 0;
 		@include border-radius(5px);
+
+		img {
+			
+		}	
 	}
+	
 
 	article {
 		margin-bottom: $margin * 4;
