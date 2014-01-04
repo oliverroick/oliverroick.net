@@ -1,10 +1,12 @@
-$margin: 30px;
-$break-small: 768px; // 85/4/30
+$break-small: 768px; // 85/6/30
 $break-large: 992px; // 130/6/30
 
-$width-small: 660px;
-$width-large: 930px;
-$margin-large: 160px;
+$column: 130px;
+$gutter: 30px;
+
+$width-small: (($column * 4) + ($gutter * 3));
+$width-large: (($column * 6) + ($gutter * 5));
+$margin-large: ($column + $gutter);
 
 $font-stack: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 
@@ -26,14 +28,15 @@ $color-teaching: #ae3825;
 }
 
 body {
-	font: 20px/1.5 $font-stack;
+	font: 16px/1.5 $font-stack;
 	color: $color-primary;
 	background-color: #fff;
 	font-weight: 200;
-	padding: $margin;
+	padding: 20px;
 
 	@media screen and (min-width: $break-small) {
 		padding-top: 0;
+		font-size: 20px;
 	}
 
 	a {
@@ -104,9 +107,9 @@ section#overview {
 		text-align: left;
 
 		h1 {
-			font-size: 63px;
+			font-size: 65px;
 			letter-spacing: -3px;
-			margin: 0 0 0 230px;
+			margin: 0 0 0 ($column + $gutter);
 
 			span {
 				font-size: 35px;
@@ -115,24 +118,22 @@ section#overview {
 		}
 
 		p {
-			font-size: 23px;
+			font-size: 26px;
 			line-height: 1.2;
-			margin-left: 230px;
 		}
 
 		img {
 			float: left;
-			margin-top: 125px;
-			width: 200px;
-			height: 200px;
+			width: $column;
+			height: $column;
+			margin-top: -25px;
 		}
 	}
 
 	@media screen and (min-width: $break-large) {
 		h1 {
 			font-size: 80px;
-			letter-spacing: -3px;
-			margin-left: 309px;
+			margin: 0 0 0 ($column * 2 + $gutter * 2);
 
 			span {
 				font-size: 40px;
@@ -141,13 +142,12 @@ section#overview {
 
 		p {
 			font-size: 26px;
-			margin-left: 320px;
-
+			margin-left: $column * 2 + $gutter * 2;
 		}
 
 		img {
-			margin-left: 70px;
 			margin-top: 143px;
+			margin-left: ($column * 2 + $gutter) - 220px;
 			width: 220px;
 			height: 220px;
 		}
@@ -156,7 +156,7 @@ section#overview {
 
 div#socialmedia {
 	text-align: center;
-	margin-top: $margin * 3;
+	margin-top: $gutter * 3;
 
 	div.media-item {
 		display: inline-block;
@@ -167,7 +167,7 @@ div#socialmedia {
 			width: 32px;
 			display: block;
 			text-indent: -9999em;
-			margin: 0 ($margin/4);
+			margin: 0 ($gutter/4);
 		}
 		&#mail a { background-image: url(../img/mail4.svg); }
 		&#twitter a { background-image: url(../img/twitter3.svg); }
@@ -183,14 +183,14 @@ section.content {
 		border-bottom: 1px solid $color-lightgray;
 		position: relative;
 		text-align: center;
-		margin: ($margin * 4) 0 ($margin * 2) 0; 
+		margin: ($gutter * 4) 0 ($gutter * 2) 0; 
 
 		span {
 			background-color: #fff;
 			display: inline-block;
 			position: relative;
 			top: 12px;
-			padding: 0 $margin;
+			padding: 0 $gutter;
 		}
 	}
 
@@ -211,10 +211,14 @@ section.content {
 
 	h3 {
 		font-weight: 300;
-		font-size: 36px;
+		font-size: 24px;
 		text-align: center;
 		line-height: 1.2;
-		margin: ($margin * 3) 0 $margin 0;
+		margin: ($gutter * 3) 0 $gutter 0;
+
+		@media screen and (min-width: $break-small) {
+			font-size: 36px
+		}
 	}
 
 	h2 + h3 {
@@ -239,7 +243,7 @@ section.content {
 	
 
 	article {
-		margin-bottom: $margin * 4;
+		margin-bottom: $gutter * 4;
 
 		h3 {
 			margin-top: 0;
@@ -253,10 +257,10 @@ section.content {
 	}
 
 	ul {
-		padding-left: $margin;
+		padding-left: $gutter;
 
 		li {
-			margin-bottom: $margin / 2;
+			margin-bottom: $gutter / 2;
 		}
 
 		&.publications {
@@ -264,8 +268,8 @@ section.content {
 			list-style: none;
 
 			li {
-				padding-left: $margin * 2;
-				text-indent: -$margin * 2;
+				padding-left: $gutter;
+				text-indent: -$gutter;
 
 				span.autoren {
 					font-variant: small-caps;
@@ -284,7 +288,7 @@ section.content {
 
 footer {
 	clear: both;
-	margin-top: $margin * 9;
+	margin-top: $gutter * 9;
 	color: $color-lightgray;
 	font-size: 14px;
 	text-align: right;
@@ -293,7 +297,7 @@ footer {
 
 	p {
 		margin: 0 auto;
-		padding: ($margin / 2) 0;
+		padding: ($gutter / 2) 0;
 		border-top: 1px solid $color-lightgray;
 
 		@media screen and (min-width: $break-small) and (max-width: $break-large) {
