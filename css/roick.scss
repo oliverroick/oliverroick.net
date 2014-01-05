@@ -1,12 +1,12 @@
-$break-small: 768px; // 85/6/30
-$break-large: 992px; // 130/6/30
+$break-small: 768px; 
+$break-large: 992px; 
 
-$column: 130px;
-$gutter: 30px;
+$column-width: 130px;
+$gutter-width: 30px;
 
-$width-small: (($column * 4) + ($gutter * 3));
-$width-large: (($column * 6) + ($gutter * 5));
-$margin-large: ($column + $gutter);
+$width-small: (($column-width * 4) + ($gutter-width * 3));
+$width-large: (($column-width * 6) + ($gutter-width * 5));
+$margin-large: ($column-width + $gutter-width);
 
 $font-stack: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 
@@ -109,7 +109,7 @@ section#overview {
 		h1 {
 			font-size: 65px;
 			letter-spacing: -3px;
-			margin: 0 0 0 ($column + $gutter);
+			margin: 0 0 0 ($column-width + $gutter-width);
 
 			span {
 				font-size: 35px;
@@ -124,8 +124,8 @@ section#overview {
 
 		img {
 			float: left;
-			width: $column;
-			height: $column;
+			width: $column-width;
+			height: $column-width;
 			margin-top: -25px;
 		}
 	}
@@ -133,7 +133,7 @@ section#overview {
 	@media screen and (min-width: $break-large) {
 		h1 {
 			font-size: 80px;
-			margin: 0 0 0 ($column * 2 + $gutter * 2);
+			margin: 0 0 0 ($column-width * 2 + $gutter-width * 2);
 
 			span {
 				font-size: 40px;
@@ -142,12 +142,12 @@ section#overview {
 
 		p {
 			font-size: 26px;
-			margin-left: $column * 2 + $gutter * 2;
+			margin-left: $column-width * 2 + $gutter-width * 2;
 		}
 
 		img {
 			margin-top: 143px;
-			margin-left: ($column * 2 + $gutter) - 220px;
+			margin-left: ($column-width * 2 + $gutter-width) - 220px;
 			width: 220px;
 			height: 220px;
 		}
@@ -156,7 +156,7 @@ section#overview {
 
 div#socialmedia {
 	text-align: center;
-	margin-top: $gutter * 3;
+	margin-top: $gutter-width * 3;
 
 	div.media-item {
 		display: inline-block;
@@ -167,7 +167,7 @@ div#socialmedia {
 			width: 32px;
 			display: block;
 			text-indent: -9999em;
-			margin: 0 ($gutter/4);
+			margin: 0 ($gutter-width/4);
 		}
 		&#mail a { background-image: url(../img/mail4.svg); }
 		&#twitter a { background-image: url(../img/twitter3.svg); }
@@ -183,14 +183,14 @@ section.content {
 		border-bottom: 1px solid $color-lightgray;
 		position: relative;
 		text-align: center;
-		margin: ($gutter * 4) 0 ($gutter * 2) 0; 
+		margin: ($gutter-width * 4) 0 ($gutter-width * 2) 0; 
 
 		span {
 			background-color: #fff;
 			display: inline-block;
 			position: relative;
 			top: 12px;
-			padding: 0 $gutter;
+			padding: 0 $gutter-width;
 		}
 	}
 
@@ -214,7 +214,7 @@ section.content {
 		font-size: 28px;
 		text-align: center;
 		line-height: 1.2;
-		margin: ($gutter * 3) 0 $gutter 0;
+		margin: ($gutter-width * 3) 0 $gutter-width 0;
 
 		@media screen and (min-width: $break-small) {
 			font-size: 36px
@@ -243,7 +243,7 @@ section.content {
 	
 
 	article {
-		margin-bottom: $gutter * 4;
+		margin-bottom: $gutter-width * 4;
 
 		h3 {
 			margin-top: 0;
@@ -257,10 +257,10 @@ section.content {
 	}
 
 	ul {
-		padding-left: $gutter;
+		padding-left: $gutter-width;
 
 		li {
-			margin-bottom: $gutter / 2;
+			margin-bottom: $gutter-width / 2;
 		}
 
 		&.publications {
@@ -268,8 +268,8 @@ section.content {
 			list-style: none;
 
 			li {
-				padding-left: $gutter;
-				text-indent: -$gutter;
+				padding-left: $gutter-width;
+				text-indent: -$gutter-width;
 
 				span.autoren {
 					font-variant: small-caps;
@@ -288,7 +288,7 @@ section.content {
 
 footer {
 	clear: both;
-	margin-top: $gutter * 9;
+	margin-top: $gutter-width * 9;
 	color: $color-lightgray;
 	font-size: 14px;
 	text-align: right;
@@ -297,7 +297,7 @@ footer {
 
 	p {
 		margin: 0 auto;
-		padding: ($gutter / 2) 0;
+		padding: ($gutter-width / 2) 0;
 		border-top: 1px solid $color-lightgray;
 
 		@media screen and (min-width: $break-small) and (max-width: $break-large) {
