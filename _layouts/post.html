@@ -3,7 +3,7 @@ layout: sub
 ---
 		<section class="content" id="news">
 			<article>
-				<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="published">{{ site.time | date_to_long_string }}</time>
+				<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="published">{{ page.date | date_to_long_string }}</time>
 				<h3>{{ page.title }}</h3>
 				
 				{{ content }}
