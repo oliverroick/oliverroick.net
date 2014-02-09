@@ -54,6 +54,26 @@ body {
 			text-decoration: none;
 		}  
 	}
+
+	p.more {
+		text-align: center;
+
+		a {
+			background-color: $color-linkvisited;
+			color: #fff;
+			text-decoration: none;
+			border: 1px solid $color-link;
+			padding: 10px 15px;
+			@include border-radius(5px);
+			-webkit-transition: background-color 0.5s;
+    		transition: background-color 0.5s;
+		}
+
+		a:hover,
+		a:focus {
+			background-color: $color-link;
+		}
+	}
 }
 
 section {
@@ -215,6 +235,16 @@ section.content {
 
 	h2 + h3 {
 		margin-top: 0;
+	}
+
+	&#news h3 > a {
+		text-decoration: none;
+		color: $color-primary;
+
+		&:hover,
+		&:focus {
+			color: $color-link;
+		}
 	}
 
 	figure {
