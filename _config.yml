@@ -1,0 +1,4 @@
+name: Oliver Roick
+markdown: redcarpet
+pygments: true
+exclude: ['Gruntfile.js', 'package.json', 'node_modules']

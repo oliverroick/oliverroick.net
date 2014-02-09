@@ -70,11 +70,7 @@ section {
 
 section#overview {
 	text-align: center;
-
-	img {
-		margin-top: -50px;
-		@include border-radius(110px);
-	}
+	margin-bottom: $gutter-width * 4;g
 
 	h1 {
 		font-size: 45px;
@@ -82,6 +78,8 @@ section#overview {
 		line-height: 1;
 		letter-spacing: -2px;
 		text-transform: uppercase;
+		margin-top: -35px;
+		margin-bottom: $gutter-width * 2;
 
 		span {
 	        color: $color-lightgray;
@@ -90,6 +88,13 @@ section#overview {
 	        font-weight: normal;
 	        text-transform: none;
 	    }
+	}
+
+	img {
+		width: 220px;
+		height: 220px;
+		text-align: center;
+		@include border-radius(110px);
 	}
 
 	p {
@@ -104,12 +109,11 @@ section#overview {
 	}
 
 	@media screen and (min-width: $break-small) {
-		text-align: left;
-
 		h1 {
-			font-size: 65px;
+			text-align: left;
+			font-size: 89px;
 			letter-spacing: -3px;
-			margin: 0 0 0 ($column-width + $gutter-width);
+			margin-top: -25px;
 
 			span {
 				font-size: 35px;
@@ -121,35 +125,23 @@ section#overview {
 			font-size: 26px;
 			line-height: 1.2;
 		}
-
-		img {
-			float: left;
-			width: $column-width;
-			height: $column-width;
-			margin-top: -25px;
-		}
 	}
 
 	@media screen and (min-width: $break-large) {
+		text-align: left;
+		
 		h1 {
-			font-size: 80px;
-			margin: 0 0 0 ($column-width * 2 + $gutter-width * 2);
-
-			span {
-				font-size: 40px;
-			}
+			margin-left: ($column-width + $gutter-width);
 		}
 
 		p {
-			font-size: 26px;
 			margin-left: $column-width * 2 + $gutter-width * 2;
 		}
 
 		img {
-			margin-top: 143px;
+			margin-top: -5px;
 			margin-left: ($column-width * 2 + $gutter-width) - 220px;
-			width: 220px;
-			height: 220px;
+			float: left;
 		}
 	}
 }

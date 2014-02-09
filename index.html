@@ -1,185 +1,143 @@
-<!doctype html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Oliver Roick</title>
-	<meta name="description" content="Personal website of Oliver Roick, Senior Developer at Extreme Citizen Science Reseacrh Group, University College London">
-	<meta name="author" content="Oliver Roick">
+---
+layout: default
+title: Oliver Roick
+---
+
+	<!-- 
+	#
+	# OVERVIEW
+	#
+	-->
+	<section id="overview">
+		<h1>Oliver Roick<span></h1>
+
+		<img src="build/img/profile.png">
+		<p>I'm a Senior Developer at <a href="http://www.ucl.ac.uk/excites">Extreme Citizen Science Research Group</a> at University College London. I develop web-based geographic information systems for participatory mapping.</p>
+
+		<p>I spend my days <a href="#coding">coding</a> and formerly also <a href="#writing">writing</a> and <a href="#teaching">teaching</a>.</p>
+	</section>
+
+	<!-- 
+	#
+	# CONTACT
+	#
+	-->
 	
-	<link rel="stylesheet" href="build/css/global.css">	
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
+	<section class="content" id="contact">
+		<div id="socialmedia">
+		  <div class="media-item" id="mail">
+			<a href="mailto:oliver.roick@gmail.com">E-Mail</a>
+		  </div>
+		  <div class="media-item" id="twitter">
+			<a href="http://twitter.com/oliverroick">Twitter</a>
+		  </div>
+		  <div class="media-item" id="github">
+			<a href="https://github.com/oliverroick/">GitHub</a>
+		  </div>
+		</div>
+	</section>
+
+	<!-- 
+	#
+	# News
+	#
+	-->
 		
-	<div id="container">
-		<!-- 
-		#
-		# OVERVIEW
-		#
-		-->
-		<section id="overview">
-            <img src="build/img/profile.png" width="220" height="220">
-            <h1><span>Hello, I am </span>Oliver Roick</h1>
-			<p>I'm a Senior Developer at <a href="http://www.ucl.ac.uk/excites">Extreme Citizen Science Research Group</a> at University College London. I develop web-based geographic information systems for participatory mapping.</p>
+		<section class="content" id="news">
+			<h2><span>News</span></h2>
 
-			<p>I spend my days <a href="#coding">coding</a> and formerly also <a href="#writing">writing</a> and <a href="#teaching">teaching</a>.</p>
-		</section>
-
-		<!-- 
-		#
-		# CONTACT
-		#
-		-->
-		
-		<section class="content" id="contact">
-				<div id="socialmedia">
-					<div class="media-item" id="mail">
-						<a href="mailto:oliver.roick@gmail.com">E-Mail</a>
-					</div>
-					<div class="media-item" id="twitter">
-						<a href="http://twitter.com/oliverroick">Twitter</a>
-					</div>
-					<div class="media-item" id="github">
-						<a href="https://github.com/oliverroick/">GitHub</a>
-					</div>
-				</div>
-		</section>
-        
-        <!-- 
-		#
-		# News
-		#
-		-->
-        
-        <section class="content" id="news">
-            <h2><span>News</span></h2>
-			
-            <article id="joining-excites">
-                <time datetime="2013-09-01T00:00:00+01:00" itemprop="published">September 1st, 2013</time>
-                <h3>Moving on: Joining ExCiteS</h3>
-                <p>As of September 2013 I'll be joining <a href="http://www.ucl.ac.uk/excites">Extreme Citizen Science</a> Group at University College London. As a Senior Developer I will be responsible for design and implementation of web-based geographic information systems.</p>
-            </article>
-            
-			<article id="fossgis-2014">
-                <time datetime="2013-06-17T00:00:00+01:00" itemprop="published">June 17th, 2013</time>
-                <h3>FOSSGIS Conference 2014 in Berlin</h3>
-                <p>FOSSGIS &mdash; the German user conference on open-source geo-spatial software and open data &mdash; will be held in March next year at Beuth Hochschule in Berlin. I created the <a href="http://fossgis.de/konferenz/2014">conference web page</a>, which which went online today.</p>
-            </article>
-			
-            <article id="new-version-of-osmatrix">
-                <time datetime="2013-05-16T00:00:00+01:00" itemprop="published">May 16th, 2013</time>
-                <h3>New Version of OSMatrix</h3>
-                <p>A new interation of <a href="http://osmatrix.uni-hd.de">OSMatrix</a> has been released today. The client application has been re-designed and implemented from ground-up leveraging latest technologies (HTML5 and CSS3) and open-source frameworks (<a href="http://leafletjs.com/">Leaflet</a> and <a href="http://d3js.org/">D3</a>). We further rebuilt server-side components using <a href="http://nodejs.org/">Node.js</a> and its awesome ecosystem of extensions for data processing and <a href="http://mapnik.org/">Mapnik</a> for map rendering purposes. For a detailed description of new features read my <a href="http://k1z.blog.uni-heidelberg.de/2013/05/16/new-version-of-osmatrix/">post on GIScience Blog.</a></p>
-            </article>
-            
-<!--
-            <article id="review-paper-location-based-social-networks">
-                <time datetime="2013-05-15T00:00:00+01:00" itemprop="published">May 15th, 2013</time>
-                <h3>Review Paper: Location Based Social Networks &mdash; Definition, Current State of the Art and Research Agenda</h3>
-                <p>An early view version of our review paper entitled <em>Location Based Social Networks &mdash; Definition, Current State of the Art and Research Agenda</em> has been <a href="http://onlinelibrary.wiley.com/doi/10.1111/tgis.12032/abstract">published by Transactions in GIS.</a> You may also download the <a href="/publications/2013/TGIS_LBSN_Review.pdf">final draft version</a> free of charge.</p>	
-            </article>
--->
-		</section>
-		
-		<!-- 
-		#
-		# CODING
-		#
-		-->
-		
-		<section class="content" id="coding">
-            
-            <h2><span>Coding</span></h2>
-
-            <h3>OSMatrix&mdash;visualizing spatio-temporal characteristics of OpenStreetMap</h3>
-            <figure>
-                <img src="build/img/osmatrix.png" width="960" height="320">
-            </figure>
-            
-            <p><a href="http://osmatrix.uni-hd.de">OSMatrix</a> visualizes characteristics of OpenStreetMap, which are usually not displayed in cartographic representations of the data. The characteristics include information on the topicality of data, user contributions and the presence (or absence) of certain feature types. These characteristics enforce understanding of data quality and activities in the community as well as their evolution over time.</p>
-
-            <h3>OpenRouteService</h3>
-            <figure>
-                <img src="build/img/openrouteservice.png" width="960" height="320">
-            </figure>
-            
-            <p><a href="http://koenigstuhl.geog.uni-heidelberg.de/ors/">OpenRouteService</a> is an online route planning application that is solely based on open-source software, open standards and open data. I'm currently involved with the re-design and re-implemention of client-side components.</p>
-
-            <h3>Lightmap</h3>
-            <figure>
-                <img src="build/img/lightmap.png" width="960" height="320">
-            </figure>
-            <p>The <a href="http://lightmap.uni-hd.de">Lightmap</a> visualizes the world-wide distribution of street lamps as they are available in OpenStreetMap.</p>
-            
-            <h3>Where do you go? &hellip; And when?</h3>
-            <figure>
-                <img src="build/img/wheredoyougo.png" width="960" height="320">
-            </figure>
-            
-            <p>As a result of some experiments I did with the Foursquare API, I implemented a litte <a href="./lab/foursquare/">web application</a> that visualizes your Foursquare check-ins and allows to filter for venue categories, day or hour of check-in.</p>
-		</section>
-
-		<!-- 
-		#
-		# PUBLICATIONS
-		#
-		-->
-		
-		<section class="content" id="writing">
-				<h2><span>Writing</span></h2>
-                <p>The final manuscripts of most of my publications are available for download from this site. Please keep in mind that these manuscript versions may slightly vary from the published ones.</p>
-				<h3>Reviewed Journal Articles</h3>
-				<ul class="publications">
-					<li><span class="autoren">Roick, O. &amp; Heuser, S.</span> (2013): <a href="/publications/2013/TGIS_LBSN_Review.pdf">Location Based Social Networks &ndash; Definition, Current State of the Art and Research Agenda</a>. Transactions in GIS, 17(5): 763–784. <a href="http://onlinelibrary.wiley.com/doi/10.1111/tgis.12032/abstract">doi: 10.1111/tgis.12032</a></li>
-				</ul>
-
-				<h3>Reviewed Conference and Workshop Contributions</h3>
-				<ul class="publications">
-					<li><span class="autoren">Roick, O.; Loos, L. &amp; Zipf, A.</span> (2012): <a href="/publications/2012/GI2012_OSMatrix.pdf">A Technical Framework for Visualizing Spatio-temporal Quality Metrics of Volunteered Geographic Information</a>. In: <span class="autoren">Löwner, M.-O.; Hillen, F.; Wohlfahrt, R.</span>(Eds.): Geoinformatik 2012 "Mobilität und Umwelt", 263-270. Shaker Verlag, Aachen.</li>
-                    <li><span class="autoren">Roick, O.; Kralisch S. &amp; Flügel, W.-A.</span> (2010): Design and implementation of a mobile client for the River Basin Information System (RBIS). In: <span class="autoren">Zipf, A; Behncke,K.; Hillen, F.; Schaefermeyer, J. </span>(Eds.): Geoinformatik 2010 "Die Welt im Netz", 239-240. Akademische Verlagsgesellschaft, Heidelberg.</li> 
-				</ul>
+			{% for post in site.categories.news limit:3 %}
+			<article id="joining-excites">
+				<time datetime="{{ post.date | date_to_xmlschema }}" itemprop="published">{{ post.date | date_to_long_string }}</time>
+				<h3>{{ post.title }}</h3>
 				
-				<h3>Conference and Workshop Abstracts and Short Papers</h3>
-				<ul class="publications">
-					<li><span class="autoren">Roick, O.</span> (2012): <a href="/publications/2012/DGfK_LBSN.pdf">Applying User Generated Geographic Information from Social Networks for the Creation of Maps &mdash; Towards a Research Agenda.</a> Workshop on Map creation from user generated data. Hannover, October 2012.</li>
-					<li><span class="autoren">Roick, O.; Hagenauer, J. &amp; Zipf, A.</span> (2011): <a href="/publications/2011/SotM_OSMatrix.pdf">OSMatrix &mdash; Grid based analysis and visualization of OpenStreetMap.</a> State of the Map EU. Wien, July 2011.</li> 
-					<li><span class="autoren">Roick, O.; Neis, P. &amp; Zipf, A.</span> (2011): <a href="/publications/2011/DGfK_VGI.pdf">Volunteered Geographic Information - Datenqualität und Nutzungspotentiale am Beispiel von OpenStreetMap.</a> Kommission "Angewandte Kartographie - Geovisualisierung" der Deutschen Gesellschaft für Kartographie (DGfK) - Symposium Königslutter 2011.</li> 
-					<li><span class="autoren">Roick, O.; Vogel, A.; Busch, H. &amp; Flügel, W.-A.</span> (2008): Innovative Technologies and their Demonstration for Indoor Positioning. 5th International Symposium on Location Based Services and TeleCartography. Salzburg, November 2008. </li> 
-					<li><span class="autoren">Roick, O.; Gerlach, R. &amp; Lemmens, R.</span> (2008): Using Open Standards for Browser-based Integration and Visualization of Geo-Spatial Data. Geophysical Research Abstracts, Vol. 10(EGU2008-A-07829).</li> 
-				</ul>
+				{{ post.content }}
+			</article>
+			{% endfor %}
 		</section>
-		
-		<!-- 
-		#
-		# Teaching
-		#
-		-->
-		
-		<section class="content" id="teaching">
-				<h2><span>Teaching</span></h2>
-				<h3>Courses (in German only)</h3>
-				<ul>
-					<li>Geosoziale Netzwerke &ndash; Theorien, Konzepte und Modelle (Summer terms 2012 and 2013)</li>
-					<li>WebMapping &ndash; Grundlagen von WebGIS (Winter terms 2010/11, 2011/12 and 2012/13)</li> 
-				</ul>
-				<h3>Supervised Theses</h3>
-				<ul class="publications">
-					<li><span class="autoren">Heuser, S.</span> (2011): Geodaten aus sozialen Netzwerken &mdash; Überblick und Nutzungspotentiale. B.Sc. Thesis. Chair of GIScience, Heidelberg University.</li> 
-				</ul>
-		</section>
-		
-		<!-- 
-		#
-		# FOOTER
-		#
-		-->
-		
-		<footer>
-				<p><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a> 2011-2013 Oliver Roick.
-		</footer>
-	</div>
-</body>
-<!-- Piwik --> 
+	
+	<!-- 
+	#
+	# CODING
+	#
+	-->
+	
+	<section class="content" id="coding">
+			<h2><span>Coding</span></h2>
 
-<!-- End Piwik Tracking Code -->
-</html>
+			<h3>OSMatrix&mdash;visualizing spatio-temporal characteristics of OpenStreetMap</h3>
+			<figure>
+				<img src="build/img/osmatrix.png" width="960" height="320">
+			</figure>
+			
+			<p><a href="http://osmatrix.uni-hd.de">OSMatrix</a> visualizes characteristics of OpenStreetMap, which are usually not displayed in cartographic representations of the data. The characteristics include information on the topicality of data, user contributions and the presence (or absence) of certain feature types. These characteristics enforce understanding of data quality and activities in the community as well as their evolution over time.</p>
+
+			<h3>OpenRouteService</h3>
+			<figure>
+				<img src="build/img/openrouteservice.png" width="960" height="320">
+			</figure>
+			
+			<p><a href="http://koenigstuhl.geog.uni-heidelberg.de/ors/">OpenRouteService</a> is an online route planning application that is solely based on open-source software, open standards and open data. I'm currently involved with the re-design and re-implemention of client-side components.</p>
+
+			<h3>Lightmap</h3>
+			<figure>
+				<img src="build/img/lightmap.png" width="960" height="320">
+			</figure>
+			<p>The <a href="http://lightmap.uni-hd.de">Lightmap</a> visualizes the world-wide distribution of street lamps as they are available in OpenStreetMap.</p>
+			
+			<h3>Where do you go? &hellip; And when?</h3>
+			<figure>
+				<img src="build/img/wheredoyougo.png" width="960" height="320">
+			</figure>
+			
+			<p>As a result of some experiments I did with the Foursquare API, I implemented a litte <a href="./lab/foursquare/">web application</a> that visualizes your Foursquare check-ins and allows to filter for venue categories, day or hour of check-in.</p>
+	</section>
+
+	<!-- 
+	#
+	# PUBLICATIONS
+	#
+	-->
+	
+	<section class="content" id="writing">
+		<h2><span>Writing</span></h2>
+				<p>The final manuscripts of most of my publications are available for download from this site. Please keep in mind that these manuscript versions may slightly vary from the published ones.</p>
+		<h3>Reviewed Journal Articles</h3>
+		<ul class="publications">
+		  <li><span class="autoren">Roick, O. &amp; Heuser, S.</span> (2013): <a href="/publications/2013/TGIS_LBSN_Review.pdf">Location Based Social Networks &ndash; Definition, Current State of the Art and Research Agenda</a>. Transactions in GIS, 17(5): 763–784. <a href="http://onlinelibrary.wiley.com/doi/10.1111/tgis.12032/abstract">doi: 10.1111/tgis.12032</a></li>
+		</ul>
+
+		<h3>Reviewed Conference and Workshop Contributions</h3>
+		<ul class="publications">
+		  <li><span class="autoren">Roick, O.; Loos, L. &amp; Zipf, A.</span> (2012): <a href="/publications/2012/GI2012_OSMatrix.pdf">A Technical Framework for Visualizing Spatio-temporal Quality Metrics of Volunteered Geographic Information</a>. In: <span class="autoren">Löwner, M.-O.; Hillen, F.; Wohlfahrt, R.</span>(Eds.): Geoinformatik 2012 "Mobilität und Umwelt", 263-270. Shaker Verlag, Aachen.</li>
+					<li><span class="autoren">Roick, O.; Kralisch S. &amp; Flügel, W.-A.</span> (2010): Design and implementation of a mobile client for the River Basin Information System (RBIS). In: <span class="autoren">Zipf, A; Behncke,K.; Hillen, F.; Schaefermeyer, J. </span>(Eds.): Geoinformatik 2010 "Die Welt im Netz", 239-240. Akademische Verlagsgesellschaft, Heidelberg.</li> 
+		</ul>
+		
+		<h3>Conference and Workshop Abstracts and Short Papers</h3>
+		<ul class="publications">
+		  <li><span class="autoren">Roick, O.</span> (2012): <a href="/publications/2012/DGfK_LBSN.pdf">Applying User Generated Geographic Information from Social Networks for the Creation of Maps &mdash; Towards a Research Agenda.</a> Workshop on Map creation from user generated data. Hannover, October 2012.</li>
+		  <li><span class="autoren">Roick, O.; Hagenauer, J. &amp; Zipf, A.</span> (2011): <a href="/publications/2011/SotM_OSMatrix.pdf">OSMatrix &mdash; Grid based analysis and visualization of OpenStreetMap.</a> State of the Map EU. Wien, July 2011.</li> 
+		  <li><span class="autoren">Roick, O.; Neis, P. &amp; Zipf, A.</span> (2011): <a href="/publications/2011/DGfK_VGI.pdf">Volunteered Geographic Information - Datenqualität und Nutzungspotentiale am Beispiel von OpenStreetMap.</a> Kommission "Angewandte Kartographie - Geovisualisierung" der Deutschen Gesellschaft für Kartographie (DGfK) - Symposium Königslutter 2011.</li> 
+		  <li><span class="autoren">Roick, O.; Vogel, A.; Busch, H. &amp; Flügel, W.-A.</span> (2008): Innovative Technologies and their Demonstration for Indoor Positioning. 5th International Symposium on Location Based Services and TeleCartography. Salzburg, November 2008. </li> 
+		  <li><span class="autoren">Roick, O.; Gerlach, R. &amp; Lemmens, R.</span> (2008): Using Open Standards for Browser-based Integration and Visualization of Geo-Spatial Data. Geophysical Research Abstracts, Vol. 10(EGU2008-A-07829).</li> 
+		</ul>
+	</section>
+	
+	<!-- 
+	#
+	# Teaching
+	#
+	-->
+	
+	<section class="content" id="teaching">
+		<h2><span>Teaching</span></h2>
+		<h3>Courses (in German only)</h3>
+		<ul>
+		  <li>Geosoziale Netzwerke &ndash; Theorien, Konzepte und Modelle (Summer terms 2012 and 2013)</li>
+		  <li>WebMapping &ndash; Grundlagen von WebGIS (Winter terms 2010/11, 2011/12 and 2012/13)</li> 
+		</ul>
+		<h3>Supervised Theses</h3>
+		<ul class="publications">
+		  <li><span class="autoren">Heuser, S.</span> (2011): Geodaten aus sozialen Netzwerken &mdash; Überblick und Nutzungspotentiale. B.Sc. Thesis. Chair of GIScience, Heidelberg University.</li> 
+		</ul>
+	</section>
