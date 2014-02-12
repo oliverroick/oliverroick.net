@@ -59,6 +59,7 @@ body {
 		text-align: center;
 
 		a {
+			display: inline-block;
 			background-color: $color-link;
 			-webkit-transition: background-color 0.5s;
     		transition: background-color 0.5s;
