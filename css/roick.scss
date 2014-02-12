@@ -344,25 +344,22 @@ section.content {
 }
 
 footer {
-	clear: both;
-	margin-top: $gutter-width * 9;
+	margin: $gutter-width * 9 auto 0 auto;
+	padding: ($gutter-width / 2) 0;
 	color: $color-lightgray;
 	font-size: 14px;
 	text-align: right;
-	float: left;
-	width: 100%;
+	border-top: 1px solid $color-lightgray;
+
+	@media screen and (min-width: $break-small) and (max-width: $break-large) {
+		width: $width-small;
+	}
+
+	@media screen and (min-width: $break-large) {
+		width: $width-large;
+	}
 
 	p {
-		margin: 0 auto;
-		padding: ($gutter-width / 2) 0;
-		border-top: 1px solid $color-lightgray;
-
-		@media screen and (min-width: $break-small) and (max-width: $break-large) {
-			width: $width-small;
-		}
-
-		@media screen and (min-width: $break-large) {
-			width: $width-large;
-		}
+		margin: 0;
 	}
 }
