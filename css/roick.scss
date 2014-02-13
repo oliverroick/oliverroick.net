@@ -27,6 +27,10 @@ $color-teaching: #ae3825;
           border-radius: $radius;
 }
 
+@mixin background-transition() {
+
+}
+
 @font-face {
 	font-family: 'icomoon';
 	src:url('../../fonts/icomoon.eot?-jmx6ps');
@@ -72,8 +76,8 @@ body {
 		a {
 			display: inline-block;
 			background-color: $color-link;
-			-webkit-transition: background-color 0.5s;
-    		transition: background-color 0.5s;
+			-webkit-transition: background-color 0.3s;
+    		transition: background-color 0.3s;
 			color: #fff;
 			text-decoration: none;
 			padding: 10px 15px;
@@ -193,6 +197,14 @@ div#socialmedia {
 			overflow: hidden;
 			margin: 0 ($gutter-width/4);
 			color: $color-primary;
+			-webkit-transition: color 0.5s;
+    		transition: color 0.3s;
+		}
+
+		a:hover,
+		a:active,
+		a:focus {
+			color: $color-lightgray;
 		}
 
 		[class^="icon-"], [class*=" icon-"] {
