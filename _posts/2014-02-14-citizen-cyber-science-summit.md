@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Citizen Cyberscience Summit"
-date:   2014-02-14 09:00:00
+date:   2014-02-13 22:00:00
 category: news
 ---
 
