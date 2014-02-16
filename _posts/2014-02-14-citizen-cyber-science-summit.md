@@ -9,4 +9,4 @@ The [Citizen Cyberscience Summit](http://cybersciencesummit.org/), bringing toge
 
 Together with [Patrick Rickles](https://twitter.com/mapperpat) I will be giving a talk presenting [past, present and future developments of Community Maps](http://lanyrd.com/2014/citizen-cyberscience-summit/sctzcm/) followed by a short workshop to discuss and share ideas about the next generation of participatory mapping platforms. 
 
-The prevention and workshop is taking place on Friday, 21st February, 2pm. in room 217 in the Chatwick Building.
+The presentation and workshop will take place on Friday, 21st February, 2p.m. in room 217 in the Chatwick Building.
