@@ -295,6 +295,19 @@ section.content {
 		}
 	}
 
+	h4 {
+		font-weight: 300;
+		font-size: 22px;
+		line-height: 1.2;
+		margin: ($gutter-width * 1.5) 0 ($gutter-width * 0.5) 0;
+		padding-bottom: $gutter-width * 0.5;
+		border-bottom: 1px dotted $color-primary;
+
+		@media screen and (min-width: $break-small) {
+			font-size: 22px
+		}
+	}
+
 	figure {
 		overflow: hidden;
 		width: 100%;
@@ -311,6 +324,11 @@ section.content {
 		}
 	}
 	
+	p.excerpt-link {
+		text-align: center;
+		font-size: 0.8em;
+		margin-top: $gutter-width / 2;
+	}
 
 	article {
 		margin-bottom: $gutter-width * 4;
@@ -349,7 +367,7 @@ section.content {
 	}
 
 	@media screen and (min-width: $break-large) {
-		h3, ul, p {
+		h3, h4, ul, p {
 			margin-left: $margin-large;
 			margin-right: $margin-large;
 		}
