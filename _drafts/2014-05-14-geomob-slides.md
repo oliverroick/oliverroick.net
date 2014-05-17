@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: talk
 title:  "My #geomob London talk on Community Maps 2.0"
 date:   2014-05-14 10:00:00
 category: talks
