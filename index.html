@@ -11,29 +11,21 @@ title: Oliver Roick
 	<section id="overview">
 		<h1><span>Hello, I am</span>Oliver Roick</h1>
 
+		<div id="socialmedia">
+			<div class="media-item">
+				<a href="mailto:oliver.roick@gmail.com" title="E-mail"><span class="icon-mail"></span>E-Mail</a>
+			</div>
+			<div class="media-item">
+				<a href="http://twitter.com/oliverroick" title="Twitter"><span class="icon-twitter"></span>Twitter</a>
+			</div>
+			<div class="media-item">
+				<a href="https://github.com/oliverroick/" title="Github"><span class="icon-github"></span>GitHub</a>
+			</div>
+		</div>
+
 		<p>I'm a Senior Developer at <a href="http://www.ucl.ac.uk/excites">Extreme Citizen Science Research Group</a> at University College London. I develop web-based geographic information systems for participatory mapping.</p>
 
 		<p>I spend my days <a href="#coding">coding</a> and sometimes <a href="#writing">writing</a>.</p>
-	</section>
-
-	<!-- 
-	#
-	# CONTACT
-	#
-	-->
-	
-	<section class="content" id="contact">
-		<div id="socialmedia">
-		  <div class="media-item">
-			<a href="mailto:oliver.roick@gmail.com" title="E-mail"><span class="icon-mail"></span>E-Mail</a>
-		  </div>
-		  <div class="media-item">
-			<a href="http://twitter.com/oliverroick" title="Twitter"><span class="icon-twitter"></span>Twitter</a>
-		  </div>
-		  <div class="media-item">
-			<a href="https://github.com/oliverroick/" title="Github"<span class="icon-github"></span>>GitHub</a>
-		  </div>
-		</div>
 	</section>
 
 	<!-- 
@@ -46,7 +38,7 @@ title: Oliver Roick
 			<h2><span>News</span></h2>
 
 			{% for post in site.posts limit:3 %}
-			<article id="joining-excites">
+			<article>
 				<time datetime="{{ post.date | date_to_xmlschema }}" itemprop="published">{{ post.date | date_to_long_string }}</time>
 				<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
 				

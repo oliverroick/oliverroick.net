@@ -42,20 +42,6 @@ $color-teaching: #00ace2;
 	font-style: normal;
 }
 
-@font-face { 
-	font-family: Vollkorn;
-	src:url('../../fonts/vollkorn-medium-webfont.woff');
-	font-weight: bold;
-	font-style: normal;
-} 
-
-@font-face { 
-	font-family: Vollkorn;
-	src:url('../../fonts/vollkorn-regular-webfont.woff');
-	font-weight: normal;
-	font-style: normal;
-} 
-
 body {
 	font: 18px/1.5 $font-stack;
 	color: $color-primary;
@@ -133,16 +119,15 @@ section {
 
 section#overview {
 	text-align: center;
-	margin-bottom: $gutter-width * 4;
+	margin-bottom: $gutter-width * 6;
 
 	h1 {
-		font-family: Vollkorn;
 		font-size: 45px;
 		font-weight: bold;
 		line-height: 1;
 		letter-spacing: -2px;
 		text-transform: uppercase;
-		margin-bottom: $gutter-width * 2;
+		margin-bottom: $gutter-width;
 		margin-top: $gutter-width;
 
 		span {
@@ -166,7 +151,7 @@ section#overview {
 
 	@media screen and (min-width: $break-small) {
 		h1 {
-			font-size: 90px;
+			font-size: 89px;
 			letter-spacing: -3px;
 
 			span {
@@ -191,10 +176,33 @@ section#overview {
 
 div#socialmedia {
 	text-align: center;
-	margin-top: $gutter-width * 3;
+	border-bottom: 1px solid $color-lightgray;
+	position: relative;
+	margin-bottom: ($gutter-width * 3) + 23px;
+
+	@media screen and (min-width: $break-large) {
+		margin-left: ($column-width / 2 + $gutter-width);
+		margin-right: ($column-width / 2 + $gutter-width);
+	}
 
 	div.media-item {
 		display: inline-block;
+		position: relative;
+		top: 23px;
+		margin: 0 -4px;
+		width: 32px;
+		padding: 0 ($gutter-width/4);
+		text-align: center;
+		background-color: #fff;
+
+		&:first-child {
+			padding-left: $gutter-width;
+		}
+
+		&:last-child {
+			padding-right: $gutter-width;
+		}
+
 
 		a:link,
 		a:visited {
@@ -203,7 +211,7 @@ div#socialmedia {
 			width: 32px;
 			display: block;
 			overflow: hidden;
-			margin: 0 ($gutter-width/4);
+			margin: 0;
 			color: $color-primary;
 			-webkit-transition: color 0.5s;
     		transition: color 0.3s;
@@ -218,6 +226,7 @@ div#socialmedia {
 
 		[class^="icon-"], [class*=" icon-"] {
 			font-size: 32px;
+			// padding: ($gutter-width/2);
 		}
 
 		.icon-twitter:before {
