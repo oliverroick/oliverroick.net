@@ -9,7 +9,7 @@ title: Oliver Roick
 	#
 	-->
 	<section id="overview">
-		<h1><span>Hello, I am</span>Oliver Roick</h1>
+		<h1><!-- <span>Hello, I am</span> -->Oliver Roick</h1>
 
 		<p>I build web-based geographic information systems; currently for <a href="http://www.ucl.ac.uk/excites">Extreme Citizen Science Research Group</a> at University College London.</p>
 
@@ -28,40 +28,30 @@ title: Oliver Roick
 
 	<!-- 
 	#
-	# News
-	#
-	-->
-		
-		<section class="content" id="news">
-			<h2><span>News</span></h2>
-
-			{% for post in site.posts limit:3 %}
-			<article>
-				<time datetime="{{ post.date | date_to_xmlschema }}" itemprop="published">{{ post.date | date_to_long_string }}</time>
-				<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-				
-				<p>
-					{{ post.excerpt | remove: '<p>' | remove: '</p>' }}
-					{% if post.category != 'news' %}
-						<a class="excerpt-link" href="{{ post.url }}"><span class="icon-hyperlink"></span> Read more</a>
-					{% endif %}
-				</p>
-			</article>
-			{% endfor %}
-
-			<p class="more"><a href="/news">Find previous news in the archive</a></p>
-		</section>
-	
-	<!-- 
-	#
 	# CODING
 	#
 	-->
 	
-	<section class="content" id="coding">
-			<h2><span>Coding</span></h2>
+	<section class="content" id="projects">
+			<h2>Projects</h2>
 
-			<h3>OSMatrix&mdash;visualizing spatio-temporal characteristics of OpenStreetMap</h3>
+			<div class="project current" id="osmatrix">
+				<h3>OSMatrix</h3>
+			</div>
+
+			<div class="project" id="openrouteservice">
+				<h3>OpenRouteService</h3>
+			</div>
+
+			<div class="project" id="lightmap">
+				<h3>Lightmap</h3>
+			</div>
+
+			<div class="project" id="wheredoyougo">
+				<h3>Where do you go?</h3>
+			</div>
+
+			<!-- <h3>OSMatrix&mdash;visualizing spatio-temporal characteristics of OpenStreetMap</h3>
 			<figure>
 				<img src="build/img/osmatrix.png" width="960" height="320">
 			</figure>
@@ -86,8 +76,34 @@ title: Oliver Roick
 				<img src="build/img/wheredoyougo.png" width="960" height="320">
 			</figure>
 			
-			<p>As a result of some experiments I did with the Foursquare API, I implemented a litte <a href="http://oliverroick.de/wheredoyougo">web application</a> that visualizes your Foursquare check-ins and allows to filter for venue categories, day or hour of check-in.</p>
+			<p>As a result of some experiments I did with the Foursquare API, I implemented a litte <a href="http://oliverroick.de/wheredoyougo">web application</a> that visualizes your Foursquare check-ins and allows to filter for venue categories, day or hour of check-in.</p> -->
 	</section>
+
+	<!-- 
+	#
+	# News
+	#
+	-->
+		
+		<!-- <section class="content" id="news">
+			<h2><span>News</span></h2>
+
+			{% for post in site.posts limit:3 %}
+			<article>
+				<time datetime="{{ post.date | date_to_xmlschema }}" itemprop="published">{{ post.date | date_to_long_string }}</time>
+				<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+				
+				<p>
+					{{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+					{% if post.category != 'news' %}
+						<a class="excerpt-link" href="{{ post.url }}"><span class="icon-hyperlink"></span> Read more</a>
+					{% endif %}
+				</p>
+			</article>
+			{% endfor %}
+
+			<p class="more"><a href="/news">Find previous news in the archive</a></p>
+		</section> -->
 
 	<!-- 
 	#
@@ -95,7 +111,7 @@ title: Oliver Roick
 	#
 	-->
 	
-	<section class="content" id="writing">
+	<!-- <section class="content" id="writing">
 		<h2><span>Writing</span></h2>
 				<p>The final manuscripts of most of my publications are available for download from this site. Please keep in mind that these manuscript versions may slightly vary from the published ones.</p>
 		<h3>Reviewed Journal Articles</h3>
@@ -118,4 +134,4 @@ title: Oliver Roick
 			<li><span class="autoren">Roick, O.; Vogel, A.; Busch, H. &amp; Flügel, W.-A.</span> (2008): Innovative Technologies and their Demonstration for Indoor Positioning. 5th International Symposium on Location Based Services and TeleCartography. Salzburg, November 2008. </li> 
 			<li><span class="autoren">Roick, O.; Gerlach, R. &amp; Lemmens, R.</span> (2008): Using Open Standards for Browser-based Integration and Visualization of Geo-Spatial Data. Geophysical Research Abstracts, Vol. 10(EGU2008-A-07829).</li> 
 		</ul>
-	</section>
+	</section> -->
