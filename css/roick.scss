@@ -10,10 +10,12 @@ $margin-large: ($column-width + $gutter-width);
 
 $font-stack: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 
+$red: #ae3825;
+
 $color-primary: #2d2d2d;
 $color-lightgray: #a9a9a9;
 $color-link: #006892;
-$color-linkvisited: #5e99bb;
+$color-linkvisited: darken($color-link, 10%);
 $color-coding: #53b057;
 $color-writing: #ae3825;
 $color-teaching: #00ace2;
@@ -118,7 +120,6 @@ section {
 }
 
 section#overview {
-	text-align: center;
 	margin-bottom: $gutter-width * 6;
 
 	h1 {
@@ -135,12 +136,18 @@ section#overview {
 	        font-size: 30px;
 	        font-weight: normal;
 	        text-transform: none;
-	     	display: block
+	     	display: block;
 	    }
 	}
 
 	p {
 		font-size: 20px;
+	}
+
+	p:before { 
+		font-size: 1.3em;
+		content: "—";
+		color: $red;
 	}
 
 	a {
@@ -151,7 +158,8 @@ section#overview {
 
 	@media screen and (min-width: $break-small) {
 		h1 {
-			font-size: 89px;
+			width: ($column-width * 4 + $gutter-width * 2);
+			font-size: 80px;
 			letter-spacing: -3px;
 
 			span {
@@ -161,34 +169,24 @@ section#overview {
 		}
 
 		p {
+			width: ($column-width * 4 + $gutter-width * 2);
 			font-size: 26px;
 			line-height: 1.2;
-		}
-	}
-
-	@media screen and (min-width: $break-large) {
-		p {
-			margin-left: ($column-width + $gutter-width);
-			margin-right: ($column-width + $gutter-width);
 		}
 	}
 }
 
 div#socialmedia {
 	text-align: center;
-	border-bottom: 1px solid $color-lightgray;
-	position: relative;
 	margin-bottom: ($gutter-width * 3) + 23px;
 
-	@media screen and (min-width: $break-large) {
-		margin-left: ($column-width / 2 + $gutter-width);
-		margin-right: ($column-width / 2 + $gutter-width);
+	@media screen and (min-width: $break-small) {
+		width: ($column-width * 4 + $gutter-width * 2);
 	}
 
 	div.media-item {
 		display: inline-block;
 		position: relative;
-		top: 23px;
 		margin: 0 -4px;
 		width: 32px;
 		padding: 0 ($gutter-width/4);
