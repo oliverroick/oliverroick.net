@@ -10,16 +10,15 @@ $margin-large: ($column-width + $gutter-width);
 
 $font-stack: "Gill Sans";
 
-$red: #ae3825;
+$color-dark: #556270;
+$color-lightblue: #4ECDC4;
+$color-green: #C7F464;
+$color-pink: #FF6B6B;
+$color-red: #C44D58;
 
-$color-base: #2d2d2d;
-$color-primary: lighten($color-base, 20%);
-$color-lightgray: #a9a9a9;
-$color-link: #006892;
-$color-linkvisited: darken($color-link, 10%);
-$color-coding: #53b057;
-$color-writing: #ae3825;
-$color-teaching: #00ace2;
+
+$color-link:  darken($color-lightblue, 20%);
+$color-linkvisited: lighten($color-link, 10%);
 
 
 @mixin border-radius($radius) {
@@ -63,7 +62,7 @@ $color-teaching: #00ace2;
 
 body {
 	font: 18px/1.5 $font-stack;
-	color: $color-primary;
+	color: $color-dark;
 	background-color: #fff;
 	font-weight: 200;
 	padding: 20px;
@@ -129,9 +128,10 @@ section#overview {
 		margin-bottom: $gutter-width;
 		margin-top: $gutter-width;
 		margin-left: $gutter-width / 2;
+		color: darken($color-dark, 10%);
 
 		span {
-	        color: $color-lightgray;
+	        color: lighten($color-dark, 20%);
 	        font-size: 30px;
 	        font-weight: normal;
 	        text-transform: none;
@@ -142,19 +142,13 @@ section#overview {
 	p {
 		font-size: 20px;
 		margin-left: $gutter-width / 2;
-		color: lighten($color-primary, 20%);
+		color: $color-dark;
 	}
 
 	p:before { 
 		font-size: 1em;
 		content: "▮ ";
-		color: $red;
-	}
-
-	a {
-		&[href="#coding"] { color: $color-coding; }
-		&[href="#writing"] { color: $color-writing; }
-		&[href="#teaching"] { color: $color-teaching; }
+		color: $color-red;
 	}
 
 	@media screen and (min-width: $break-small) {
@@ -201,7 +195,7 @@ div#socialmedia {
 			display: block;
 			overflow: hidden;
 			margin: 0;
-			color: $color-primary;
+			color: $color-dark;
 			-webkit-transition: color 0.5s;
     		transition: color 0.3s;
     		text-decoration: none;
@@ -210,7 +204,7 @@ div#socialmedia {
 		a:hover,
 		a:active,
 		a:focus {
-			color: $color-lightgray;
+			color: lighten($color-dark, 20%);
 		}
 
 		[class^="icon-"], [class*=" icon-"] {
@@ -240,15 +234,17 @@ section.content {
 		font-weight: normal;
 		text-transform: uppercase;
 		margin: 0 ($gutter-width / 2) ($gutter-width / 2) ($gutter-width / 2);
-		padding: 0 0 0 $gutter-width;
-		background-color: $red;
-		height: 20px;
-		width: ($column-width * 4 + $gutter-width * 2);
+		padding: 0;
+		background-color: $color-red;
+		height: 10px;
+		@include border-radius(5px);
+		
+		color: darken($color-dark, 10%);
 		
 		span {
 			display: inline-block;
 			position: relative;
-			top: -45px;
+			top: -53px;
 		}
 	}
 
@@ -284,13 +280,13 @@ section.content#news {
 
 	time {
 		margin: 0;
-		color: $color-lightgray;
+		color: lighten($color-dark, 20%);
 		display: block;
 	}
 
-	h3 > a {
+	a {
 		text-decoration: none;
-		color: $color-primary;
+		color: $color-dark;
 
 		&:hover,
 		&:focus {
@@ -299,11 +295,11 @@ section.content#news {
 	}
 
 	ul {
-		-moz-column-count: 2;
+		-moz-column-count: 3;
 		-moz-column-gap: $gutter-width;
-		-webkit-column-count: 2;
+		-webkit-column-count: 3;
 		-webkit-column-gap: $gutter-width;
-		column-count: 2;
+		column-count: 3;
 		column-gap: $gutter-width;
 
 		padding: 0 ($gutter-width/2);
@@ -352,6 +348,7 @@ section#projects {
 		float: left;
 		margin: ($gutter-width / 2);
 
+		@include border-radius(5px);
 		@include transition(all, 0.3s, ease);
 
 		&.current {
@@ -368,6 +365,7 @@ section#projects {
 			right: 0;
 			position: absolute;
 			z-index: -1;
+			@include border-radius(5px);
 
 			@include transition(opacity, 0.3s, ease);
 		}
@@ -412,120 +410,20 @@ section#projects {
 		&#lightmap {
 			h3 {
 				color: #fff;
-				text-shadow: 0 0 5px darken($color-primary, 20%);
+				text-shadow: 0 0 5px lighten($color-dark, 20%);
 			}
 		}
 	}
 }
 
-// section.content {
-// 	// h3 {
-// 	// 	font-weight: 300;
-// 	// 	font-size: 28px;
-// 	// 	text-align: center;
-// 	// 	line-height: 1.2;
-// 	// 	margin: ($gutter-width * 3) 0 $gutter-width 0;
-
-// 	// 	@media screen and (min-width: $break-small) {
-// 	// 		font-size: 36px
-// 	// 	}
-// 	// }
-
-// 	// h2 + h3 {
-// 	// 	margin-top: 0;
-// 	// }
-
-// 	&#news h3 > a {
-// 		text-decoration: none;
-// 		color: $color-primary;
-
-// 		&:hover,
-// 		&:focus {
-// 			color: $color-link;
-// 		}
-// 	}
-
-// 	h4 {
-// 		font-weight: 300;
-// 		font-size: 22px;
-// 		line-height: 1.2;
-// 		margin: ($gutter-width * 1.5) 0 ($gutter-width * 0.5) 0;
-// 		padding-bottom: $gutter-width * 0.5;
-// 		border-bottom: 1px dotted $color-primary;
-
-// 		@media screen and (min-width: $break-small) {
-// 			font-size: 22px
-// 		}
-// 	}
-
-// 	figure {
-// 		overflow: hidden;
-// 		width: 100%;
-// 		height: 150px;
-// 		margin: 0;
-// 		@include border-radius(10px);
-
-// 		@media screen and (min-width: $break-small) and (max-width: $break-large) {
-// 			height: 225px;
-// 		}
-
-// 		@media screen and (min-width: $break-large) {
-// 			height: 300px;
-// 		}
-// 	}
-
-// 	article {
-// 		margin-bottom: $gutter-width * 4;
-
-// 		h3 {
-// 			margin-top: 0;
-// 		}
-
-// 		time {
-// 			display: block;
-// 			text-align: center;
-// 			color: $color-lightgray;
-// 		}
-// 	}
-
-// 	ul {
-// 		padding-left: $gutter-width;
-
-// 		li {
-// 			margin-bottom: $gutter-width / 2;
-// 		}
-
-// 		&.publications {
-// 			padding: 0;
-// 			list-style: none;
-
-// 			li {
-// 				padding-left: $gutter-width;
-// 				text-indent: -$gutter-width;
-
-// 				span.autoren {
-// 					font-variant: small-caps;
-// 				}
-// 			}
-// 		}
-// 	}
-
-// 	@media screen and (min-width: $break-large) {
-// 		h4, ul, p {
-// 			margin-left: $margin-large;
-// 			margin-right: $margin-large;
-// 		}
-// 	}
-// }
-
 footer {
 	clear: both;
 	margin: $gutter-width * 9 auto 0 auto;
 	padding: ($gutter-width / 2) 0;
-	color: $color-lightgray;
+	color: lighten($color-dark, 20%);
 	font-size: 14px;
 	text-align: right;
-	border-top: 1px solid $color-lightgray;
+	border-top: 1px solid lighten($color-dark, 20%);
 
 	@media screen and (min-width: $break-small) and (max-width: $break-large) {
 		width: $width-small;
