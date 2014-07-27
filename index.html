@@ -33,23 +33,32 @@ title: Oliver Roick
 	-->
 		
 		<section class="content" id="news">
-			<h2>News</h2>
+			<h2><span>News</span></h2>
 
-			{% for post in site.posts limit:4 %}
-			<article class="item {% if forloop.index0 == 0 %}current{% endif %}">
-				<time datetime="{{ post.date | date_to_xmlschema }}" itemprop="published">{{ post.date | date_to_long_string }}</time>
-				<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-				<!-- 
+			<article class="current">
+				<time datetime="{{ site.posts.first.date | date_to_xmlschema }}" itemprop="published">{{ site.posts.first.date | date_to_long_string }}</time>
+				<h3><a href="{{ site.posts.first.url }}">{{ site.posts.first.title }}</a></h3>
+
 				<p>
-					{{ post.excerpt | remove: '<p>' | remove: '</p>' }}
-					{% if post.category != 'news' %}
-						<a class="excerpt-link" href="{{ post.url }}"><span class="icon-hyperlink"></span> Read more</a>
+					{{ site.posts.first.excerpt | remove: '<p>' | remove: '</p>' }}
+					{% if site.posts.first.category != 'news' %}
+						<a class="excerpt-link" href="{{ site.posts.first.url }}"><span class="icon-hyperlink"></span> Read more</a>
 					{% endif %}
-				</p> -->
+				</p>
 			</article>
-			{% endfor %}
 
-			<div class="item more">
+			<ul>
+				{% for post in site.posts limit:10 %}
+				{% if forloop.index0 > 1 %}
+					<li>
+						<time datetime="{{ post.date | date_to_xmlschema }}" itemprop="published">{{ post.date | date_to_long_string }}</time>
+						<a href="{{ post.url }}">{{ post.title }}</a>		
+					</li>
+				{% endif %}
+			{% endfor %}
+			</ul>
+
+			<div class="more">
 				<a href="/news">Find previous news in the archive</a>
 			</div>
 		</section>
@@ -61,22 +70,22 @@ title: Oliver Roick
 	-->
 	
 	<section class="content" id="projects">
-			<h2>Projects</h2>
+			<h2><span>Projects</span></h2>
 
 			<div class="item current" id="osmatrix">
-				<h3>OSMatrix</h3>
+				<a href="#"><h3>OSMatrix</h3></a>
 			</div>
 
 			<div class="item" id="openrouteservice">
-				<h3>OpenRouteService</h3>
+				<a href="#"><h3>OpenRouteService</h3></a>
 			</div>
 
 			<div class="item" id="lightmap">
-				<h3>Lightmap</h3>
+				<a href="#"><h3>Lightmap</h3></a>
 			</div>
 
 			<div class="item" id="wheredoyougo">
-				<h3>Where do you go?</h3>
+				<a href="#"><h3>Where do you go?</h3></a>
 			</div>
 
 			<!-- <h3>OSMatrix&mdash;visualizing spatio-temporal characteristics of OpenStreetMap</h3>
