@@ -42,12 +42,12 @@ title: Oliver Roick
 				<time datetime="{{ post.date | date_to_xmlschema }}" itemprop="published">{{ post.date | date_to_long_string }}</time>
 				<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
 				
-				<p>
-					{{ post.excerpt | remove: '<p>' | remove: '</p>' }}
 					{% if post.category != 'news' %}
+						<p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
 						<a class="excerpt-link" href="{{ post.url }}"><span class="icon-hyperlink"></span> Read more</a>
+					{% else %}
+						{{ post.content }}
 					{% endif %}
-				</p>
 			</article>
 			{% endfor %}
 
