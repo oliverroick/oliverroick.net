@@ -43,8 +43,10 @@ title: Oliver Roick
 				<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
 				
 					{% if post.category != 'news' %}
-						<p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
-						<a class="excerpt-link" href="{{ post.url }}"><span class="icon-hyperlink"></span> Read more</a>
+						<p>
+							{{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+							<a class="excerpt-link" href="{{ post.url }}"><span class="icon-hyperlink"></span> Read more</a>
+						</p>
 					{% else %}
 						{{ post.content }}
 					{% endif %}
