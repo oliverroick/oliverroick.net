@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
 $break-small: 768px; 
 $break-large: 992px; 
 
@@ -8,17 +10,15 @@ $width-small: (($column-width * 4) + ($gutter-width * 4));
 $width-large: (($column-width * 6) + ($gutter-width * 6));
 $margin-large: ($column-width + $gutter-width);
 
-$font-stack: "Gill Sans";
+$font-stack: 'Open Sans', sans-serif;
 
-$color-dark: #556270;
-$color-lightblue: #4ECDC4;
-$color-green: #C7F464;
-$color-pink: #FF6B6B;
-$color-red: #C44D58;
+$color-dark: #6C7A89;
+$color-blue: #2574A9;
+$color-green: #1e824c;
+$color-red: #cf000f;
 
-
-$color-link:  darken($color-lightblue, 20%);
-$color-linkvisited: lighten($color-link, 10%);
+$color-link: $color-blue;
+$color-linkvisited: lighten($color-blue, 10%);
 
 
 @mixin border-radius($radius) {
@@ -64,8 +64,15 @@ body {
 	font: 18px/1.5 $font-stack;
 	color: $color-dark;
 	background-color: #fff;
-	font-weight: 200;
-	padding: 20px;
+	font-weight: 400;
+	padding: 0;
+	margin: 0;
+
+	*, *:after, *:before {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
 
 	@media screen and (min-width: $break-small) {
 		padding-top: 0;
@@ -73,6 +80,8 @@ body {
 	}
 
 	a {
+		@include transition(all, 0.3s, ease);
+
 		&:link,
 		&:active {
 			color: $color-link;
@@ -116,110 +125,101 @@ section {
 	}
 }
 
-section#overview {
+header#overview {
 	margin-bottom: $gutter-width * 3;
+	text-align: center;
+	background: url(../img/city.png) no-repeat 0 50%;
+	color: #fff;
+	padding: ($gutter-width * 2) 0;
 
 	h1 {
+		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 		font-size: 45px;
-		font-weight: 300;
 		line-height: 1;
 		letter-spacing: -2px;
 		text-transform: uppercase;
-		margin-bottom: $gutter-width;
-		margin-top: $gutter-width;
-		margin-left: $gutter-width / 2;
-		color: darken($color-dark, 10%);
-
-		span {
-	        color: lighten($color-dark, 20%);
-	        font-size: 30px;
-	        font-weight: normal;
-	        text-transform: none;
-	     	display: block;
-	    }
+		margin: $gutter-width auto;
+		text-shadow: 0 0 5px darken(#fff, 30%);
 	}
 
 	p {
 		font-size: 20px;
 		margin-left: $gutter-width / 2;
-		color: $color-dark;
-	}
+		border: 0 solid #fff;
+		border-width: 1px 0;
+		padding: ($gutter-width) 0;
+		font-weight: 300;
+		text-transform: uppercase;
+		line-height: 1.5;
 
-	p:before { 
-		font-size: 1em;
-		content: "▮ ";
-		color: $color-red;
+		a {
+			color: lighten($color-link, 25%);
+			text-decoration: none;
+			border-bottom: 1px solid lighten($color-link, 25%);
+
+			&:hover,
+			&:focus {
+				color: lighten($color-link, 15%);
+				border-bottom: 1px solid lighten($color-link, 15%);
+			}
+		}
 	}
 
 	@media screen and (min-width: $break-small) {
 		h1 {
 			width: ($column-width * 4 + $gutter-width * 3);
-			font-size: 100px;
-			letter-spacing: -3px;
-
-			span {
-				font-size: 35px;
-        		letter-spacing: -1px;
-			}
+			letter-spacing: 3px;
 		}
 
 		p {
 			width: ($column-width * 4 + $gutter-width * 3);
 			font-size: 22px;
-			line-height: 1.2;
+			margin: 0 auto;
 		}
 	}
-}
 
-div#socialmedia {
-	margin-bottom: ($gutter-width * 3) + 23px;
-	margin-left: $gutter-width / 2;
-
-	@media screen and (min-width: $break-small) {
-		width: ($column-width * 4 + $gutter-width * 3);
-	}
-
-	div.media-item {
-		display: inline-block;
-		position: relative;
-		margin-right: $gutter-width / 5;
-		width: 32px;
-		text-align: center;
-		background-color: #fff;
-
-		a:link,
-		a:visited {
-			background: #fff no-repeat 50% 50%;
-			height: 32px;
+	div#socialmedia {
+		margin-top: $gutter-width * 2;
+		div.media-item {
+			display: inline-block;
+			position: relative;
+			margin-right: $gutter-width / 5;
 			width: 32px;
-			display: block;
-			overflow: hidden;
-			margin: 0;
-			color: $color-dark;
-			-webkit-transition: color 0.5s;
-    		transition: color 0.3s;
-    		text-decoration: none;
-		}
+			text-align: center;
 
-		a:hover,
-		a:active,
-		a:focus {
-			color: lighten($color-dark, 20%);
-		}
+			a:link,
+			a:visited {
+				background: transparent no-repeat 50% 50%;
+				height: 32px;
+				width: 32px;
+				display: block;
+				overflow: hidden;
+				margin: 0;
+				color: #fff;
+				-webkit-transition: color 0.5s;
+	    		transition: color 0.3s;
+	    		text-decoration: none;
+			}
 
-		[class^="icon-"], [class*=" icon-"] {
-			font-size: 32px;
-			// padding: ($gutter-width/2);
-		}
+			a:hover,
+			a:active,
+			a:focus {
+				color: $color-linkvisited;
+			}
 
-		.icon-twitter:before {
-			content: "\e600";
-		}
-		.icon-mail:before {
-			content: "\e601";
-		}
-		.icon-github:before {
-			content: "\e602";
+			[class^="icon-"], [class*=" icon-"] {
+				font-size: 32px;
+			}
+
+			.icon-twitter:before {
+				content: "\e600";
+			}
+			.icon-mail:before {
+				content: "\e601";
+			}
+			.icon-github:before {
+				content: "\e602";
+			}
 		}
 	}
 }
@@ -228,78 +228,71 @@ section.content {
 	margin-bottom: $gutter-width * 3;
 
 	h2 {
-		position: relative;
-		z-index: 10000;
-		font-size: 50px;
+		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 		font-weight: normal;
 		text-transform: uppercase;
 		margin: 0 ($gutter-width / 2) ($gutter-width / 2) ($gutter-width / 2);
-		padding: 0;
-		background-color: $color-red;
-		height: 10px;
-		@include border-radius(5px);
 		
 		color: darken($color-dark, 10%);
-		
-		span {
-			display: inline-block;
-			position: relative;
-			top: -53px;
-		}
 	}
 
 	h3 {
 		line-height: 1;
 		margin: 0;
-		font-weight: 300;
+		font-weight: 400;
 		font-size: 35px;
 	}
 }
 
 section.content#news {
+	.icon-hyperlink:before {
+		// font-size: 0.8em;
+		content: "\e603";
+	}
+
+	article div.more {
+		text-align: left;
+		font-size: 0.7em;
+		a {
+			padding: 7px 10px;	
+		}
+		
+	}
+
 	.current {
 		width: ($column-width * 4 + $gutter-width * 3);
 		margin: 0 $column-width ($gutter-width * 2) ($gutter-width / 2);
+		padding-bottom: ($gutter-width * 2);
+		border-bottom: 1px dotted $color-dark;
 
-		a.excerpt-link {
-			font-size: 0.9em;
-			text-decoration: none;
-			padding-left: 0.5em;
-		}
+		h3 {
+			a:link,
+			a:visited {
+				color: $color-red;
+				text-decoration: none;
+			}
 
-		a.excerpt-link:hover,
-		a.excerpt-link:focus {
-			text-decoration: underline;
-		}
-
-		.icon-hyperlink:before {
-			font-size: 0.8em;
-			content: "\e603";
+			a:hover,
+			a:focus {
+				color: darken($color-red, 10%);
+			}
 		}
 	}
 
 	time {
 		margin: 0;
-		color: lighten($color-dark, 20%);
+		color: lighten($color-dark, 30%);
 		display: block;
-	}
-
-	a {
-		text-decoration: none;
-		color: $color-dark;
-
-		&:hover,
-		&:focus {
-			color: $color-link;
-		}
+		text-transform: uppercase;
+		font-size: 0.8em;
 	}
 
 	ul {
-		-moz-column-count: 3;
+		-moz-column-count: 2;
 		-moz-column-gap: $gutter-width;
-		-webkit-column-count: 3;
+		-webkit-column-count: 2;
 		-webkit-column-gap: $gutter-width;
-		column-count: 3;
+		column-count: 2;
 		column-gap: $gutter-width;
 
 		padding: 0 ($gutter-width/2);
@@ -309,11 +302,18 @@ section.content#news {
 			padding: 0;
 			margin: 0 0 ($gutter-width/2) 0;
 			list-style: none;
-			line-height: 1.1;
 			display:inline-block;
 
-			time {
-				font-size: 0.9em;
+			a {
+				font-weight: 400;
+				text-decoration: none;
+				color: $color-dark;
+
+				&:hover,
+				&:focus {
+					text-decoration: hover;
+					color: $color-linkvisited;
+				}
 			}
 		}
 	}
@@ -343,40 +343,69 @@ section.content#news {
 section#projects {
 	div.item {
 		position: relative;
-		width: $column-width * 2 + $gutter-width;
-		height: 250px;
+		width: $column-width * 2 + $gutter-width * 1.5;
+		height: 100px;
 		float: left;
-		margin: ($gutter-width / 2);
-
-		@include border-radius(5px);
+		border-bottom: 2px solid #fff;
 		@include transition(all, 0.3s, ease);
 
+		a {
+			display: block;
+			width: $column-width * 2 + $gutter-width * 1.5;
+			height: 100px;
+			text-align: center;
+
+			span {
+				display: inline-block;
+				background-color: rgba(0, 0, 0, 0.6);
+				padding: 10px 15px;
+				text-decoration: none;
+				color: #fff;
+				@include border-radius(5px);
+				text-transform: uppercase;
+				font-size: 0.8em;
+				margin-top: 28px;
+				@include box-shadow(0, 0, 10px, rgba(0, 0, 0, 0.7))
+			}
+		}
+
 		&.current {
-			width: $column-width * 4 + $gutter-width * 3;
+			width: $column-width * 4 + $gutter-width * 3.5;
+			float: left;
+			height: 400px;
+			margin-left: $gutter-width / 2;
+			border-right: 2px solid #fff;
+
+			a {
+				width: $column-width * 4 + $gutter-width * 3.5;
+				height: 300px;
+
+				span {
+					margin-top: 178px;
+				}
+			}
 		}
 
 		&::after {
 			content: "";
 			background: no-repeat 50% 50%;
-			opacity: 0.7;
+			opacity: 1;
 			top: 0;
 			left: 0;
 			bottom: 0;
 			right: 0;
 			position: absolute;
 			z-index: -1;
-			@include border-radius(5px);
 
 			@include transition(opacity, 0.3s, ease);
 		}
 
-		&:hover {
-			@include scale(1.01);
-			@include box-shadow(2px, 2px, 10px, rgba(0, 0, 0, 0.5));
+		&:hover::after {
+			opacity: 0.7;			
 		}
 
-		&:hover::after {
-			opacity: 1;			
+		&#communitymaps::after {
+			background-image: url(../img/city.png);
 		}
 
 		&#osmatrix::after {
@@ -393,25 +422,6 @@ section#projects {
 
 		&#wheredoyougo::after {
 			background-image: url(../img/wheredoyougo.png);
-		}
-
-		a {
-			display: block;
-			height: 180px;
-		}
-
-		h3 {
-			position: absolute;
-			bottom: $gutter-width / 2;
-			left:  $gutter-width / 2;;
-			text-shadow: 0 0 5px darken(#fff, 20%);
-		}
-
-		&#lightmap {
-			h3 {
-				color: #fff;
-				text-shadow: 0 0 5px lighten($color-dark, 20%);
-			}
 		}
 	}
 }

@@ -1,31 +1,7 @@
 ---
-layout: default
+layout: home
 title: Oliver Roick
 ---
-
-	<!-- 
-	#
-	# OVERVIEW
-	#
-	-->
-	<section id="overview">
-		<h1><!-- <span>Hello, I am</span> -->Oliver Roick</h1>
-
-		<p>I build web-based geographic information systems; currently for <a href="http://www.ucl.ac.uk/excites">Extreme Citizen Science Research Group</a> at University College London.</p>
-
-		<div id="socialmedia">
-			<div class="media-item">
-				<a href="mailto:oliver.roick@gmail.com" title="E-mail"><span class="icon-mail"></span>E-Mail</a>
-			</div>
-			<div class="media-item">
-				<a href="http://twitter.com/oliverroick" title="Twitter"><span class="icon-twitter"></span>Twitter</a>
-			</div>
-			<div class="media-item">
-				<a href="https://github.com/oliverroick/" title="Github"><span class="icon-github"></span>GitHub</a>
-			</div>
-		</div>
-	</section>
-
 	<!-- 
 	#
 	# News
@@ -38,18 +14,19 @@ title: Oliver Roick
 			<article class="current">
 				<time datetime="{{ site.posts.first.date | date_to_xmlschema }}" itemprop="published">{{ site.posts.first.date | date_to_long_string }}</time>
 				<h3><a href="{{ site.posts.first.url }}">{{ site.posts.first.title }}</a></h3>
-
-				<p>
-					{{ site.posts.first.excerpt | remove: '<p>' | remove: '</p>' }}
-					{% if site.posts.first.category != 'news' %}
-						<a class="excerpt-link" href="{{ site.posts.first.url }}"><span class="icon-hyperlink"></span> Read more</a>
-					{% endif %}
-				</p>
+				{% if site.posts.first.category != 'news' %}
+					<p>{{ site.posts.first.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+					<div class="more">
+						<a href="{{ site.posts.first.url }}"><span class="icon-hyperlink"></span> Read full post</a>
+					</div>
+				{% else %}
+					{{ site.posts.first.content }}
+				{% endif %}
 			</article>
 
 			<ul>
-				{% for post in site.posts limit:10 %}
-				{% if forloop.index0 > 1 %}
+				{% for post in site.posts limit:7 %}
+				{% if forloop.index0 > 0 %}
 					<li>
 						<time datetime="{{ post.date | date_to_xmlschema }}" itemprop="published">{{ post.date | date_to_long_string }}</time>
 						<a href="{{ post.url }}">{{ post.title }}</a>		
@@ -72,77 +49,23 @@ title: Oliver Roick
 	<section class="content" id="projects">
 			<h2><span>Projects</span></h2>
 
-			<div class="item current" id="osmatrix">
-				<a href="#"><h3>OSMatrix</h3></a>
+			<div class="item current" id="communitymaps">
+				<a href="#"><span>Community Maps</span></a>
+			</div>
+
+			<div class="item" id="osmatrix">
+				<a href="#"><span>OSMatrix</span></a>
 			</div>
 
 			<div class="item" id="openrouteservice">
-				<a href="#"><h3>OpenRouteService</h3></a>
+				<a href="#"><span>OpenRouteService</span></a>
 			</div>
 
 			<div class="item" id="lightmap">
-				<a href="#"><h3>Lightmap</h3></a>
+				<a href="#"><span>Lightmap</span></a>
 			</div>
 
 			<div class="item" id="wheredoyougo">
-				<a href="#"><h3>Where do you go?</h3></a>
+				<a href="#"><span>Where do you go?</span></a>
 			</div>
-
-			<!-- <h3>OSMatrix&mdash;visualizing spatio-temporal characteristics of OpenStreetMap</h3>
-			<figure>
-				<img src="build/img/osmatrix.png" width="960" height="320">
-			</figure>
-			
-			<p><a href="http://osmatrix.uni-hd.de">OSMatrix</a> visualizes characteristics of OpenStreetMap, which are usually not displayed in cartographic representations of the data. The characteristics include information on the topicality of data, user contributions and the presence (or absence) of certain feature types. These characteristics enforce understanding of data quality and activities in the community as well as their evolution over time.</p>
-
-			<h3>OpenRouteService</h3>
-			<figure>
-				<img src="build/img/openrouteservice.png" width="960" height="320">
-			</figure>
-			
-			<p><a href="http://koenigstuhl.geog.uni-heidelberg.de/ors/">OpenRouteService</a> is an online route planning application that is solely based on open-source software, open standards and open data. I'm currently involved with the re-design and re-implemention of client-side components.</p>
-
-			<h3>Lightmap</h3>
-			<figure>
-				<img src="build/img/lightmap.png" width="960" height="320">
-			</figure>
-			<p>The <a href="http://lightmap.uni-hd.de">Lightmap</a> visualizes the world-wide distribution of street lamps as they are available in OpenStreetMap.</p>
-			
-			<h3>Where do you go? &hellip; And when?</h3>
-			<figure>
-				<img src="build/img/wheredoyougo.png" width="960" height="320">
-			</figure>
-			
-			<p>As a result of some experiments I did with the Foursquare API, I implemented a litte <a href="http://oliverroick.de/wheredoyougo">web application</a> that visualizes your Foursquare check-ins and allows to filter for venue categories, day or hour of check-in.</p> -->
 	</section>
-
-	<!-- 
-	#
-	# PUBLICATIONS
-	#
-	-->
-	
-	<!-- <section class="content" id="writing">
-		<h2><span>Writing</span></h2>
-				<p>The final manuscripts of most of my publications are available for download from this site. Please keep in mind that these manuscript versions may slightly vary from the published ones.</p>
-		<h3>Reviewed Journal Articles</h3>
-		<ul class="publications">
-		  <li><span class="autoren">Roick, O. &amp; Heuser, S.</span> (2013): <a href="/publications/2013/TGIS_LBSN_Review.pdf">Location Based Social Networks &ndash; Definition, Current State of the Art and Research Agenda</a>. Transactions in GIS, 17(5): 763–784. <a href="http://onlinelibrary.wiley.com/doi/10.1111/tgis.12032/abstract">doi: 10.1111/tgis.12032</a></li>
-		</ul>
-
-		<h3>Reviewed Conference and Workshop Contributions</h3>
-		<ul class="publications">
-		  <li><span class="autoren">Roick, O.; Loos, L. &amp; Zipf, A.</span> (2012): <a href="/publications/2012/GI2012_OSMatrix.pdf">A Technical Framework for Visualizing Spatio-temporal Quality Metrics of Volunteered Geographic Information</a>. In: <span class="autoren">Löwner, M.-O.; Hillen, F.; Wohlfahrt, R.</span>(Eds.): Geoinformatik 2012 "Mobilität und Umwelt", 263-270. Shaker Verlag, Aachen.</li>
-					<li><span class="autoren">Roick, O.; Kralisch S. &amp; Flügel, W.-A.</span> (2010): Design and implementation of a mobile client for the River Basin Information System (RBIS). In: <span class="autoren">Zipf, A; Behncke,K.; Hillen, F.; Schaefermeyer, J. </span>(Eds.): Geoinformatik 2010 "Die Welt im Netz", 239-240. Akademische Verlagsgesellschaft, Heidelberg.</li> 
-		</ul>
-		
-		<h3>Conference and Workshop Abstracts and Short Papers</h3>
-		<ul class="publications">
-			<li><span class="autoren">Roick, O. &amp; Rickles, P.</span> (2014): Community Maps — A Platform for Participatory Mapping. FOSS4G-E. Bremen, July 2014.</li>
-			<li><span class="autoren">Roick, O.</span> (2012): <a href="/publications/2012/DGfK_LBSN.pdf">Applying User Generated Geographic Information from Social Networks for the Creation of Maps &mdash; Towards a Research Agenda.</a> Workshop on Map creation from user generated data. Hannover, October 2012.</li>
-			<li><span class="autoren">Roick, O.; Hagenauer, J. &amp; Zipf, A.</span> (2011): <a href="/publications/2011/SotM_OSMatrix.pdf">OSMatrix &mdash; Grid based analysis and visualization of OpenStreetMap.</a> State of the Map EU. Wien, July 2011.</li> 
-			<li><span class="autoren">Roick, O.; Neis, P. &amp; Zipf, A.</span> (2011): <a href="/publications/2011/DGfK_VGI.pdf">Volunteered Geographic Information - Datenqualität und Nutzungspotentiale am Beispiel von OpenStreetMap.</a> Kommission "Angewandte Kartographie - Geovisualisierung" der Deutschen Gesellschaft für Kartographie (DGfK) - Symposium Königslutter 2011.</li> 
-			<li><span class="autoren">Roick, O.; Vogel, A.; Busch, H. &amp; Flügel, W.-A.</span> (2008): Innovative Technologies and their Demonstration for Indoor Positioning. 5th International Symposium on Location Based Services and TeleCartography. Salzburg, November 2008. </li> 
-			<li><span class="autoren">Roick, O.; Gerlach, R. &amp; Lemmens, R.</span> (2008): Using Open Standards for Browser-based Integration and Visualization of Geo-Spatial Data. Geophysical Research Abstracts, Vol. 10(EGU2008-A-07829).</li> 
-		</ul>
-	</section> -->
