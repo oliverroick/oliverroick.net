@@ -10,13 +10,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <div id="container">
-        <section id="overview">
+        <header id="overview">
             <h1>Oliver Roick <span>Talks &amp; Presentations</span></h1>
-        </section>
+        </header>
 
         <section class="content" id="talks">
-            <article>
+            <article class="container">
                 <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="published">{{ page.date | date_to_long_string }}</time>
                 <h3>{{ page.title }}</h3>
                 
@@ -25,6 +24,5 @@
         </section>
 
         {% include footer.html %}
-    </div>
 </body>
 </html>

@@ -8,35 +8,37 @@ title: Oliver Roick
 	#
 	-->
 		
-		<section class="content" id="news">
-			<h2><span>News</span></h2>
+		<section id="news">
+			<div class="container">
+				<h2>News</h2>
 
-			<article class="current">
-				<time datetime="{{ site.posts.first.date | date_to_xmlschema }}" itemprop="published">{{ site.posts.first.date | date_to_long_string }}</time>
-				<h3><a href="{{ site.posts.first.url }}">{{ site.posts.first.title }}</a></h3>
-				{% if site.posts.first.category != 'news' %}
-					<p>{{ site.posts.first.excerpt | remove: '<p>' | remove: '</p>' }}</p>
-					<div class="more">
-						<a href="{{ site.posts.first.url }}"><span class="icon-hyperlink"></span> Read full post</a>
-					</div>
-				{% else %}
-					{{ site.posts.first.content }}
-				{% endif %}
-			</article>
+				<article class="current">
+					<time datetime="{{ site.posts.first.date | date_to_xmlschema }}" itemprop="published">{{ site.posts.first.date | date_to_long_string }}</time>
+					<h3><a href="{{ site.posts.first.url }}">{{ site.posts.first.title }}</a></h3>
+					{% if site.posts.first.category != 'news' %}
+						<p>{{ site.posts.first.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+						<div class="more">
+							<a href="{{ site.posts.first.url }}"><span class="icon-hyperlink"></span> Read full post</a>
+						</div>
+					{% else %}
+						{{ site.posts.first.content }}
+					{% endif %}
+				</article>
 
-			<ul>
-				{% for post in site.posts limit:7 %}
-				{% if forloop.index0 > 0 %}
-					<li>
-						<time datetime="{{ post.date | date_to_xmlschema }}" itemprop="published">{{ post.date | date_to_long_string }}</time>
-						<a href="{{ post.url }}">{{ post.title }}</a>		
-					</li>
-				{% endif %}
-			{% endfor %}
-			</ul>
+				<ul>
+					{% for post in site.posts limit:7 %}
+					{% if forloop.index0 > 0 %}
+						<li>
+							<time datetime="{{ post.date | date_to_xmlschema }}" itemprop="published">{{ post.date | date_to_long_string }}</time>
+							<a href="{{ post.url }}">{{ post.title }}</a>		
+						</li>
+					{% endif %}
+				{% endfor %}
+				</ul>
 
-			<div class="more">
-				<a href="/news">Find previous news in the archive</a>
+				<div class="more">
+					<a href="/news">Find previous news in the archive</a>
+				</div>
 			</div>
 		</section>
 
@@ -46,26 +48,53 @@ title: Oliver Roick
 	#
 	-->
 	
-	<section class="content" id="projects">
-			<h2><span>Projects</span></h2>
+		<section id="projects">
+			<h2 class="container">Stuff I built</h2>
 
-			<div class="item current" id="communitymaps">
-				<a href="#"><span>Community Maps</span></a>
+			<div class="item current" id="geokey">
+				<div class="container">
+					<h3>Geokey</h3>	
+				</div>
 			</div>
 
 			<div class="item" id="osmatrix">
-				<a href="#"><span>OSMatrix</span></a>
+				<div class="container">
+					<h3>OSMatrix</h3>
+					<p>OSMatrix visualizes characteristics of OpenStreetMap, which are usually not displayed in cartographic representations of the data. The characteristics include information on the topicality of data, user contributions and the presence (or absence) of certain feature types. These characteristics enforce understanding of data quality and activities in the community as well as their evolution over time.</p>
+
+					<div class="more">
+						<a href="http://osmatrix.uni-hd.de"><span class="icon-hyperlink"></span> Visit OSMatrix</a>
+					</div>
+				</div>
 			</div>
 
 			<div class="item" id="openrouteservice">
-				<a href="#"><span>OpenRouteService</span></a>
+				<div class="container">
+					<h3>OpenRouteService</h3>
+					<p>OpenRouteService is an online route planning application that is solely based on open-source software, open standards and open data. I'm currently involved with the re-design and re-implemention of client-side components.</p>
+					<div class="more">
+						<a href="http://koenigstuhl.geog.uni-heidelberg.de/ors/"><span class="icon-hyperlink"></span> Visit OpenRouteService</a>
+					</div>
+				</div>
 			</div>
 
 			<div class="item" id="lightmap">
-				<a href="#"><span>Lightmap</span></a>
+				<div class="container">
+					<h3>Lightmap</h3>
+					<p>The Lightmap visualizes the world-wide distribution of street lamps as they are available in OpenStreetMap.</p>
+					<div class="more">
+						<a href="http://lightmap.uni-hd.de/"><span class="icon-hyperlink"></span> Visit OSM Lightmap</a>
+					</div>
+				</div>
 			</div>
 
 			<div class="item" id="wheredoyougo">
-				<a href="#"><span>Where do you go?</span></a>
+				<div class="container">
+					<h3>Where do you go?</h3>
+					<p>As a result of some experiments I did with the Foursquare API, I implemented a litte web application that visualizes your Foursquare check-ins and allows to filter for venue categories, day or hour of check-in.</p>
+					<div class="more">
+						<a href="http://oliverroick.de/wheredoyougo/"><span class="icon-hyperlink"></span> Visit Where do you go?</a>
+					</div>
+				</div>
 			</div>
-	</section>
+		</section>
