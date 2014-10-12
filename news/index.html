@@ -5,16 +5,18 @@ title: Oliver Roick | News
 
 		<section class="content" id="news">
 			{% for post in site.posts %}
-			<article>
+			<article class="container">
 				<time datetime="{{ post.date | date_to_xmlschema }}" itemprop="published">{{ post.date | date_to_long_string }}</time>
 				<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
 				
-				<p>
+				{% if post.category != 'news' %}
+					<p>
 					{{ post.excerpt | remove: '<p>' | remove: '</p>' }}
-					{% if post.category != 'news' %}
-						<a class="excerpt-link" href="{{ post.url }}"><span class="icon-hyperlink"></span> Read more</a>
-					{% endif %}
-				</p>
+					<a class="excerpt-link" href="{{ post.url }}"><span class="icon-hyperlink"></span> Read more</a>
+					</p>
+				{% else %}
+					{{ post.excerpt }}
+				{% endif %}
 			</article>
 			{% endfor %}
 		</section>

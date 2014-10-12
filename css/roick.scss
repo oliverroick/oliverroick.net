@@ -1,23 +1,32 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
 $break-small: 768px; 
 $break-large: 992px; 
 
 $column-width: 130px;
 $gutter-width: 30px;
 
-$width-small: (($column-width * 4) + ($gutter-width * 3));
-$width-large: (($column-width * 6) + ($gutter-width * 5));
+$width-small: (($column-width * 4) + ($gutter-width * 4));
+$width-large: (($column-width * 6) + ($gutter-width * 6));
 $margin-large: ($column-width + $gutter-width);
 
-$font-stack: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+$font-stack: 'Open Sans', sans-serif;
 
-$color-primary: #2d2d2d;
-$color-lightgray: #a9a9a9;
-$color-link: #006892;
-$color-linkvisited: #5e99bb;
-$color-coding: #53b057;
-$color-writing: #ae3825;
-$color-teaching: #00ace2;
+$color-dark: #6C7A89;
+$color-blue: #2574A9;
+$color-green: #1e824c;
+$color-red: #cf000f;
 
+$color-link: $color-blue;
+$color-linkvisited: lighten($color-blue, 10%);
+
+@mixin clear-float() {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -27,8 +36,24 @@ $color-teaching: #00ace2;
           border-radius: $radius;
 }
 
-@mixin background-transition() {
+@mixin scale($factor) {
+	-webkit-transform: scale($factor);
+	-moz-transform: scale($factor);
+	-o-transform: scale($factor);
+	transform: scale($factor);
+}
 
+@mixin transition($property, $time, $function) {
+	-moz-transition: $property $time $function;
+	-webkit-transition: $property $time $function;
+	-o-transition: opacity $property $time $function;
+	transition: opacity $property $time $function;
+}
+
+@mixin box-shadow($right, $bottom, $blur, $colour) {
+	-moz-box-shadow: $right $bottom $blur $colour;
+	-webkit-box-shadow: $right $bottom $blur $colour;
+	box-shadow: opacity $right $bottom $blur $colour;
 }
 
 @font-face {
@@ -44,10 +69,17 @@ $color-teaching: #00ace2;
 
 body {
 	font: 18px/1.5 $font-stack;
-	color: $color-primary;
+	color: $color-dark;
 	background-color: #fff;
-	font-weight: 200;
-	padding: 20px;
+	font-weight: 400;
+	padding: 0;
+	margin: 0;
+
+	*, *:after, *:before {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
 
 	@media screen and (min-width: $break-small) {
 		padding-top: 0;
@@ -55,6 +87,8 @@ body {
 	}
 
 	a {
+		@include transition(all, 0.3s, ease);
+
 		&:link,
 		&:active {
 			color: $color-link;
@@ -70,6 +104,14 @@ body {
 		}  
 	}
 
+	time {
+		margin: 0;
+		color: lighten($color-dark, 30%);
+		display: block;
+		text-transform: uppercase;
+		font-size: 0.8em;
+	}
+
 	[class^="icon-"], [class*=" icon-"] {
 		font-family: 'icomoon';
 		speak: none;
@@ -83,330 +125,348 @@ body {
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 	}
+}
 
-	p.more {
-		text-align: center;
+div.more {
+	clear: both;
+	text-align: center;
+	border: 0;
+	font-size: 0.7em;
 
-		a {
-			display: inline-block;
-			background-color: $color-link;
-			-webkit-transition: background-color 0.3s;
-    		transition: background-color 0.3s;
-			color: #fff;
-			text-decoration: none;
-			padding: 10px 15px;
-			@include border-radius(5px);
+	.icon-hyperlink:before {
+		content: "\e603";
+	}
+
+	a {
+		display: inline-block;
+		background-color: $color-link;
+		color: #fff;
+		text-decoration: none;
+		padding: 7px 10px;
+		@include border-radius(5px);
+		@include transition(all, 0.3s, ease);
+	}
+
+	a:hover,
+	a:focus {
+		background-color: $color-linkvisited;
+	}
+}
+
+section {
+	clear: both;
+	margin: 0;
+
+	.container {
+		margin: 0 auto;
+		@media screen and (min-width: $break-small) and (max-width: $break-large) {
+			width: $width-small;
 		}
 
-		a:hover,
-		a:focus {
-			background-color: $color-linkvisited;
+		@media screen and (min-width: $break-large) {
+			width: $width-large;
+		}
+	}
+}
+
+header#overview {
+	margin-bottom: $gutter-width * 3;
+	text-align: center;
+	background: url(../img/city.png) no-repeat 0 50%;
+	background-size: cover;
+	color: #fff;
+	padding: ($gutter-width * 2) 0;
+
+	h1 {
+		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+		font-size: 45px;
+		line-height: 1;
+		letter-spacing: -2px;
+		text-transform: uppercase;
+		margin: $gutter-width auto;
+		text-shadow: 0 0 5px darken(#fff, 30%);
+
+		span {
+			display: block;
+			font-size: 20px;
+			font-weight: 300;
+			font-family: $font-stack;
+			text-transform: uppercase;
+			text-shadow: none;
+			padding: ($gutter-width) 0;
+		}
+	}
+
+	p {
+		font-size: 20px;
+		border: 0 solid #fff;
+		border-width: 1px 0;
+		padding: ($gutter-width) 0;
+		font-weight: 300;
+		text-transform: uppercase;
+		line-height: 1.5;
+
+		a {
+			color: lighten($color-link, 25%);
+			text-decoration: none;
+			border-bottom: 1px solid lighten($color-link, 25%);
+
+			&:hover,
+			&:focus {
+				color: lighten($color-link, 15%);
+				border-bottom: 1px solid lighten($color-link, 15%);
+			}
+		}
+	}
+
+	@media screen and (min-width: $break-small) {
+		h1 {
+			width: ($column-width * 4 + $gutter-width * 3);
+			letter-spacing: 3px;
+		}
+
+		p {
+			width: ($column-width * 4 + $gutter-width * 3);
+			font-size: 22px;
+			margin: 0 auto;
+		}
+	}
+
+	div#socialmedia {
+		margin-top: $gutter-width * 2;
+		div.media-item {
+			display: inline-block;
+			position: relative;
+			margin-right: $gutter-width / 5;
+			width: 32px;
+			text-align: center;
+
+			a:link,
+			a:visited {
+				background: transparent no-repeat 50% 50%;
+				height: 32px;
+				width: 32px;
+				display: block;
+				overflow: hidden;
+				margin: 0;
+				color: #fff;
+				-webkit-transition: color 0.5s;
+	    		transition: color 0.3s;
+	    		text-decoration: none;
+			}
+
+			a:hover,
+			a:active,
+			a:focus {
+				color: $color-linkvisited;
+			}
+
+			[class^="icon-"], [class*=" icon-"] {
+				font-size: 32px;
+			}
+
+			.icon-twitter:before {
+				content: "\e600";
+			}
+			.icon-mail:before {
+				content: "\e601";
+			}
+			.icon-github:before {
+				content: "\e602";
+			}
 		}
 	}
 }
 
 section {
-	margin: 0 auto;
+	margin-bottom: $gutter-width * 3;
 
-	@media screen and (min-width: $break-small) and (max-width: $break-large) {
-		width: $width-small;
-	}
-
-	@media screen and (min-width: $break-large) {
-		width: $width-large;
-	}
-}
-
-section#overview {
-	text-align: center;
-	margin-bottom: $gutter-width * 6;
-
-	h1 {
-		font-size: 45px;
-		font-weight: bold;
-		line-height: 1;
-		letter-spacing: -2px;
-		text-transform: uppercase;
-		margin-bottom: $gutter-width;
-		margin-top: $gutter-width;
-
-		span {
-	        color: $color-lightgray;
-	        font-size: 30px;
-	        font-weight: normal;
-	        text-transform: none;
-	     	display: block
-	    }
-	}
-
-	p {
-		font-size: 20px;
-	}
-
-	a {
-		&[href="#coding"] { color: $color-coding; }
-		&[href="#writing"] { color: $color-writing; }
-		&[href="#teaching"] { color: $color-teaching; }
-	}
-
-	@media screen and (min-width: $break-small) {
-		h1 {
-			font-size: 89px;
-			letter-spacing: -3px;
-
-			span {
-				font-size: 35px;
-        		letter-spacing: -1px;
-			}
-		}
-
-		p {
-			font-size: 26px;
-			line-height: 1.2;
-		}
-	}
-
-	@media screen and (min-width: $break-large) {
-		p {
-			margin-left: ($column-width + $gutter-width);
-			margin-right: ($column-width + $gutter-width);
-		}
-	}
-}
-
-div#socialmedia {
-	text-align: center;
-	border-bottom: 1px solid $color-lightgray;
-	position: relative;
-	margin-bottom: ($gutter-width * 3) + 23px;
-
-	@media screen and (min-width: $break-large) {
-		margin-left: ($column-width / 2 + $gutter-width);
-		margin-right: ($column-width / 2 + $gutter-width);
-	}
-
-	div.media-item {
-		display: inline-block;
-		position: relative;
-		top: 23px;
-		margin: 0 -4px;
-		width: 32px;
-		padding: 0 ($gutter-width/4);
-		text-align: center;
-		background-color: #fff;
-
-		&:first-child {
-			padding-left: $gutter-width;
-		}
-
-		&:last-child {
-			padding-right: $gutter-width;
-		}
-
-
-		a:link,
-		a:visited {
-			background: #fff no-repeat 50% 50%;
-			height: 32px;
-			width: 32px;
-			display: block;
-			overflow: hidden;
-			margin: 0;
-			color: $color-primary;
-			-webkit-transition: color 0.5s;
-    		transition: color 0.3s;
-    		text-decoration: none;
-		}
-
-		a:hover,
-		a:active,
-		a:focus {
-			color: $color-lightgray;
-		}
-
-		[class^="icon-"], [class*=" icon-"] {
-			font-size: 32px;
-			// padding: ($gutter-width/2);
-		}
-
-		.icon-twitter:before {
-			content: "\e600";
-		}
-		.icon-mail:before {
-			content: "\e601";
-		}
-		.icon-github:before {
-			content: "\e602";
-		}
-	}
-}
-
-section.content {
 	h2 {
-		font-size: 18px;
+		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+		font-weight: normal;
 		text-transform: uppercase;
-		font-weight: 400;
-		border-bottom: 1px solid $color-lightgray;
-		position: relative;
-		text-align: center;
-		margin: ($gutter-width * 4) 0 ($gutter-width * 2) 0; 
-
-		span {
-			background-color: #fff;
-			display: inline-block;
-			position: relative;
-			top: 12px;
-			padding: 0 $gutter-width;
-		}
-	}
-
-	&#coding > h2 {
-		color: $color-coding;
-		border-color: $color-coding;
-	}
-
-	&#writing > h2 {
-		color: $color-writing;
-		border-color: $color-writing;
-	}
-
-	&#teaching > h2 {
-		color: $color-teaching;
-		border-color: $color-teaching;
+		margin: 0 auto ($gutter-width / 2) auto;
+		padding: 0 15px;
+		
+		color: darken($color-dark, 10%);
 	}
 
 	h3 {
-		font-weight: 300;
-		font-size: 28px;
-		text-align: center;
-		line-height: 1.2;
-		margin: ($gutter-width * 3) 0 $gutter-width 0;
-
-		@media screen and (min-width: $break-small) {
-			font-size: 36px
-		}
-	}
-
-	h2 + h3 {
-		margin-top: 0;
-	}
-
-	&#news h3 > a {
-		text-decoration: none;
-		color: $color-primary;
-
-		&:hover,
-		&:focus {
-			color: $color-link;
-		}
-	}
-
-	h4 {
-		font-weight: 300;
-		font-size: 22px;
-		line-height: 1.2;
-		margin: ($gutter-width * 1.5) 0 ($gutter-width * 0.5) 0;
-		padding-bottom: $gutter-width * 0.5;
-		border-bottom: 1px dotted $color-primary;
-
-		@media screen and (min-width: $break-small) {
-			font-size: 22px
-		}
-	}
-
-	figure {
-		overflow: hidden;
-		width: 100%;
-		height: 150px;
+		line-height: 1;
 		margin: 0;
-		@include border-radius(10px);
-
-		@media screen and (min-width: $break-small) and (max-width: $break-large) {
-			height: 225px;
-		}
-
-		@media screen and (min-width: $break-large) {
-			height: 300px;
-		}
-	}
-	
-	a.excerpt-link {
-		font-size: 0.9em;
-		text-decoration: none;
-		padding-left: 0.5em;
+		font-weight: 400;
+		font-size: 35px;
 	}
 
-	a.excerpt-link:hover,
-	a.excerpt-link:focus {
-		text-decoration: underline;
-	}
-
-	.icon-hyperlink:before {
-		font-size: 0.8em;
-		content: "\e603";
-	}
-
-	article {
-		margin-bottom: $gutter-width * 4;
+	&.content {
+		padding: 0 15px;
 
 		h3 {
-			margin-top: 0;
+			color: $color-red;
+
+			a:link,
+			a:visited,
+			a:active {
+				color: $color-red;
+				text-decoration: none;
+			}
+
+			a:hover,
+			a:focus {
+				color: darken($color-red, 10%);
+			}
 		}
 
-		time {
-			display: block;
-			text-align: center;
-			color: $color-lightgray;
+		h4 {
+			margin-bottom: $gutter-width / 4;
+		}
+
+		article {
+			margin-bottom: $gutter-width * 4;
+		}
+
+		@media screen and (min-width: $break-small) {
+			h2, h3, h4, p, time {
+				margin-left: auto;
+				margin-right: auto;
+				width: $width-small;
+			}
+		}
+	}
+}
+
+section#news {
+	article div.more {
+		text-align: left;
+	}
+
+	.current {
+		margin: 0 ($gutter-width / 2) ($gutter-width * 2) ($gutter-width / 2);
+		padding-bottom: ($gutter-width * 2);
+		border-bottom: 1px dotted $color-dark;
+
+		@media screen and (min-width: $break-small) {
+			width: $width-small;
+		}
+
+		h3 {
+			a:link,
+			a:visited {
+				color: $color-red;
+				text-decoration: none;
+			}
+
+			a:hover,
+			a:focus {
+				color: darken($color-red, 10%);
+			}
 		}
 	}
 
 	ul {
-		padding-left: $gutter-width;
-
-		li {
-			margin-bottom: $gutter-width / 2;
-		}
-
-		&.publications {
-			padding: 0;
-			list-style: none;
+		@media screen and (min-width: $break-small) {
+			-moz-column-count: 2;
+			-moz-column-gap: $gutter-width;
+			-webkit-column-count: 2;
+			-webkit-column-gap: $gutter-width;
+			column-count: 2;
+			column-gap: $gutter-width;
 
 			li {
-				padding-left: $gutter-width;
-				text-indent: -$gutter-width;
+				display:inline-block;
+			}
+		}
 
-				span.autoren {
-					font-variant: small-caps;
+		padding: 0 ($gutter-width/2);
+		margin: 0 0 ($gutter-width * 2) 0;
+
+		li {
+			padding: 0;
+			margin: 0 0 ($gutter-width/2) 0;
+			list-style: none;
+
+			a {
+				font-weight: 400;
+				text-decoration: none;
+				color: $color-dark;
+
+				&:hover,
+				&:focus {
+					text-decoration: hover;
+					color: $color-linkvisited;
 				}
 			}
 		}
 	}
+}
 
-	@media screen and (min-width: $break-large) {
-		h3, h4, ul, p {
-			margin-left: $margin-large;
-			margin-right: $margin-large;
+section#projects {
+	div.item {
+		background: no-repeat 50% 50%;
+		background-size: cover;
+		padding: ($gutter-width * 8) 0 0 0;
+		margin-bottom: $gutter-width;
+		color: #fff;
+
+		div.container {
+			background-color: rgba(0, 0, 0, 0.6);
+			padding: $gutter-width;
+		}
+
+		div.more {
+			text-align: left;
+
+			a {
+				border: 2px solid #fff;
+				background-color: transparent;	
+			}
+
+			a:hover,
+			a:focus {
+				color: darken(#fff, 30%);
+				border-color: darken(#fff, 30%);
+			}
+		}
+
+		&#geokey {
+			background-image: url(../img/city.png);
+		}
+
+		&#osmatrix {
+			background-image: url(../img/osmatrix_big.png);
+		}
+
+		&#openrouteservice {
+			background-image: url(../img/openrouteservice_big.png);
+		}
+
+		&#lightmap {
+			background-image: url(../img/lightmap_big.png);
+		}
+
+		&#wheredoyougo {
+			background-image: url(../img/wheredoyougo_big.png);
 		}
 	}
 }
 
 footer {
-	margin: $gutter-width * 9 auto 0 auto;
+	clear: both;
+	margin: $gutter-width * 4 auto 0 auto;
 	padding: ($gutter-width / 2) 0;
-	color: $color-lightgray;
+	color: lighten($color-dark, 20%);
 	font-size: 14px;
 	text-align: right;
-	border-top: 1px solid $color-lightgray;
-
-	@media screen and (min-width: $break-small) and (max-width: $break-large) {
-		width: $width-small;
-	}
-
-	@media screen and (min-width: $break-large) {
-		width: $width-large;
-	}
+	border-top: 1px solid lighten($color-dark, 20%);
 
 	p {
-		margin: 0;
+		margin: 0 auto;
+		@media screen and (min-width: $break-small) and (max-width: $break-large) {
+			width: $width-small;
+		}
+
+		@media screen and (min-width: $break-large) {
+			width: $width-large;
+		}
 	}
 }

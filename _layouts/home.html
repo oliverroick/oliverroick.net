@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="description" content="Personal website of Oliver Roick, Senior Developer at Extreme Citizen Science Reseacrh Group, University College London">
+    <meta name="author" content="Oliver Roick">
+  
+    <link rel="stylesheet" href="build/css/global.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<!-- 
+    #
+    # OVERVIEW
+    #
+    -->
+    <header id="overview">
+        <h1>Oliver Roick</h1>
+
+        <p>I design and build web-based geographic information systems at  <a href="http://www.ucl.ac.uk/excites">Extreme Citizen Science Research Group</a> at University College London.</p>
+
+        <div id="socialmedia">
+            <div class="media-item">
+                <a href="mailto:oliver.roick@gmail.com" title="E-mail"><span class="icon-mail"></span>E-Mail</a>
+            </div>
+            <div class="media-item">
+                <a href="http://twitter.com/oliverroick" title="Twitter"><span class="icon-twitter"></span>Twitter</a>
+            </div>
+            <div class="media-item">
+                <a href="https://github.com/oliverroick/" title="Github"><span class="icon-github"></span>GitHub</a>
+            </div>
+        </div>
+    </header>
+        {{ content }}
+
+        {% include footer.html %}
+</body>
+</html>
