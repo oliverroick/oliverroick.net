@@ -1,3 +1,4 @@
+@import 'syntax';
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 
 $break-small: 768px; 
@@ -151,6 +152,15 @@ div.more {
 	a:focus {
 		background-color: $color-linkvisited;
 	}
+}
+
+.highlight pre {
+	background-color: lighten($color-dark, 45%);
+	@include border-radius(5px);
+	padding: $gutter-width / 2;
+	margin-bottom: $gutter-width;
+	font-size: 14px;
+	overflow-x: auto;
 }
 
 section {
@@ -326,7 +336,7 @@ section {
 		}
 
 		@media screen and (min-width: $break-small) {
-			h2, h3, h4, p, time {
+			h2, h3, h4, p, time, div.more {
 				margin-left: auto;
 				margin-right: auto;
 				width: $width-small;

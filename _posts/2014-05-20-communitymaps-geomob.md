@@ -1,5 +1,5 @@
 ---
-layout: talk
+layout: post
 title:  "Introducing Community Maps 2.0 to #geomob London"
 date:   2014-05-21 10:00:00
 category: talks

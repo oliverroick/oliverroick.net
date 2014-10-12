@@ -1,6 +1,6 @@
 name: Oliver Roick
 markdown: redcarpet
-pygments: true
+highlighter: pygments
 permalink: /:categories/:year/:title.html
 exclude: ['Gruntfile.js', 'package.json', 'node_modules']
 excerpt_separator: "====="

@@ -4,5 +4,13 @@
 	#
 	-->
 	<header id="overview">
-		<h1>Oliver Roick <span>News Archive</span></h1>
+		<h1>Oliver Roick 
+            {% if page.category == 'code' %}
+            <span>Code</span>
+            {% elsif page.category == 'talks' %}
+            <span>Talks &amp; Presentations</span>
+            {% else %}
+            <span>News Archive</span>
+            {% endif %}
+        </h1>
 	</header>
