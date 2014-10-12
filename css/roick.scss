@@ -173,6 +173,7 @@ header#overview {
 	margin-bottom: $gutter-width * 3;
 	text-align: center;
 	background: url(../img/city.png) no-repeat 0 50%;
+	background-size: cover;
 	color: #fff;
 	padding: ($gutter-width * 2) 0;
 
@@ -423,7 +424,7 @@ section#projects {
 			a:hover,
 			a:focus {
 				color: darken(#fff, 30%);
-				border-top-color: darken(#fff, 30%);
+				border-color: darken(#fff, 30%);
 			}
 		}
 
@@ -432,19 +433,19 @@ section#projects {
 		}
 
 		&#osmatrix {
-			background-image: url(../img/osmatrix.png);
+			background-image: url(../img/osmatrix_big.png);
 		}
 
 		&#openrouteservice {
-			background-image: url(../img/openrouteservice.png);
+			background-image: url(../img/openrouteservice_big.png);
 		}
 
 		&#lightmap {
-			background-image: url(../img/lightmap.png);
+			background-image: url(../img/lightmap_big.png);
 		}
 
 		&#wheredoyougo {
-			background-image: url(../img/wheredoyougo.png);
+			background-image: url(../img/wheredoyougo_big.png);
 		}
 	}
 }
