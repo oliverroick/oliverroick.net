@@ -1,8 +1,8 @@
 @import 'syntax';
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 
-$break-small: 768px; 
-$break-large: 992px; 
+$break-small: 768px;
+$break-large: 992px;
 
 $column-width: 130px;
 $gutter-width: 30px;
@@ -102,7 +102,7 @@ body {
 		&:hover,
 		&:focus {
 			text-decoration: none;
-		}  
+		}
 	}
 
 	time {
@@ -297,7 +297,7 @@ section {
 		text-transform: uppercase;
 		margin: 0 auto ($gutter-width / 2) auto;
 		padding: 0 15px;
-		
+
 		color: darken($color-dark, 10%);
 	}
 
@@ -336,7 +336,7 @@ section {
 		}
 
 		@media screen and (min-width: $break-small) {
-			h2, h3, h4, p, time, div.more {
+			h2, h3, h4, p, time, div.more, div.twitter {
 				margin-left: auto;
 				margin-right: auto;
 				width: $width-small;
@@ -428,7 +428,7 @@ section#projects {
 
 			a {
 				border: 2px solid #fff;
-				background-color: transparent;	
+				background-color: transparent;
 			}
 
 			a:hover,

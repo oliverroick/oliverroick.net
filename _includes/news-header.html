@@ -1,14 +1,16 @@
-	<!-- 
+	<!--
 	#
 	# OVERVIEW
 	#
 	-->
 	<header id="overview">
-		<h1>Oliver Roick 
+		<h1>Oliver Roick
             {% if page.category == 'code' %}
             <span>Code</span>
             {% elsif page.category == 'talks' %}
             <span>Talks &amp; Presentations</span>
+			{% elsif page.category == 'conferences' %}
+			<span>Conferences</span>
             {% else %}
             <span>News Archive</span>
             {% endif %}
