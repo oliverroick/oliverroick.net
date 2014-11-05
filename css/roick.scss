@@ -182,7 +182,7 @@ section {
 header#overview {
 	margin-bottom: $gutter-width * 3;
 	text-align: center;
-	background: url(../img/city.png) no-repeat 0 50%;
+	background: url(../img/city.jpg) no-repeat 0 50%;
 	background-size: cover;
 	color: #fff;
 	padding: ($gutter-width * 2) 0;
@@ -440,7 +440,7 @@ section#projects {
 		}
 
 		&#geokey {
-			background-image: url(../img/city.png);
+			background-image: url(../img/geokey.jpg);
 		}
 
 		&#osmatrix {
