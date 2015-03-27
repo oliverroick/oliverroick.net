@@ -10,7 +10,7 @@ title: Oliver Roick | News
 				<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
 				
 				{% if post.category != 'news' %}
-					<p>{{ site.posts.first.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+					<p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
 					<div class="more">
 						<a href="{{ post.url }}"><span class="icon-hyperlink"></span> Read full post</a>
 					</div>
