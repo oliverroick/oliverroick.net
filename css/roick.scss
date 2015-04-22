@@ -205,6 +205,15 @@ header#overview {
 			text-shadow: none;
 			padding: ($gutter-width) 0;
 		}
+
+        a:link,
+        a:visited,
+        a:hover,
+        a:focus,
+        a:active, {
+            color: #fff;
+            text-decoration: none;
+        }
 	}
 
 	p {
@@ -335,12 +344,20 @@ section {
 			margin-bottom: $gutter-width * 4;
 		}
 
+        ul {
+            list-style: square;
+        }
+
 		@media screen and (min-width: $break-small) {
-			h2, h3, h4, p, time, div.more, div.twitter {
+			h2, h3, h4, p, ul, li, time, div.more, div.twitter {
 				margin-left: auto;
 				margin-right: auto;
 				width: $width-small;
 			}
+
+            ul, ol {
+                padding-left: 0;
+            }
 		}
 	}
 }
@@ -373,7 +390,7 @@ section#news {
 		}
 	}
 
-	ul {
+	ul.news-list {
 		@media screen and (min-width: $break-small) {
 			-moz-column-count: 2;
 			-moz-column-gap: $gutter-width;

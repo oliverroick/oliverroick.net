@@ -8,7 +8,7 @@ title: Oliver Roick | News
 			<article class="container">
 				<time datetime="{{ post.date | date_to_xmlschema }}" itemprop="published">{{ post.date | date_to_long_string }}</time>
 				<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-				
+
 				{% if post.category != 'news' %}
 					<p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
 					<div class="more">

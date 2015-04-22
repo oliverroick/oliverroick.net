@@ -1,11 +1,11 @@
 ---
 layout: sub
 ---
-		<section class="content" id="news">
+		<section class="content">
 			<article class="container">
 				<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="published">{{ page.date | date_to_long_string }}</time>
 				<h3>{{ page.title }}</h3>
-				
+
 				{{ content }}
 			</article>
 		</section>
