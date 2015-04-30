@@ -46,9 +46,7 @@ easy (and it's free for open-source projects). On the same note, there are more
 tools out there that integrate with Travis and help keeping the code quality at a high level:
 
 - [Requires.io](https://requires.io/) checks your requirements (either in requirements.txt or setup.py) and tells you whether your packages are up-to-date, outdated or insecure. You can also sign up for an email alert, that notifies you as soon as something changes.
-
 - [coveralls.io](https://coveralls.io/) checks the test coverage of your code. It is basically the same thing  [coverage](http://nedbatchelder.com/code/coverage/) does in the command line, but it checks all commits to your repository and it automatically comments on a pull request about changes in code test coverage.
-
 - [landscape.io](https://landscape.io/) provides code quality measures for your Python code. It checks for coding errors, styling flaws and code smells (things that aren't really wrong, but look like they could need some improvements) and therefore helps you keep your code neat and clean.
 
 #### Package from the start if you intend to make releases
