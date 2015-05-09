@@ -13,8 +13,8 @@ $margin-large: ($column-width + $gutter-width);
 
 $font-stack: 'Open Sans', sans-serif;
 
-$color-dark: #6C7A89;
-$color-blue: #2574A9;
+$color-dark: #22313F;
+$color-blue: #446CB3;
 $color-green: #1e824c;
 $color-red: #cf000f;
 
@@ -154,8 +154,15 @@ div.more {
 	}
 }
 
+div.more.inactive {
+    display: inline-block;
+    border: 2px dotted #fff;
+    @include border-radius(5px);
+    padding: 7px 10px;
+}
+
 .highlight pre {
-	background-color: lighten($color-dark, 45%);
+	background-color: lighten($color-dark, 70%);
 	@include border-radius(5px);
 	padding: $gutter-width / 2;
 	margin-bottom: $gutter-width;
