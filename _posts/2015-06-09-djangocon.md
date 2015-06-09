@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Take-aways from Djangocon Europe 2015"
+title:  "Takeaways from Djangocon Europe 2015"
 date:   2015-06-09 10:30:00
 category: conferences
 ---
