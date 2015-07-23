@@ -137,7 +137,7 @@ class BookUrlTest(TestCase):
         self.assertEqual(resolved.kwargs['book_id'], '3')
 ```
 
-We can use Django's `reverse()` to get the URL to a namespace. The namespace `books_detail` should resolve to something `/books/<book_id>/`, so passing the ID `3` should resolve to `/books/3/`.
+We can use Django's `reverse()` to get the URL to a namespace. The namespace `books_detail` should resolve to something like `/books/<book_id>/`, so passing the ID `3` should resolve to `/books/3/`.
 
 The opposite way should be tested too: When receiving a request to `/books/3/` the request should be passed on to the view `BookDetail` and the view's `book_id` should be passed the ID `3`. We use Django's `resolve()` to resolve the URL. To test if the correct view is linked to the URL, we compare the name of the resolved view (`resolved.func.func_name`) to the name of the expected view (`BookDetail.__name__`). The `kwargs` property of each resolved view is a dictionary that holds the parameters passed from the URL. We can use it to assert of the parameters where passed correctly.
 
