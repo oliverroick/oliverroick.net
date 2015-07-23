@@ -6,6 +6,6 @@ layout: sub
 				<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="published">{{ page.date | date_to_long_string }}</time>
 				<h3>{{ page.title }}</h3>
 
-				{{ content }}
+				{{ content | replace: '=====', '' }}
 			</article>
 		</section>
