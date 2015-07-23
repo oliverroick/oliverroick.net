@@ -12,6 +12,7 @@ $width-large: (($column-width * 6) + ($gutter-width * 6));
 $margin-large: ($column-width + $gutter-width);
 
 $font-stack: 'Open Sans', sans-serif;
+$headline-font: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
 
 $color-dark: #22313F;
 $color-blue: #446CB3;
@@ -69,7 +70,7 @@ $color-linkvisited: lighten($color-blue, 10%);
 }
 
 body {
-	font: 18px/1.5 $font-stack;
+	font: 16px/1.5 $font-stack;
 	color: $color-dark;
 	background-color: #fff;
 	font-weight: 400;
@@ -84,7 +85,7 @@ body {
 
 	@media screen and (min-width: $break-small) {
 		padding-top: 0;
-		font-size: 20px;
+		font-size: 18px;
 	}
 
 	a {
@@ -170,6 +171,13 @@ div.more.inactive {
 	overflow-x: auto;
 }
 
+p > code {
+    font-size: 0.8em;
+    background-color: lighten($color-dark, 70%);
+    padding: 2px 4px;
+    @include border-radius(3px);
+}
+
 section {
 	clear: both;
 	margin: 0;
@@ -195,10 +203,11 @@ header#overview {
 	padding: ($gutter-width * 2) 0;
 
 	h1 {
-		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+		font-family: $headline-font;
+        font-weight: 600;
 		font-size: 45px;
 		line-height: 1;
-		letter-spacing: -2px;
+		letter-spacing: 3px;
 		text-transform: uppercase;
 		margin: $gutter-width auto;
 		text-shadow: 0 0 5px darken(#fff, 30%);
@@ -207,7 +216,6 @@ header#overview {
 			display: block;
 			font-size: 20px;
 			font-weight: 300;
-			font-family: $font-stack;
 			text-transform: uppercase;
 			text-shadow: none;
 			padding: ($gutter-width) 0;
@@ -224,7 +232,9 @@ header#overview {
 	}
 
 	p {
-		font-size: 20px;
+		font-family: $headline-font;
+        letter-spacing: 1px;
+        font-size: 20px;
 		border: 0 solid #fff;
 		border-width: 1px 0;
 		padding: ($gutter-width) 0;
@@ -248,7 +258,6 @@ header#overview {
 	@media screen and (min-width: $break-small) {
 		h1 {
 			width: ($column-width * 4 + $gutter-width * 3);
-			letter-spacing: 3px;
 		}
 
 		p {
@@ -308,7 +317,9 @@ section {
 	margin-bottom: $gutter-width * 3;
 
 	h2 {
-		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+		font-family: $headline-font;
+        font-size: 20px;
+        letter-spacing: 3px;
 		font-weight: normal;
 		text-transform: uppercase;
 		margin: 0 auto ($gutter-width / 2) auto;
@@ -344,8 +355,30 @@ section {
 		}
 
 		h4 {
-			margin-bottom: $gutter-width / 4;
+            font-family: $headline-font;
+            letter-spacing: 3px;
+            font-size: 22px;
+            font-weight: 600;
+            text-transform: uppercase;
+			margin-bottom: $gutter-width / 8;
 		}
+
+        h4 + p {
+            margin-top: 0;
+        }
+
+        h5 {
+            font-size: 18px;
+            letter-spacing: 1px;
+            font-family: $headline-font;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: $gutter-width / 8;
+        }
+
+        h5 + p {
+            margin-top: 0;
+        }
 
 		article {
 			margin-bottom: $gutter-width * 4;
@@ -356,7 +389,7 @@ section {
         }
 
 		@media screen and (min-width: $break-small) {
-			h2, h3, h4, p, ul, li, time, div.more, div.twitter {
+			h2, h3, h4, h5, p, ul, li, time, div.more, div.twitter {
 				margin-left: auto;
 				margin-right: auto;
 				width: $width-small;
