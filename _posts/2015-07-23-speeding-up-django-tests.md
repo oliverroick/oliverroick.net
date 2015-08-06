@@ -125,7 +125,7 @@ Here we want to test that the URL namespaces resolve to the correct URL and that
 
 ```python
 from django.test import TestCase
-from django.core.urlresolvers import reverse,
+from django.core.urlresolvers import reverse, resolve
 
 class BookUrlTest(TestCase):
     def test_reverse_books_detail(self):
