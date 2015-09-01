@@ -129,7 +129,7 @@ from django.core.urlresolvers import reverse, resolve
 
 class BookUrlTest(TestCase):
     def test_reverse_books_detail(self):
-        self.assertEqual(reverse('books_detail' kwargs={'book_id': 3}), '/books/3/')
+        self.assertEqual(reverse('books_detail', kwargs={'book_id': 3}), '/books/3/')
 
     def test_resolve_book_list(self):
         resolved = resolve('/books/3/')
