@@ -21,7 +21,7 @@ module.exports = function(grunt) {
                     style: 'compressed'
                 },
                 files: {
-                    'build/css/global.css': 'css/roick.scss'
+                    'build/css/roick.css': 'css/roick.scss'
                 }
             } 
         },

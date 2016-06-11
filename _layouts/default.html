@@ -7,14 +7,21 @@
     <meta name="author" content="Oliver Roick">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
+<body{% if page.body_id %} id="{{ page.body_id }}"{% endif %}>
     {{ content }}
 
     <footer>
-        <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a> 2011-2015 Oliver Roick.</p>
-        <p>Built using <a href="http://sass-lang.com/">Sass</a>, <a href="http://jekyllrb.com/">Jekyll</a> and <a href="http://icomoon.io/">IcoMoon</a>. Hosted on <a href="http://pages.github.com/">Github</a>.</p>
+        <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a> 2011-2016 Oliver Roick.</p>
     </footer>
 
+    <link rel="stylesheet" href="/css/roick.css">
+    {% if page.highlight_code %}<link rel="stylesheet" href="/css/syntax.css">{% endif %}
+    {% if page.body_id == 'home' %}
+        {% include home.html %}
+    {% endif %}
+    {% if page.body_id == 'blog' %}
+        {% include blog.html %}
+    {% endif %}
     <script type="text/javascript">
       var _gauges = _gauges || [];
       (function() {
@@ -29,8 +36,6 @@
         s.parentNode.insertBefore(t, s);
       })();
     </script>
-
-    <link rel="stylesheet" href="/build/css/global.css"> 
 </body>
 
 </html>

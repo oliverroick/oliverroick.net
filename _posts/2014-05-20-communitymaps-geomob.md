@@ -3,6 +3,7 @@ layout: post
 title:  "Introducing Community Maps 2.0 to #geomob London"
 date:   2014-05-21 10:00:00
 category: talks
+body_id: blog
 ---
 
 Last week, I introduced Community Maps 2.0 to the [London #geomob](http://geomobldn.org/). You can find the slides and a brief summary of the talk here.
@@ -11,7 +12,7 @@ Last week, I introduced Community Maps 2.0 to the [London #geomob](http://geomob
 
 <script async class="speakerdeck-embed" data-id="d3b8d2e0bd7c013141513eaa9c70471f" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-#### What is Community Maps?
+## What is Community Maps?
 
 Community Maps is about mapping geographic information by volunteers. Unlike [OpenSteetMap](http://osm.org/), where contributors are creating a dataset of everything in the world, Community Maps is about small communities, with a small geographic scope. These communities collect geographic data to make a difference in their area by identifying issues, participate in decision making processes, influencing politics and track progress. 
 
@@ -21,7 +22,7 @@ Community Maps has existed for quite some time now and we have run several proje
 
 In the seven years of running the existing version of Community Maps, we successfully run 64 projects with more than 2000 users who contributed about 20.000 observations since 2007. 
 
-#### Community Maps 2.0
+## Community Maps 2.0
 
 However, after seven years, we decided for a re-built of the platform. The reason for this is mainly an outdated architecture  that is difficult to maintain and to extend. 
 
@@ -31,7 +32,7 @@ Also, we decided to completely de-couple back-end and front-end. This provides u
 
 Another aim was to create a user-friendly interface to help users to easily set-up new projects. 
 
-#### What's next
+## What's next
 
 A first alpha version will be released soon. You can use the instance of Community Maps we will be running on our servers or download the code and deploy it yourself. The whole back-end will be open-sourced on [Github](https://github.com/ExCiteS/opencommunitymaps). We encourage you to contribute by forking the code or submitting issues. 
 

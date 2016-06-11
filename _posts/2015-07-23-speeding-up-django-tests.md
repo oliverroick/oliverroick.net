@@ -3,6 +3,8 @@ layout: post
 title:  "Speeding up tests in Django"
 date:   2015-07-23 10:00:00
 category: "code"
+highlight_code: true
+body_id: blog
 ---
 
 Class-based views are difficult to test in Django applications. There is a number of tutorials out there that discuss best practices about how to test views — most of these are based on the official [Django guides](https://docs.djangoproject.com/en/1.8/topics/testing/tools/). Doing it their way, however, can be terribly slow, especially when you add complexity to your views, such user authentication.
@@ -11,7 +13,7 @@ I'll discuss a slightly different method of testing views without the test clien
 
 =====
 
-#### The use case
+## The use case
 
 To demonstrate my approach, I have created the following simple example project.
 
@@ -19,7 +21,7 @@ A book has an author and a title. There are two views in our project; one that d
 
 I'll spare you the boring code examples here — have a look at the [repository](https://github.com/oliverroick/django-tests/) to learn how the project is setup.
 
-#### What to test
+## What to test
 
 There are three things that should be tested with views:
 
@@ -27,11 +29,11 @@ There are three things that should be tested with views:
 2. URL namespaces should resolve to the correct URL and the parameters should be assigned correctly.
 3. URLs should be linked to the correct views and the URL parameters should be passed correctly on to the view's keyword arguments.
 
-#### The "official" approach to testing views
+## The "official" approach to testing views
 
 The [Django guides](https://docs.djangoproject.com/en/1.8/topics/testing/tools/) propose to use the test client to test views. Here's how this would look like in our project:
 
-```python
+{% highlight python %}
 class BookListTest(TestCase):
     def setUp(self):
         self.client = Client()
@@ -52,7 +54,7 @@ class BookListTest(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.content.decode('utf-8'), rendered)
         self.assertNotContains(response, 'No books found')
-```
+{% endhighlight %}
 
 The `setUp` method, which is called before every test in the test class, creates a new `Client` instance.
 
@@ -63,13 +65,13 @@ To test if the view has been rendered with the correct template and context, we 
 This approach is very straightforward and easy to reproduce. However, creating the client, logging the user in and getting the response from the client takes a long time. A fully developed test suite for our case takes about 0.6 seconds to run only ten tests. Imagine you have a test suite of a more complex project with 1000 tests.
 
 
-#### Testing views without the test client
+## Testing views without the test client
 
 Getting rid of the test client can speed up your tests tremendously. We can use the view and its methods to render a response — the same happens internally when you request a response using the test client; it only spares the detour over the client.
 
 Here's how to do it:
 
-```python
+{% highlight python %}
 class BookListTest(TestCase):
     def setUp(self):
         self.view = BookList.as_view()
@@ -93,7 +95,7 @@ class BookListTest(TestCase):
         self.assertEqual(response.content.decode('utf-8'), rendered)
         self.assertEqual(response.status_code, 200)
         self.assertNotContains(response, 'No books found')
-```
+{% endhighlight %}
 
 In `setUp`, we set the defaults for the test case. The view function is set to `BookList`, a request object is initialised, HTTP method and requesting user are set as well. If necessary, these defaults can be overwritten in each test.
 
@@ -101,29 +103,29 @@ The test itself looks very similar to the one above, except that there's no clie
 
 It tests the same functionality as above. But running all ten tests for the example takes about 0.03 seconds instead of 0.6. And that's a significant performance increase.
 
-#### What else to test?
+## What else to test?
 
 There are more things that should be tested. For instance, accessing the view with an anonymous user and that the URLs are defined correctly and linked to the right views.
 
-##### Test with AnonymousUser
+### Test with AnonymousUser
 
 Since authors can only access their own books, users accessing the views need to identify themselves by logging in. If a user is not authenticated, the view should return a redirect to the login page.
 
-```python
+{% highlight python %}
     def test_get_with_anonymous(self):
         response = self.view(self.request)
 
         self.assertEqual(response.status_code, 302)
         self.assertIn('/accounts/login/', response['location'])
-```
+{% endhighlight %}
 
 The response's status code should be `302` (this indicates a redirect). The login page can be accessed via `/accounts/login/`, hence `response['location']`, which contains the redirect location, should provide that URL.
 
-##### Testing the URLs
+### Testing the URLs
 
 Here we want to test that the URL namespaces resolve to the correct URL and that the views are linked correctly.
 
-```python
+{% highlight python %}
 from django.test import TestCase
 from django.core.urlresolvers import reverse, resolve
 
@@ -135,12 +137,12 @@ class BookUrlTest(TestCase):
         resolved = resolve('/books/3/')
         self.assertEqual(resolved.func.func_name, BookDetail.__name__)
         self.assertEqual(resolved.kwargs['book_id'], '3')
-```
+{% endhighlight %}
 
 We can use Django's `reverse()` to get the URL to a namespace. The namespace `books_detail` should resolve to something like `/books/<book_id>/`, so passing the ID `3` should resolve to `/books/3/`.
 
 The opposite way should be tested too: When receiving a request to `/books/3/` the request should be passed on to the view `BookDetail` and the view's `book_id` should be passed the ID `3`. We use Django's `resolve()` to resolve the URL. To test if the correct view is linked to the URL, we compare the name of the resolved view (`resolved.func.func_name`) to the name of the expected view (`BookDetail.__name__`). The `kwargs` property of each resolved view is a dictionary that holds the parameters passed from the URL. We can use it to assert of the parameters where passed correctly.
 
-#### Wrapping up
+## Wrapping up
 
 To get a grasp about the example project and how it is fully tested, have a look at the [repository](https://github.com/oliverroick/django-tests/). You will also find the "standard" approach that uses the test client in the branch ["test-client"](https://github.com/oliverroick/django-tests/tree/test-client).

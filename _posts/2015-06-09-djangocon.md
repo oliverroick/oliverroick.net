@@ -3,6 +3,7 @@ layout: post
 title:  "Takeaways from Djangocon Europe 2015"
 date:   2015-06-09 10:30:00
 category: conferences
+body_id: blog
 ---
 
 I went to [Djangocon Europe in Cardiff](http://2015.djangocon.eu/) last week. Here are my key takeaways from talks I saw and discussions I had.
