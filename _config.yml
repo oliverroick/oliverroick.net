@@ -1,5 +1,5 @@
 name: Oliver Roick
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments
 permalink: /:categories/:year/:title.html
 exclude: ['Gruntfile.js', 'package.json', 'node_modules']

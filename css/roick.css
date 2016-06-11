@@ -1,0 +1,140 @@
+/* GRID STUFF */
+
+body {
+    margin: 0;
+    padding: 0;
+    border-left: 10px solid #22313F;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #22313F;
+ }
+
+/* GRID STUFF */
+
+header > *,
+section > *,
+footer  > * {
+    padding: 0 15px;
+}
+
+header {
+    font-family: "Gill Sans","Gill Sans MT",Calibri,sans-serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding-top: 30px;
+    margin-bottom: 60px;
+}
+
+section > article {
+    margin-bottom: 4em;
+}
+
+header a {
+    text-decoration: none;
+}
+
+    header a:visited {
+        color: #446CB3;
+    }
+
+@media (min-width: 768px) {
+    header,
+    section,
+    footer {
+        margin-left: 145px;
+        width: 610px;
+    }
+}
+
+section {
+    margin-top: 100px;
+}
+
+footer {
+    margin-top: 200px;
+    padding-bottom: 30px;
+    font-size: 13px;
+    color: #777;
+    text-align: center;
+    clear: both;
+}
+
+/* ELEMENTS */
+
+h1 {
+    font-size: 24px;
+    font-weight: normal;
+    color: #cf000f;
+}
+
+time {
+    display: block;
+    margin-top: 30px;
+    font-family: "Gill Sans","Gill Sans MT",Calibri,sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #777;
+}
+
+    time + * {
+        margin-top: 5px;
+    }
+
+a:link {
+    color: #446CB3;
+}
+
+a:visited    {
+    color: #6588c5;
+}
+
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none;
+}
+
+div.more a {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 3px;
+    background-color: #446CB3;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+div.more a:hover,
+div.more a:focus {
+    background-color: #22313F;
+}
+
+figure.highlight {
+    background-color: #dbe3eb;
+    margin: 0 0 0 -50px;
+    padding: 10px 15px 10px 50px;
+    border-left: 3px solid #22313F;
+    border-radius: 0 3px 3px 0;
+    overflow-x: auto;
+}
+
+@media (min-width: 850px) {
+    figure.highlight {
+        padding-right: 50px;
+        width: 610px;
+    }
+}
+
+code {
+    font-family: "Monaco", Consolas, "Lucida Console", monospace;
+    font-size: 14px;
+}
+
+p > code {
+    background-color: #dbe3eb;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 3px;
+}

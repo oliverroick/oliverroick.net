@@ -2,9 +2,10 @@
   "name": "oliverroick.github.io",
   "version": "0.1.0",
   "devDependencies": {
+    "bootstrap-sass": "^3.3.6",
     "grunt": "~0.4.1",
     "grunt-contrib-imagemin": "~0.4.0",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-contrib-sass": "~0.6.0"
+    "grunt-contrib-sass": "~0.6.0",
+    "grunt-contrib-watch": "~0.5.3"
   }
 }

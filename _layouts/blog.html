@@ -1,0 +1,20 @@
+---
+layout: default
+title: page.title
+---
+	<header>
+        <a href="/">Oliver Roick</a>
+        {% if page.category == 'code' %}
+        <span>Code</span>
+        {% elsif page.category == 'thoughts' %}
+        <span>Thoughts</span>
+        {% elsif page.category == 'talks' %}
+        <span>Talks &amp; Presentations</span>
+        {% elsif page.category == 'conferences' %}
+        <span>Conferences</span>
+        {% else %}
+        <span>Recently</span>
+        {% endif %}    
+    </header>
+
+	{{ content }}

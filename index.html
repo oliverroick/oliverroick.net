@@ -1,108 +1,87 @@
 ---
-layout: home
+layout: default
 title: Oliver Roick
+body_id: home
 ---
-	<!--
-	#
-	# News
-	#
-	-->
+    <!--
+    #
+    # News
+    #
+    -->
 
-		<section id="news">
-			<div class="container">
-				<h2>Recently</h2>
+    <header>
+        <h1>Oliver Roick</h1>
+        
+        <p>I build software that helps people to collect, manage and share geographic information over the Web. I work at <a href="http://cadasta.org/">Cadasta Foundation</a>.</p>
+    </header>
 
-				<article class="current">
-					<time datetime="{{ site.posts.first.date | date_to_xmlschema }}" itemprop="published">{{ site.posts.first.date | date_to_long_string }}</time>
-					<h3><a href="{{ site.posts.first.url }}">{{ site.posts.first.title }}</a></h3>
-					{% if site.posts.first.category != 'news' %}
-						<p>{{ site.posts.first.excerpt | remove: '<p>' | remove: '</p>' }}</p>
-						<div class="more">
-							<a href="{{ site.posts.first.url }}"><span class="icon-hyperlink"></span> Read full post</a>
-						</div>
-					{% else %}
-						{{ site.posts.first.content }}
-					{% endif %}
-				</article>
+    <section>
+        <h2>Recently</h2>
 
-				<ul class="news-list">
-					{% for post in site.posts limit:7 %}
-					{% if forloop.index0 > 0 %}
-						<li>
-							<time datetime="{{ post.date | date_to_xmlschema }}" itemprop="published">{{ post.date | date_to_long_string }}</time>
-							<a href="{{ post.url }}">{{ post.title }}</a>
-						</li>
-					{% endif %}
-				{% endfor %}
-				</ul>
+        <article>
+            <time datetime="{{ site.posts.first.date | date_to_xmlschema }}" itemprop="published">{{ site.posts.first.date | date_to_long_string }}</time>
+            <h3><a href="{{ site.posts.first.url }}">{{ site.posts.first.title }}</a></h3>
+            {% if site.posts.first.category != 'news' %}
+                <p>{{ site.posts.first.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+                <div class="more">
+                    <a href="{{ site.posts.first.url }}"><span class="icon-hyperlink"></span> Read full post</a>
+                </div>
+            {% else %}
+                {{ site.posts.first.content }}
+            {% endif %}
+        </article>
 
-				<div class="more">
-					<a href="/news">Find previous news in the archive</a>
-				</div>
-			</div>
-		</section>
+        <ul class="news-list">
+            {% for post in site.posts limit:7 %}
+            {% if forloop.index0 > 0 %}
+                <li>
+                    <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="published">{{ post.date | date_to_long_string }}</time>
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                </li>
+            {% endif %}
+        {% endfor %}
+        </ul>
 
-	<!--
-	#
-	# CODING
-	#
-	-->
+        <div class="more">
+            <a href="/recently">Find previous news in the archive</a>
+        </div>
+    </section>
 
-		<section id="projects">
-			<div class="container">
-				<h2>Work</h2>
-			</div>
+    <!--
+    #
+    # CODING
+    #
+    -->
+    <section class="projects">
+        <h2>Projects I contributed to</h2>
 
-			<div class="item" id="geokey">
-				<div class="container">
-					<h3>GeoKey</h3>
-					<p>GeoKey is a platform for participatory mapping. GeoKey provides local communities with a web-based infrastructure to collect, share and discuss local knowledge. You can use it to setup your own mapping project with your community and to collect, visualise and analyse data using the tools of your choice.</p>
+        <article>
+            <h3><a href="http://geokey.org.uk">GeoKey</a></h3>
+            <p>GeoKey is a platform for participatory mapping. I developed GeoKey during my time at <a href="https://www.ucl.ac.uk/excites">UCL ExCiteS</a>, who have taken over development since my departure in October 2013.</p>
 
-					<div class="more">
-						<a href="http://geokey.org.uk"><span class="icon-hyperlink"></span> Visit GeoKey project website</a>
-						<a href="http://github.com/excites/geokey/"><span class="icon-hyperlink"></span> View the code on Github</a>
-					</div>
-				</div>
-			</div>
+            <ul class="links">
+                <li><a href="http://geokey.org.uk/">Project web site</a></li>
+                <li><a href="https://github.com/ExCiteS/geokey">GitHub repository</a></li>
+            </ul>
+        </article>
 
-			<div class="item" id="osmatrix">
-				<div class="container">
-					<h3>OSMatrix</h3>
-					<p>OSMatrix visualizes characteristics of OpenStreetMap, which are usually not displayed in cartographic representations of the data. The characteristics include information on the topicality of data, user contributions and the presence (or absence) of certain feature types. These characteristics enforce understanding of data quality and activities in the community as well as their evolution over time.</p>
+        <article>
+            <h3><a href="https://github.com/oliverroick/Leaflet.Deflate">Leaflet.Deflate</a></h3>
+            <p>Leaflet.Deflate is a plugin for the web mapping library <a href="http://leafletjs.com/">Leaflet</a> that converts features in low zoom levels to markers if they become too small to be visible and vice versa.</p>
+            <ul class="links">
+                <li><a href="/code/2015/leaflet-deflate.html">Read blog post</a></li>
+                <li><a href="https://github.com/oliverroick/Leaflet.Deflate">GitHub repository</a></li>
+            </ul>
+        </article>
 
-					<div class="more inactive">
-						OSMatrix is currently not available.
-					</div>
-				</div>
-			</div>
-
-			<div class="item" id="openrouteservice">
-				<div class="container">
-					<h3>OpenRouteService</h3>
-					<p>OpenRouteService is an online route planning application that is solely based on open-source software, open standards and open data. I was involved with the re-design and re-implemention of client-side components.</p>
-					<div class="more">
-						<a href="http://openrouteservice.org/"><span class="icon-hyperlink"></span> Visit OpenRouteService</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="item" id="lightmap">
-				<div class="container">
-					<h3>Lightmap</h3>
-					<p>The Lightmap visualizes the world-wide distribution of street lamps as they are available in OpenStreetMap.</p>
-					<div class="more">
-						<a href="http://lightmap.uni-hd.de/"><span class="icon-hyperlink"></span> Visit OSM Lightmap</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="item" id="wheredoyougo">
-				<div class="container">
-					<h3>Where do you go?</h3>
-					<p>As a result of some experiments I did with the Foursquare API, I implemented a litte web application that visualizes your Foursquare check-ins and allows to filter for venue categories, day or hour of check-in.</p>
-					<div class="more">
-						<a href="http://oliverroick.de/wheredoyougo/"><span class="icon-hyperlink"></span> Visit Where do you go?</a>
-					</div>
-				</div>
-			</div>
-		</section>
+        <h3>Other projects &amp; experiments</h3>
+        <article>
+            <ul>
+                <li><a href="http://openrouteservice.org/">OpenRouteService</a></li>
+                <li><a href="http://alborz.geog.uni-heidelberg.de/osmatrix/#timestamp/length_highway_major/6/9/8.489685058593748/49.09904896047899">OSMatrix</a></li>
+                <li><a href="http://lightmap.uni-hd.de/">Lightmap</a></li>
+                <li><a href="http://oliverroick.de/wheredoyougo/">Where do you go</a></li>
+                <li><a href="http://lab.oliverroick.de/umbrella/">Do I need an umbrella?</a></li>
+            </ul>
+        </article>
+    </section>

@@ -3,6 +3,8 @@ layout: post
 title:  "Deflating Polygons in Leaflet"
 date:   2015-04-22 10:00:00
 category: "code"
+highlight_code: true
+body_id: blog
 ---
 
 A common problem with dynamic web maps is the way polygons and lines are displayed in lower zoom levels. At some point, these geometries become too small to be noticeable on the map. A straight forward solution is to replace the polygon or line with a marker at the feature's centroid position.
@@ -13,13 +15,13 @@ The new Leaflet plugin [Leaflet.Deflate](https://github.com/oliverroick/Leaflet.
 
 ![Leaflet Deflate example](/build/img/Leaflet.Deflate.gif)
 
-#### The basics
+## The basics
 
 The (slighlty) tricky part is to determine when a feature actually is too small, as it depends on both the geographical size of the feature and the scale of the map. A scale-independent unit, which also happens to be the universal unit on computer screens, is the pixel. Hence, calculating the pixel size of the polygon on the screen and switching between marker and polygon display when the pixel size falls below a certain threshold is the approach that was implemented in the plugin.
 
 The good thing is, [Leaflet](http://leafletjs.com/) already provides us with all the basic functionality necessary to implement this approach.
 
-#### Identifying the threshold zoom level
+## Identifying the threshold zoom level
 
 The following snippet demonstrates how we determine the polygon screen size.
 
@@ -44,7 +46,7 @@ Here's how it works:
 4. Finally, all we need is to compare the dimensions against a pre-set threshold value (the `minSize` option). For simplicity, the function just checks if both `width` and `hight` exceed the threshold value.
 5. The function returns `true` if one of the values is lower than the threshold.
 
-#### Determining the minimum zoom level for a feature
+## Determining the minimum zoom level for a feature
 
 Now we can determine the threshold zoom level for each feature when the display should swap between a marker and its actual geometry. We determine that threshold as soon as the feature is added to the map so we don't have to do any calculations every time the map is zoomed.
 
@@ -79,7 +81,7 @@ Here's how it works:
 2. Check if the feature should be displayed as a marker at the current zoom level; using the method discussed previously.
 3. Depending on that information, we have to increase or decrease the zoom level until `isCollapsed` changes its status to determine the threshold.
 
-#### Adding the feature to the map
+## Adding the feature to the map
 
 When a new feature is added to the map, we can now pre-calculate the zoom threshold and the replacement marker. We register an event handler for the `layeradd` event that is called every time a feature is added to the map.
 
@@ -103,7 +105,7 @@ map.on('layeradd', function(event) {
 });
 {% endhighlight %}
 
-#### Replacing markers after zooming the map
+## Replacing markers after zooming the map
 
 Whenever the user zooms the map, we just need to compare the map's current zoom with the pre-calculated threshold of each feature. We do that in a handler function we registered on Leaflet's `zoomend` event.
 

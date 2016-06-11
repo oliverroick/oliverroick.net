@@ -1,11 +1,11 @@
 ---
-layout: sub
+layout: blog
 ---
-		<section class="content">
-			<article class="container">
-				<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="published">{{ page.date | date_to_long_string }}</time>
-				<h3>{{ page.title }}</h3>
+        <section>
+            <article>
+                <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="published">{{ page.date | date_to_long_string }}</time>
+                <h1>{{ page.title }}</h1>
 
-				{{ content | replace: '=====', '' }}
-			</article>
-		</section>
+                {{ content | replace: '=====', '' }}
+            </article>
+        </section>
