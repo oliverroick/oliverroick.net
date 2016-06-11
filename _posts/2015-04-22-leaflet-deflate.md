@@ -13,7 +13,7 @@ The new Leaflet plugin [Leaflet.Deflate](https://github.com/oliverroick/Leaflet.
 
 =====
 
-![Leaflet Deflate example](/build/img/Leaflet.Deflate.gif)
+![Leaflet Deflate example](/img/Leaflet.Deflate.gif)
 
 ## The basics
 
