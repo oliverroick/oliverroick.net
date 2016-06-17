@@ -1,6 +1,6 @@
 name: Oliver Roick
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 permalink: /:categories/:year/:title.html
 exclude: ['Gruntfile.js', 'package.json', 'node_modules']
 excerpt_separator: "====="
