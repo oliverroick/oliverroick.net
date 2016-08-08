@@ -38,6 +38,14 @@ header a {
         color: #446CB3;
     }
 
+    header a.social {
+        float: right;
+        margin-left: 0;
+        margin-top: 2px;
+        letter-spacing: 2px;
+        font-size: 14px;
+    }
+
 @media (min-width: 768px) {
     header,
     section,
