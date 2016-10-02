@@ -4,6 +4,10 @@ title: page.title
 ---
 	<header>
         <a href="/">Oliver Roick</a>
+
+        <a class="social" href="https://twitter.com/oliverroick">Twitter</a>
+        <a class="social" href="https://github.com/oliverroick">Github</a>
+
         {% if page.category == 'code' %}
         <span>Code</span>
         {% elsif page.category == 'thoughts' %}
@@ -15,9 +19,6 @@ title: page.title
         {% else %}
         <span>Recently</span>
         {% endif %}
-
-        <a class="social" href="https://twitter.com/oliverroick">Twitter</a>
-        <a class="social" href="https://github.com/oliverroick">Github</a>
     </header>
 
 	{{ content }}
