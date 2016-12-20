@@ -1,3 +1,7 @@
+## On software architecture
+
+- [You (probably) don't need a JavaScript framework](https://slack-files.com/T03JT4FC2-F151AAF7A-13fe6f98da)
+
 ## On software development
 
 - Tom Preston-Werner: [Readme Driven Development](http://tom.preston-werner.com/2010/08/23/readme-driven-development.html)
