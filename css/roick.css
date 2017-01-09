@@ -146,7 +146,8 @@ code {
     font-size: 14px;
 }
 
-p > code {
+p > code,
+li > code {
     background-color: #dbe3eb;
     padding-left: 3px;
     padding-right: 3px;
