@@ -6,6 +6,7 @@
 
 - Tom Preston-Werner: [Readme Driven Development](http://tom.preston-werner.com/2010/08/23/readme-driven-development.html)
 - Harry Roberts: [We Need to Talk About Technical Debt](https://24ways.org/2016/we-need-to-talk-about-technical-debt/)
+- Glen D Sanford: [On Code Review](http://glen.nu/ramblings/oncodereview.php)
 
 ## On Writing
 
