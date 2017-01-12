@@ -74,6 +74,14 @@ footer {
     clear: both;
 }
 
+    footer p.social {
+        color: #cf000f;
+    }
+
+    footer p.social a {
+        text-transform: uppercase;
+    }
+
 /* ELEMENTS */
 
 h1 {

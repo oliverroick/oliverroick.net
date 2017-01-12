@@ -11,6 +11,12 @@
     {{ content }}
 
     <footer>
+        {% if page.body_id != "home" %}
+        <p class="social" >
+            <a href="https://twitter.com/oliverroick">Twitter</a> |
+            <a href="https://github.com/oliverroick">Github</a>
+        </p>
+        {% endif %}
         <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a> 2011-2017 Oliver Roick.</p>
     </footer>
 
