@@ -2,12 +2,14 @@
 
 - [You (probably) don't need a JavaScript framework](https://slack-files.com/T03JT4FC2-F151AAF7A-13fe6f98da)
 
-## On software development
+## On software development (mostly the management parts)
 
 - Tom Preston-Werner: [Readme Driven Development](http://tom.preston-werner.com/2010/08/23/readme-driven-development.html)
 - Tomas Rybing: [Priority Pyramid](https://theagileist.wordpress.com/2014/12/08/priority-pyramid/)
 - Harry Roberts: [We Need to Talk About Technical Debt](https://24ways.org/2016/we-need-to-talk-about-technical-debt/)
 - Glen D Sanford: [On Code Review](http://glen.nu/ramblings/oncodereview.php)
+- Joel Spolsky: [Evidence Based Scheduling](https://www.joelonsoftware.com/2007/10/26/evidence-based-scheduling/)
+- Tom Bartel: [Recalibrate Your Productivity Sensors](https://www.tombartel.de/blog/recalibrate-your-productivity-sensors/)
 
 ## On Writing
 
