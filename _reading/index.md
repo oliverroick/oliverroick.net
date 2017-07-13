@@ -5,6 +5,7 @@
 ## On software development (mostly the management parts)
 
 - Tom Preston-Werner: [Readme Driven Development](http://tom.preston-werner.com/2010/08/23/readme-driven-development.html)
+- [Making Engineering Team Communication Clearer, Faster, Better](http://firstround.com/review/making-engineering-team-communication-clearer-faster-better/)
 - Tomas Rybing: [Priority Pyramid](https://theagileist.wordpress.com/2014/12/08/priority-pyramid/)
 - Harry Roberts: [We Need to Talk About Technical Debt](https://24ways.org/2016/we-need-to-talk-about-technical-debt/)
 - Glen D Sanford: [On Code Review](http://glen.nu/ramblings/oncodereview.php)
