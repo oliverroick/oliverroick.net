@@ -12,6 +12,10 @@
 - Joel Spolsky: [Evidence Based Scheduling](https://www.joelonsoftware.com/2007/10/26/evidence-based-scheduling/)
 - Tom Bartel: [Recalibrate Your Productivity Sensors](https://www.tombartel.de/blog/recalibrate-your-productivity-sensors/)
 
+## Diversity
+
+- [http://firstround.com/review/atlassian-boosted-its-female-technical-hires-by-80-percent-heres-how/](http://firstround.com/review/atlassian-boosted-its-female-technical-hires-by-80-percent-heres-how/)
+
 ## On Writing
 
 - Katy DeCorah: [Writing for everyone](http://katydecorah.com/writing-for-everyone/#0)
