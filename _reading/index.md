@@ -14,7 +14,7 @@
 
 ## Diversity
 
-- [http://firstround.com/review/atlassian-boosted-its-female-technical-hires-by-80-percent-heres-how/](http://firstround.com/review/atlassian-boosted-its-female-technical-hires-by-80-percent-heres-how/)
+- [Atlassian Boosted Its Female Technical Hires By 80% — Here’s How](http://firstround.com/review/atlassian-boosted-its-female-technical-hires-by-80-percent-heres-how/)
 
 ## On Writing
 
