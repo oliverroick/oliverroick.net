@@ -1,3 +1,7 @@
+## On product management
+
+- Max Bennett: [Great Product Managers are “Outcome Thinkers”](https://productcoalition.com/great-product-managers-are-outcome-thinkers-66fa5d69cfac)
+
 ## On software architecture
 
 - [You (probably) don't need a JavaScript framework](https://slack-files.com/T03JT4FC2-F151AAF7A-13fe6f98da)
