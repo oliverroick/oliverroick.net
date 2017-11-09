@@ -46,12 +46,6 @@ header a:first-child {
         color: #446CB3;
     }
 
-    header a.social {
-        margin-left: 15px;
-        padding: 0;
-        letter-spacing: 2px;
-    }
-
 @media (min-width: 768px) {
     header,
     section,
@@ -73,14 +67,6 @@ footer {
     text-align: center;
     clear: both;
 }
-
-    footer p.social {
-        color: #cf000f;
-    }
-
-    footer p.social a {
-        text-transform: uppercase;
-    }
 
 /* ELEMENTS */
 
