@@ -15,6 +15,8 @@
 - Glen D Sanford: [On Code Review](http://glen.nu/ramblings/oncodereview.php)
 - Joel Spolsky: [Evidence Based Scheduling](https://www.joelonsoftware.com/2007/10/26/evidence-based-scheduling/)
 - Tom Bartel: [Recalibrate Your Productivity Sensors](https://www.tombartel.de/blog/recalibrate-your-productivity-sensors/)
+- [What happens when the pager goes off?
+](https://www.increment.com/on-call/when-the-pager-goes-off/)
 
 ## Diversity
 
