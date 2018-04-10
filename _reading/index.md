@@ -17,6 +17,7 @@
 - Tom Bartel: [Recalibrate Your Productivity Sensors](https://www.tombartel.de/blog/recalibrate-your-productivity-sensors/)
 - [What happens when the pager goes off?
 ](https://www.increment.com/on-call/when-the-pager-goes-off/)
+- Claire Lew: [Someone’s underperforming. Now what?](https://m.signalvnoise.com/someones-underperforming-now-what-bac8861e347e)
 
 ## Diversity
 
