@@ -32,3 +32,4 @@
 - Jason Fried: [How we structure our work and teams at Basecamp](https://m.signalvnoise.com/how-we-set-up-our-work-cbce3d3d9cae#.nny1hyldm)
 - Jason Fried: [Is group chat making you sweat?](https://m.signalvnoise.com/is-group-chat-making-you-sweat-744659addf7d#.7298b39gu)
 - Oliver Burkeman: [Why time management is ruining our lives](https://www.theguardian.com/technology/2016/dec/22/why-time-management-is-ruining-our-lives)
+- Dan Kim: [Reflecting on five years at Basecamp](https://m.signalvnoise.com/reflecting-on-five-years-at-basecamp-940830386da9)
