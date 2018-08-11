@@ -147,3 +147,45 @@ li > code {
     padding-right: 3px;
     border-radius: 3px;
 }
+
+table.db {
+    border-spacing: 0;
+    font-family: "Monaco", Consolas, "Lucida Console", monospace;
+    font-size: 14px;
+    margin-bottom: 1em;
+}
+
+table.db caption {
+    text-align: left;
+}
+
+table.db th, table.db td {
+    text-align: left;
+    padding: 7px;
+}
+
+table.db th {
+    border-bottom: 2px solid #757B7F;
+    border-left: 1px solid #757B7F;
+}
+
+table.db th:first-child {
+    border-left: none;
+}
+
+table.db td {
+    border-top: 1px solid #757B7F;
+    border-left: 1px solid #757B7F;
+}
+
+table.db td:first-child {
+    border-left: none;
+}
+
+table.db .pk {
+    background-color: #BFC7CF;
+}
+
+table.db .sk {
+    background-color: #dbe3eb;
+}
