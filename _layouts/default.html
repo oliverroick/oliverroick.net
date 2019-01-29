@@ -6,12 +6,13 @@
     <meta name="description" content="Personal website of Oliver Roick, Developer at Cadasta Foundation">
     <meta name="author" content="Oliver Roick">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{{ site.url }}/atom.xml" rel="alternate" type="application/atom+xml">
 </head>
 <body{% if page.body_id %} id="{{ page.body_id }}"{% endif %}>
     {{ content }}
 
     <footer>
-        <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a> 2011-2019 Oliver Roick.</p>
+        <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a> 2011-2019 Oliver Roick. | <a href="/atom.xml" rel="alternate" type="application/atom+xml">Atom</a></p></p>
     </footer>
 
     <link rel="stylesheet" href="/css/roick.css">
