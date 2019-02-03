@@ -9,14 +9,31 @@
     <link href="{{ site.url }}/atom.xml" rel="alternate" type="application/atom+xml">
 </head>
 <body{% if page.body_id %} id="{{ page.body_id }}"{% endif %}>
+    <header class="grid">
+        <h1><a href="/">Oliver Roick</a></h1>
+        <nav>
+            <ul>
+               <li><a href="/recently/">Writing</a></li>
+               <li><a href="/projects">Projects</a></li>
+               <li><a href="/about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
     {{ content }}
 
     <footer>
-        <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a> 2011-2019 Oliver Roick. | <a href="/atom.xml" rel="alternate" type="application/atom+xml">Atom</a></p></p>
+        <div class="grid col4">
+            <div>
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a> 2011-2019 Oliver Roick.
+            </div>
+            <div>
+                <a href="/atom.xml" rel="alternate" type="application/atom+xml">Atom</a>
+            </div>
+        </div>
     </footer>
 
     <link rel="stylesheet" href="/css/roick.css">
-    {% if page.highlight_code %}<link rel="stylesheet" href="/css/syntax.css">{% endif %}
     {% if page.body_id == 'home' %}
         {% include home.html %}
     {% endif %}
