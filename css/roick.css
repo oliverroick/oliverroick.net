@@ -13,6 +13,7 @@
     --border-size: calc(var(--base-size) / 4);
     --font-s: calc(var(--base-size) * 0.75);
     --font-l: calc(var(--base-size) * 2);
+    --gap-xxs: calc(var(--base-size) / 2);
     --gap-s: calc(var(--base-size) * 2);
     --gap-m: calc(var(--base-size) * 4);
     --gap-l: calc(var(--base-size) * 6);
@@ -61,6 +62,50 @@ pre > code {
 
 figure {
     margin: 0;
+}
+
+table {
+    border-spacing: 0;
+    margin-bottom: var(--gap-s);
+}
+
+caption {
+    text-align: left;
+    margin-bottom: var(--border-size);
+}
+
+th {
+    border-bottom: 2px solid var(--grey);
+    border-left: 1px solid var(--grey);
+}
+
+th:first-child {
+    border-left: none;
+}
+
+td {
+    border-top: 1px solid var(--grey);
+    border-left: 1px solid var(--grey);
+}
+
+td:first-child {
+    border-left: none;
+}
+
+th, td {
+    padding: var(--gap-xxs);
+}
+
+table.db {
+    font-family: monospace;
+}
+
+table.db .pk {
+    background-color: #BAB8B4;
+}
+
+table.db .sk {
+    background-color: #E2E0DC;
 }
 
 header {
