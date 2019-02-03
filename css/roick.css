@@ -180,19 +180,19 @@ section {
     padding-right: var(--gap-s);
 }
 
-article > h1 {
+section h1 {
     text-align: center;
     font-size: var(--font-l);
     margin-bottom: 0.5em;
     font-family: var(--serif);
 }
 
-article > h1 > a {
+section h1 > a {
     color: var(--dark);
     text-decoration: none;
 }
 
-article > h1 > a:hover {
+section h1 > a:hover {
     color: var(--blue);
 }
 
@@ -226,9 +226,26 @@ article > time {
         grid-gap: var(--grid-gap);
         grid-template-columns: repeat(6, 1fr);
     }
+
+    ul.projects {
+        display: grid;
+        grid-gap: var(--grid-gap);
+        grid-template-columns: repeat(3, 1fr);
+        font-size: var(--font-s);
+    }
+
+    ul.projects li {
+        border-top: 2px solid var(--grey);
+    }
+
+    ul.projects > li > h2 {
+        font-weight: normal;
+        font-size: var(--font-s);
+    }
 }
 
-ul.archive {
+ul.archive,
+ul.projects {
     list-style: none;
     padding: 0;
 }
@@ -245,6 +262,27 @@ ul.archive > li > time {
 ul.archive > li > a {
     grid-column: 3 / span 4;
     font-size: var(--font-s);
+}
+
+ul.projects {
+    font-size: var(--font-s);
+}
+
+ul.projects > li > h2 > a {
+    text-decoration: none;
+}
+
+ul.projects > li > h2 > a:hover {
+    text-decoration: underline;
+}
+
+ul.projects > li > .description > p:first-child {
+    margin-top: 0;
+}
+
+p.tech {
+    font-size: var(--font-s);
+    font-family: monospace;
 }
 
 .highlight  { background: #ffffff; }
