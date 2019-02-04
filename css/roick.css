@@ -242,6 +242,11 @@ article > time {
         font-weight: normal;
         font-size: var(--font-s);
     }
+
+    ul.projects > li > h2:before {
+        content: "●\A";
+        white-space: pre;
+    }
 }
 
 ul.archive,
