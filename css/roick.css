@@ -54,6 +54,10 @@ a:hover {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+}
+
 pre {
     border-left: var(--border-size) solid var(--vanilla);
     padding-left: var(--gap-s);
@@ -74,6 +78,10 @@ pre > code {
 
 figure {
     margin: 0;
+}
+
+.highlight {
+    overflow-x: auto;
 }
 
 table {
@@ -305,7 +313,10 @@ p.tech {
     font-family: var(--mono);
 }
 
-.highlight  { background: #ffffff; }
+.highlight  {
+    background: #ffffff;
+    overflow-x: auto;
+}
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
 .highlight .k { font-weight: bold } /* Keyword */
