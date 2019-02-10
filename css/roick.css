@@ -182,6 +182,12 @@ footer {
     border-top: var(--border-size) solid var(--vanilla);
 }
 
+
+footer h1 {
+    font-size: var(--font-s);
+    margin-top: 0;
+}
+
 footer a {
     color: var(--yellow);
     text-decoration: none;
@@ -254,10 +260,6 @@ article > time {
         font-size: var(--font-s);
     }
 
-    /* ul.projects li {
-        border-top: 2px solid var(--grey);
-    } */
-
     ul.projects > li > h2 {
         font-size: var(--font-s);
     }
@@ -275,6 +277,22 @@ article > time {
     
     ul.archive > li > a {
         grid-column: 3 / span 4;
+    }
+
+    footer #left {
+        grid-column: 1 / span 3;
+    }
+
+    footer #right {
+        grid-column: 5 / span 2;
+    }
+
+    footer h1 {
+        margin: 0;
+    }
+
+    footer p:first-child {
+        margin-top: 0;
     }
 }
 
