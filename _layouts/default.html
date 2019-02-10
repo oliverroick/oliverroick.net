@@ -9,20 +9,34 @@
     <link href="{{ site.url }}/atom.xml" rel="alternate" type="application/atom+xml">
 </head>
 <body{% if page.body_id %} id="{{ page.body_id }}"{% endif %}>
+    <header class="grid">
+        <h1><a href="/">Oliver Roick</a></h1>
+        <nav>
+            <ul>
+               <li id="li_writing"><a href="/writing.html">Writing</a></li>
+               <li id="li_work"><a href="/work.html">Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
     {{ content }}
 
     <footer>
-        <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a> 2011-2019 Oliver Roick. | <a href="/atom.xml" rel="alternate" type="application/atom+xml">Atom</a></p></p>
+        <div class="grid">
+
+            <h1>About</h1>
+            <div id="left">
+                <p>I build software that puts people on the map. I work at <a href="http://cadasta.org/">Cadasta Foundation</a>. Most of my work is available on <a href="https://github.com/oliverroick">GitHub</a>.</p>
+                <p>Subscribe to this blog with <a href="/atom.xml" rel="alternate" type="application/atom+xml">Atom</a>.</p>
+            </div>
+            <div id="right">
+                <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a> 2011-2019 Oliver Roick. <a href="impressum.html">Impressum</a>.</p>
+                
+            </div>
+        </div>
     </footer>
 
     <link rel="stylesheet" href="/css/roick.css">
-    {% if page.highlight_code %}<link rel="stylesheet" href="/css/syntax.css">{% endif %}
-    {% if page.body_id == 'home' %}
-        {% include home.html %}
-    {% endif %}
-    {% if page.body_id == 'blog' %}
-        {% include blog.html %}
-    {% endif %}
 </body>
 
 </html>
