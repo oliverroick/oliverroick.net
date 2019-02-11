@@ -10,7 +10,7 @@ A few years ago, I almost laughed at a friend who offered an RSS feed on their w
 
 How do I read these days?
 
-I subscribed to a newspaper – a printed one – to stay up-to-date with current topics. The friendly neighbourhood mailman delivers it to my postbox once a week. It’s like getting a weekly summary of all the topics that were important; a static list that doesn’t grow, no-one is going to shout “READ THIS TOO” in my face. 
+I subscribed to a newspaper – a printed one – to stay up-to-date with current topics. The friendly neighbourhood mailman delivers it to my postbox once a week. I like getting a weekly summary of all the topics that were important; a static list that doesn’t grow, no-one is going to shout “READ THIS TOO” in my face. 
 
 On the Web, I want to read the same way; so I’m back to good old feeds. They come with more signal and less noise. That’s why I’m now offering an [Atom Feed](/atom.xml) here too. I never particularly liked feed-reader applications, though. It’s just another thing on my computer that interrupts me when I don’t want to be interrupted. And I don't need an app to follow the five to ten sources I want to read regularly.
 
