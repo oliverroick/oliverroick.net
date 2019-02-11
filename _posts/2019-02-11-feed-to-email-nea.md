@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "Feed to email: Introducing Nea"
+date:   2019-02-11 18:30:00+02:00
+category: "code"
+body_id: blog
+---
+
+A few years ago, I almost laughed at a friend who offered an RSS feed on their website. Back then, I got most of my reading from Twitter. It was a time when people mostly tweeted about the things they built or the things they wrote. These times are gone, unfortunately. 
+
+How do I read these days?
+
+I subscribed to a newspaper – a printed one – to stay up-to-date with current topics. The friendly neighbourhood mailman delivers it to my postbox once a week. It’s like getting a weekly summary of all the topics that were important; a static list that doesn’t grow, no-one is going to shout “READ THIS TOO” in my face. 
+
+On the Web, I want to read the same way; so I’m back to good old feeds. They come with more signal and less noise. That’s why I’m now offering an [Atom Feed](/atom.xml) here too. I never particularly liked feed-reader applications, though. It’s just another thing on my computer that interrupts me when I don’t want to be interrupted. And I don't need an app to follow the five to ten sources I want to read regularly.
+
+On the other hand, unlike most people I know, I’m good with e-mail. Over the years I developed techniques to stay on top of my inbox. Getting new reads delivered to my inbox once a week would be perfect – just how I receive my paper once a week. 
+
+Over the last year or so, I built [Nea](https://github.com/oliverroick/nea). Every Monday at 8am, it checks all the blogs I follow, extracts previous week’s posts and sends me a neat list of links to my email. Technically speaking, it’s a series of [Lambda functions](https://aws.amazon.com/de/lambda/) that parse a list of feeds and then composes and sends an email. The Lambdas are coordinated using a [Step Function](https://aws.amazon.com/step-functions/), which is triggered every Monday by a [scheduled Cloudwatch event](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html). Because everything deploys automatically, curating the list of blogs I follow is as simple as editing the list using Github’s online editor. 
+
+Why go through all this effort instead of just checking your feed reader only once a week you say? I hear you, but most of the time I’m just not that disciplined. Also, it’s a lot of fun to build something just for yourself and precisely the way you want it to function.
