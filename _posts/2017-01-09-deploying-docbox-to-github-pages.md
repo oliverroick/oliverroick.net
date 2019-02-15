@@ -31,6 +31,6 @@ Two things to keep in mind:
 1. The script only works when you use [Github with SSH](https://help.github.com/articles/which-remote-url-should-i-use/#cloning-with-ssh-urls).
 2. The script expects to find the build inside the directory `docs-build` because it's cleaner to build in a fresh directory. You will need to adapt the [build command](https://github.com/mapbox/docbox/blob/master/package.json#L11) accordingly so it builds into `docs-build`.
 
-We use it to deploy both the [API docs](https://cadasta.github.io/api-docs/) and docs for [django-skivvy](https://cadasta.github.io/django-skivvy/#django-skivvy) at Cadasta.
+We use it to deploy both the [API docs](https://cadasta.github.io/api-docs/) and docs for [django-skivvy](https://oliverroick.de/django-skivvy/#django-skivvy) at Cadasta.
 
 You could even automate deployment. For example, you can configure your CI environment to deploy the documentation whenever a new tag is built successfully.
