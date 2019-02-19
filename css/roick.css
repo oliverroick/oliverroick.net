@@ -135,9 +135,14 @@ header {
 header > h1 {
   text-transform: uppercase;
   font-size: var(--base-size);
-  letter-spacing: 3px;
-  margin: 0;
-  grid-column: 1 / span 1;
+  letter-spacing: 1px;
+  margin: 0 0 var(--gap-xxs) 0;
+  grid-column: 1 / span 2;
+}
+
+body#home header h1 a {
+  text-decoration: none;
+  border-bottom: var(--border-size) solid var(--vanilla);
 }
 
 header > h1 > a:visited {
@@ -146,29 +151,28 @@ header > h1 > a:visited {
 
 header > nav {
   text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: var(--font-s);
-  border-bottom: var(--border-size) solid var(--vanilla);
-  grid-column: 2 / span 5;
+  font-size: var(--base-size);
+  font-weight: bold;
+  font-style: italic;
+  grid-column: 3 / span 4;
 }
 
 header > nav > ul {
-  margin: 28px 0 0 0;
+  margin: 0 0 0 0;
   padding: 0;
   list-style: none;
 }
 
-header > nav > ul > li {
-  display: inline;
-  margin-right: var(--base-size);
+header > nav > ul > li::before {
+  content: "//";
+  padding-right: var(--gap-xxs);
 }
 
-body#writing header > nav > ul > li#li_writing:before,
-body#blog header > nav > ul > li#li_writing:before,
-body#work header > nav > ul > li#li_work:before {
-  content: "●";
-  color: var(--blue);
-  padding-right: 3px;
+body#writing header > nav > ul > li#li_writing > a,
+body#blog header > nav > ul > li#li_writing > a,
+body#work header > nav > ul > li#li_work > a {
+  border-bottom: var(--border-size) solid var(--vanilla);
+  text-decoration: none;
 }
 
 header a {
@@ -327,6 +331,19 @@ table.db .sk {
 
   header > h1 {
     text-align: right;
+    font-size: var(--font-m);
+  }
+
+  header > nav > ul > li {
+    display: inline;
+  }
+
+  header > nav > ul > li::before {
+    padding-left: var(--gap-xxs);
+  }
+  
+  header > nav > ul > li:first-child::before {
+    padding-left: 0;
   }
 
   footer #left {
