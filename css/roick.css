@@ -141,6 +141,7 @@ header > h1 {
 }
 
 body#home header h1 a {
+  color: var(--red);
   text-decoration: none;
   border-bottom: var(--border-size) solid var(--vanilla);
 }
