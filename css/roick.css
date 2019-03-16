@@ -140,14 +140,14 @@ header > h1 {
   grid-column: 1 / span 2;
 }
 
-body#home header h1 a {
-  color: var(--red);
-  text-decoration: none;
-  border-bottom: var(--border-size) solid var(--vanilla);
-}
-
+header > h1 > a,
 header > h1 > a:visited {
   color: var(--red);
+}
+
+body#home header h1 a {
+  text-decoration: none;
+  border-bottom: var(--border-size) solid var(--vanilla);
 }
 
 header > nav {
