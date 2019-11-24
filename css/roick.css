@@ -138,7 +138,10 @@ hr:after {
 header {
   font-weight: 500;
   font-family: var(--sans-serif);
+  font-size: var(--font-s);
+  text-transform: uppercase;
   max-width: var(--main-width);
+  letter-spacing: 1px;
   margin: auto auto var(--gap-l) auto;
   padding-left: var(--gap-s);
   padding-right: var(--gap-s);
@@ -146,16 +149,22 @@ header {
 }
 
 header > h1 {
-  text-transform: uppercase;
-  font-size: var(--base-size);
-  letter-spacing: 1px;
-  margin: 0 0 var(--gap-xxs) 0;
-  grid-column: 1 / span 2;
+  font-size: var(--font-s);
 }
 
-header > h1 > a,
-header > h1 > a:visited {
-  color: var(--red);
+header a,
+header a:visited {
+  color: var(--dark);
+  text-decoration: none;
+}
+
+header nav a,
+header nav a:visited {
+  color: var(--blue);
+}
+
+header a:hover {
+  border-bottom: var(--border-size) solid var(--yellow);
 }
 
 body#home header h1 a {
@@ -163,12 +172,14 @@ body#home header h1 a {
   border-bottom: var(--border-size) solid var(--vanilla);
 }
 
+body#writing header li#li_writing > a,
+body#blog header li#li_writing > a,
+body#work header li#li_work > a {
+  border-bottom: var(--border-size) solid var(--vanilla);
+}
+
 header > nav {
-  text-transform: uppercase;
-  font-size: var(--base-size);
   font-weight: bold;
-  font-style: italic;
-  grid-column: 3 / span 4;
 }
 
 header > nav > ul {
@@ -178,27 +189,12 @@ header > nav > ul {
 }
 
 header > nav > ul > li::before {
-  content: "//";
+  content: "▪";
   padding-right: var(--gap-xxs);
 }
 
-body#writing header > nav > ul > li#li_writing > a,
-body#blog header > nav > ul > li#li_writing > a,
-body#work header > nav > ul > li#li_work > a {
-  border-bottom: var(--border-size) solid var(--vanilla);
-  text-decoration: none;
-}
-
-header a {
-  text-decoration: none;
-}
-
-header a:hover {
-  text-decoration: underline;
-}
-
 /*
- * HEADER
+ * FOOTER
  */
 
 footer {
@@ -344,21 +340,15 @@ table.db .sk {
     font-size: var(--font-l);
   }
 
-  header > h1 {
-    text-align: right;
-    font-size: var(--font-m);
-  }
-
+  header > h1,
+  header > nav,
+  header > nav > ul,
   header > nav > ul > li {
     display: inline;
   }
 
   header > nav > ul > li::before {
     padding-left: var(--gap-xxs);
-  }
-  
-  header > nav > ul > li:first-child::before {
-    padding-left: 0;
   }
 
   footer #left {
