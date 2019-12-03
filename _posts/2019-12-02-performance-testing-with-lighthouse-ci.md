@@ -64,18 +64,18 @@ The config is a JSON document, which specifies what URLs to test, the test crite
       "http://staging.somesite.com/other/" 
     ]
   }, 
-    "assert": {
-      "preset": "lighthouse:recommended", 
-      "assertions": {
-        "works-offline": "off", 
-        "service-worker": "off", 
-        "offline-start-url": "off" 
-      } 
+  "assert": {
+    "preset": "lighthouse:recommended", 
+    "assertions": {
+      "works-offline": "off", 
+      "service-worker": "off", 
+      "offline-start-url": "off" 
     } 
   },
   "ci": {
     "upload": {
       "target": "temporary-public-storage" 
+    }
   }
 }
 ```
