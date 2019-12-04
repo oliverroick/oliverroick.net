@@ -203,6 +203,13 @@ header nav a:visited {
   color: var(--blue);
 }
 
+body#writing header li#li_writing > a,
+body#blog header li#li_writing > a,
+body#work header li#li_work > a,
+body#about header li#li_about > a {
+  border-bottom: var(--border-size) solid var(--vanilla);
+}
+
 body#home header span#name {
   border-bottom: var(--border-size) solid var(--vanilla);
 }
@@ -341,6 +348,21 @@ article .when {
 
 .archive > li {
   margin-bottom: var(--grid-gap);
+}
+
+.publications ul {
+  list-style: none;
+  padding: 0;
+}
+
+.publications ul li {
+  text-indent: calc(var(--gap-s) * -1);
+  padding-left: var(--gap-s);
+  margin-bottom: 1rem;
+}
+
+.authors {
+  font-variant: small-caps;
 }
 
 .archive > li > h2 {
