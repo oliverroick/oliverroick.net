@@ -250,7 +250,8 @@ section h1 > a:hover {
   color: var(--blue);
 }
 
-time {
+time,
+span.author {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: var(--font-s);
@@ -374,13 +375,15 @@ table.db .sk {
     font-size: var(--font-s);
   }
 
-  ul.archive > li > time {
+  ul.archive > li > time,
+  ul.archive > li > span.author {
     text-align: right;
     grid-column: 1 / span 2;
     padding-top: 5px;
   }
 
-  ul.archive > li > a {
+  ul.archive > li > a,
+  ul.archive > li > span.title {
     grid-column: 3 / span 4;
   }
 }
