@@ -3,11 +3,17 @@
 <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
     <meta name="description" content="Words from Oliver Roick">
+    <meta content="oliver.roick@gmail.com" property="og:email">
+    <meta content="oliverroick.de" property="og:site_name">
+    <meta content="blog" property="og:type">
     <meta name="author" content="Oliver Roick">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/roick.css">
     <link href="{{ site.url }}/atom.xml" rel="alternate" type="application/atom+xml">
+    <link href="{{ site.url }}{{ page.url }}" rel="canonical">
 </head>
 <body{% if page.body_id %} id="{{ page.body_id }}"{% endif %}>
     <header>
