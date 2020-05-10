@@ -4,6 +4,7 @@ title:  "Releasing a Library to NPM"
 date:   2019-02-20 18:30:00+02:00
 category: "code"
 body_id: blog
+description: Automating releases to NPM
 ---
 
 Releasing software packages to a registry makes me nervous. My ideal workflow for releasing a library to [npm](https://www.npmjs.com/) involves several steps:

@@ -4,6 +4,7 @@ title:  "Variations of Open Source"
 date:   2019-03-30 08:30:00+02:00
 category: "thoughts"
 body_id: blog
+description: Thinking about different types of open source
 ---
 
 There are two types of open-source: Problem-driven open-source projects and business-driven projects. 

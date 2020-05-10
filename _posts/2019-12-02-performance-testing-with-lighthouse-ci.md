@@ -4,6 +4,7 @@ title:  "Performance Testing with Lighthouse CI"
 date:   2019-12-02 21:00:00+00:00
 category: "code"
 body_id: blog
+description: Automating website-performance testing with LighthouseCI
 ---
 
 Today's websites are slow. They are dynamic and complex applications. Pages are rendered on the fly in the browser using content downloaded from APIs. They are implemented using JavaScript and CSS frameworks, and they rely on external dependencies, such as fonts, trackers, and other crap we put on websites today. 

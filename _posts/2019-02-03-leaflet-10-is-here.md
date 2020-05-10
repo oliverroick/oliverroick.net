@@ -4,6 +4,7 @@ title:  "Leaflet.Deflate 1.0 is here"
 date:   2019-02-03 15:00:00+02:00
 category: "code"
 body_id: blog
+description: Announcing the release Leaflet.Deflate 1.0
 ---
 
 The first iteration of Leaflet.Deflate was the result of some experiments we did during my time at [UCL ExCiteS](https://www.ucl.ac.uk/excites) when we tried to improve the legibility of the web maps on the Community Maps platform. While this first version and its following iterations worked well for many use cases, it never integrated well with Leaflet’s core concepts and thus other Leaflet plugins – especially since Leaflet 1.0 was released. For a good two years now, I periodically worked on improving Leaflet.Deflate, making it more stable, performant and – above all – integrate better with Leaflet and Leaflet plugins. So without further ado: [Leaflet.Deflate 1.0](https://github.com/oliverroick/Leaflet.Deflate) is here. 

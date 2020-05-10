@@ -5,7 +5,7 @@
     <title>{{ page.title }} | Oliver Roick</title>
     <meta property="og:title" content="{{ page.title }}">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-    <meta name="description" content="Words from Oliver Roick">
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
     <meta content="oliver.roick@gmail.com" property="og:email">
     <meta content="oliverroick.de" property="og:site_name">
     <meta content="blog" property="og:type">

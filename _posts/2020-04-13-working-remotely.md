@@ -4,6 +4,7 @@ title:  "Working remotely"
 date:   2020-04-13 10:00:00+00:00
 category: "thoughts"
 body_id: blog
+description: Thoughts on how COVID-19 impacts businesses' and workers' perception of remote work. 
 ---
 
 Now there is no choice. Everybody is working remotely. A few weeks ago it was the dream of a few millennials – now it is the default. 

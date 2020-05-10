@@ -4,6 +4,7 @@ title:  "Retiring a project"
 date:   2019-11-20 20:30:00+00:00
 category: "thoughts"
 body_id: blog
+description: Nobody uses your project, you should retire it
 ---
 
 Open-source projects have a life-cycle. They are born because a problem needs to be solved. You start building an initial solution, improve it, fix bugs, and incorporate feedback. Some projects become successful. Their use case is broad enough to attract a large user base and a sufficient number of maintainers that keep the software going.

@@ -4,6 +4,7 @@ title:  "Leaflet.Deflate 1.2"
 date:   2020-01-19 20:00:00+00:00
 category: "code"
 body_id: blog
+description: Announcing the release Leaflet.Deflate 1.2
 ---
 
 It has been about a year since I released [Leaflet.Deflate 1.0](/code/2019/leaflet-10-is-here.html). Back then, I spent a considerable amount of time to whip the library into shape. 
