@@ -150,10 +150,12 @@ header {
 
 header > h1 {
   font-size: var(--font-s);
+  line-height: 2;
 }
 
 header a,
 header a:visited {
+  line-height: 2;
   color: var(--dark);
   text-decoration: none;
 }
