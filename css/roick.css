@@ -35,6 +35,11 @@ body {
   margin: 0;
 }
 
+body > * {
+  padding-left: var(--base-size);
+  padding-right: var(--base-size);
+}
+
 h1 {
   font-family: var(--sans-serif);
   text-transform: uppercase;
@@ -143,8 +148,6 @@ header {
   max-width: var(--main-width);
   letter-spacing: 1px;
   margin: auto auto var(--gap-l) auto;
-  padding-left: var(--gap-s);
-  padding-right: var(--gap-s);
   padding-top: var(--gap-s);
 }
 
@@ -205,7 +208,8 @@ footer {
   font-size: var(--font-s);
   font-family: var(--sans-serif);
   margin-top: var(--gap-l);
-  padding: var(--gap-m) var(--gap-s);
+  padding-top: var(--gap-m);
+  padding-bottom: var(--gap-m);
   line-height: 1.5;
   border-top: var(--border-size) solid var(--vanilla);
 }
@@ -233,8 +237,6 @@ section {
   margin: var(--gap-s);
   max-width: var(--main-width);
   margin: auto;
-  padding-left: var(--gap-s);
-  padding-right: var(--gap-s);
 }
 
 section h1 {
@@ -328,6 +330,13 @@ table.db .sk {
 /*
  * RESPONSIVENESS
  */
+
+@media (min-width: 450px) {
+  body > * {
+    padding-left: var(--gap-s);
+    padding-right: var(--gap-s);
+  }
+}
 
 @media (min-width: 968px) {
   .grid {
