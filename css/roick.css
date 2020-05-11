@@ -149,6 +149,7 @@ header {
   letter-spacing: 1px;
   margin: auto auto var(--gap-l) auto;
   padding-top: var(--gap-s);
+  text-align: right;
 }
 
 header > h1 {
@@ -191,11 +192,6 @@ header > nav > ul {
   margin: 0 0 0 0;
   padding: 0;
   list-style: none;
-}
-
-header > nav > ul > li::before {
-  content: "▪";
-  padding-right: var(--gap-xxs);
 }
 
 /*
@@ -352,6 +348,10 @@ table.db .sk {
     font-size: var(--font-l);
   }
 
+  header {
+    text-align: left;
+  }
+
   header > h1,
   header > nav,
   header > nav > ul,
@@ -360,6 +360,8 @@ table.db .sk {
   }
 
   header > nav > ul > li::before {
+    content: "▪";
+    padding-right: var(--gap-xxs);
     padding-left: var(--gap-xxs);
   }
 
