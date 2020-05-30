@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <title>{{ page.title }} | Oliver Roick</title>
     <meta property="og:title" content="{{ page.title }}">
-    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:url" content="{{ page.url }}">
     {% if page.description %}
     <meta name="description" content="{{ page.description }}">
     <meta name="twitter:description" content="{{ page.description }}">
-    <meta name="og:description" content="{{ page.description }}">
+    <meta property="og:description" content="{{ page.description }}">
     {% endif %}
     <meta content="oliver.roick@gmail.com" property="og:email">
     <meta content="oliverroick.de" property="og:site_name">
