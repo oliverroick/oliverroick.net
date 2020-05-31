@@ -11,6 +11,10 @@
     <meta name="twitter:description" content="{{ page.description }}">
     <meta property="og:description" content="{{ page.description }}">
     {% endif %}
+    {% if page.category %}
+    <meta property="og:image" content="{{ site.url }}/img/socialmedia/{{ page.category }}.png">
+    <meta name="twitter:card" content="summary_large_image">
+    {% endif %}
     <meta content="oliver.roick@gmail.com" property="og:email">
     <meta content="oliverroick.de" property="og:site_name">
     <meta content="blog" property="og:type">
