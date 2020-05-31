@@ -40,14 +40,9 @@ body > * {
   padding-right: var(--base-size);
 }
 
-h1 {
+h1, h2, h3 {
   font-family: var(--sans-serif);
   text-transform: uppercase;
-}
-
-h2,
-h3 {
-  font-family: var(--sans-serif);
 }
 
 p,
@@ -239,6 +234,22 @@ section h1 {
   text-align: center;
   margin-bottom: 0.5em;
   font-size: var(--font-m);
+}
+
+section h2 {
+  font-size: var(--font-m);
+  margin-bottom: var(--base-size);
+  margin-top: var(--gap-s);
+}
+
+section h3 {
+  font-size: var(--base-size);
+  margin-top: var(--base-size);
+  margin-bottom: var(--gap-xxs);
+}
+
+section h3 + p {
+  margin-top: var(--gap-xxs);
 }
 
 section h1 > a {
