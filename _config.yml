@@ -4,5 +4,3 @@ highlighter: rouge
 permalink: /:categories/:year/:title.html
 exclude: ['Gruntfile.js', 'package.json', 'node_modules']
 excerpt_separator: "====="
-collections:
-  - reading
