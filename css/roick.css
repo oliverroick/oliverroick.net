@@ -295,9 +295,11 @@ ul.projects {
 
 ul.projects > li > h2 {
   font-weight: normal;
+  font-size: var(--base-size);
   line-height: 1;
   border-bottom: 5px solid var(--vanilla); 
   display: inline-block;
+  text-transform: none;
 }
 
 ul.projects > li > h2 > a {
