@@ -279,14 +279,9 @@ article > time {
  * SPECIFICS
  */
 
-ul.archive,
 ul.projects {
   list-style: none;
   padding: 0;
-}
-
-ul.archive > li {
-  margin-bottom: var(--grid-gap);
 }
 
 ul.projects {
@@ -312,6 +307,10 @@ ul.projects > li > h2 > a:hover {
 
 ul.projects > li > .description > p:first-child {
   margin-top: 0;
+}
+
+ol.archive > li {
+  margin-bottom: var(--grid-gap);
 }
 
 p.tech {
@@ -398,16 +397,6 @@ table.db .sk {
     grid-gap: var(--grid-gap);
     grid-template-columns: repeat(2, 1fr);
     font-size: var(--font-s);
-  }
-
-  ul.archive > li > time {
-    text-align: right;
-    grid-column: 1 / span 2;
-    padding-top: 5px;
-  }
-
-  ul.archive > li > a {
-    grid-column: 3 / span 4;
   }
 }
 
