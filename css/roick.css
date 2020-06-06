@@ -137,27 +137,48 @@ hr:after {
  */
 
 header {
-  font-weight: 500;
-  font-family: var(--sans-serif);
+  text-align: center;
   font-size: var(--font-s);
-  text-transform: uppercase;
-  max-width: var(--main-width);
-  letter-spacing: 1px;
-  margin: auto auto var(--gap-l) auto;
-  padding-top: var(--gap-s);
-  text-align: right;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-top: var(--gap-s);
+}
+
+header:after {
+  content: "• • •";
+  display: block;
+  color: var(--grey);
+  margin: var(--gap-xxs) 0 var(--gap-m) 0;
 }
 
 header > h1 {
   font-size: var(--font-s);
-  line-height: 2;
+}
+
+header > h1 > a {
+  color: var(--dark);
+}
+
+header > nav {
+  font-family: var(--sans-serif);
+  text-transform: uppercase;
+}
+
+header > nav > ul {
+  margin: 0 0 0 0;
+  padding: 0;
+  list-style: none;
 }
 
 header a,
 header a:visited {
-  line-height: 2;
-  color: var(--dark);
+  line-height: 2.5;
   text-decoration: none;
+}
+
+header a:hover,
+header a:focus {
+  border-bottom: var(--border-size) solid var(--yellow);
 }
 
 header nav a,
@@ -165,9 +186,6 @@ header nav a:visited {
   color: var(--blue);
 }
 
-header a:hover {
-  border-bottom: var(--border-size) solid var(--yellow);
-}
 
 body#home header h1 a {
   text-decoration: none;
@@ -178,16 +196,6 @@ body#writing header li#li_writing > a,
 body#blog header li#li_writing > a,
 body#work header li#li_work > a {
   border-bottom: var(--border-size) solid var(--vanilla);
-}
-
-header > nav {
-  font-weight: bold;
-}
-
-header > nav > ul {
-  margin: 0 0 0 0;
-  padding: 0;
-  list-style: none;
 }
 
 /*
@@ -326,6 +334,21 @@ table.db .sk {
     padding-left: var(--gap-s);
     padding-right: var(--gap-s);
   }
+
+  header > h1,
+  header > nav,
+  header > nav > ul,
+  header > nav > ul > li {
+    display: inline;
+  }
+
+  header > nav {
+    margin-left: var(--base-size);
+  }
+
+  header nav a {
+    margin-left: var(--gap-xxs);
+  }
 }
 
 @media (min-width: 968px) {
@@ -340,23 +363,6 @@ table.db .sk {
 
   article > h1 {
     font-size: var(--font-l);
-  }
-
-  header {
-    text-align: left;
-  }
-
-  header > h1,
-  header > nav,
-  header > nav > ul,
-  header > nav > ul > li {
-    display: inline;
-  }
-
-  header > nav > ul > li::before {
-    content: "▪";
-    padding-right: var(--gap-xxs);
-    padding-left: var(--gap-xxs);
   }
 
   footer #left {
