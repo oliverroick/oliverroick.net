@@ -206,7 +206,7 @@ footer {
   border-top: var(--border-size) solid var(--vanilla);
 }
 
-footer h1 {
+footer h2 {
   font-size: var(--font-s);
   margin-top: 0;
 }
@@ -367,7 +367,7 @@ table.db .sk {
     grid-column: 5 / span 2;
   }
 
-  footer h1 {
+  footer h2 {
     margin: 0;
   }
 
