@@ -4,14 +4,11 @@ title: Writing
 body_id: writing
 description: A list of all articles posted to Oliver Roick's blog.
 ---
-
-		<section>
-			<ol class="archive" reversed>
-				{% for post in site.posts %}
-				<li>
-					<a href="{{ post.url }}">{{ post.title }}</a>
-					<time datetime="{{ post.date | date_to_xmlschema }}" itemprop="published">{{ post.date | date_to_long_string }}</time>
-				</li>
-				{% endfor %}
-			</ol>
-		</section>
+<ol class="archive" reversed>
+	{% for post in site.posts %}
+	<li>
+		<a href="{{ post.url }}">{{ post.title }}</a>
+		<time datetime="{{ post.date | date_to_xmlschema }}" itemprop="published">{{ post.date | date_to_long_string }}</time>
+	</li>
+	{% endfor %}
+</ol>

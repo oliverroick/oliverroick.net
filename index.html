@@ -4,16 +4,9 @@ title: Home
 body_id: home
 description: The blog and work of Oliver Roick 
 ---
-    <!--
-    #
-    # News
-    #
-    -->
 
-    <section>
-        <article>
-            <h1><a href="{{ site.posts.first.url }}">{{ site.posts.first.title }}</a></h1>
-            <time datetime="{{ site.posts.first.date | date_to_xmlschema }}" itemprop="published">{{ site.posts.first.date | date_to_long_string }}</time>
-            {{ site.posts.first.content | replace: '=====', '' }}
-        </article>
-    </section>
+<article>
+    <h1><a href="{{ site.posts.first.url }}">{{ site.posts.first.title }}</a></h1>
+    <time datetime="{{ site.posts.first.date | date_to_xmlschema }}" itemprop="published">{{ site.posts.first.date | date_to_long_string }}</time>
+    {{ site.posts.first.content | replace: '=====', '' }}
+</article>

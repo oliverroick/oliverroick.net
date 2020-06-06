@@ -1,11 +1,9 @@
 ---
 layout: default
 ---
-        <section>
-            <article>
-                <h1>{{ page.title }}</h1>
-                <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="published">{{ page.date | date_to_long_string }}</time>
+<article>
+    <h1>{{ page.title }}</h1>
+    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="published">{{ page.date | date_to_long_string }}</time>
 
-                {{ content | replace: '=====', '' }}
-            </article>
-        </section>
+    {{ content | replace: '=====', '' }}
+</article>
