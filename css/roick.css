@@ -12,7 +12,7 @@
   --serif: Georgia, "Century Schoolbook", "Times New Roman", Times, serif;
   --mono: monaco, Consolas, monospace;
 
-  --base-size: 16px;
+  --base-size: 18px;
   --border-size: calc(var(--base-size) / 4);
   --font-s: calc(var(--base-size) * 0.75);
   --font-m: calc(var(--base-size) * 1.5);
