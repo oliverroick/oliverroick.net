@@ -238,7 +238,8 @@ main {
   margin: auto;
 }
 
-main h1 {
+main h1,
+main h2.index-page-header {
   text-align: center;
   margin-bottom: 0.5em;
   font-size: var(--font-l);
@@ -288,8 +289,22 @@ article > time {
  * SPECIFICS
  */
 
+.archive {
+  padding: 0;
+  margin: 0;
+}
+
 .archive > li {
   margin-bottom: var(--grid-gap);
+}
+
+body#writing .archive {
+  text-align: center;
+  list-style-position: inside;
+}
+
+body#work .archive {
+  list-style: none;
 }
 
 body#work .archive a {
