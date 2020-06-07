@@ -124,7 +124,7 @@ hr {
 }
 
 hr:after {
-  content: "• • •";
+  content: "* * *";
   display: inline-block;
   position: relative;
   color: var(--grey);
@@ -144,7 +144,7 @@ header {
 }
 
 header:after {
-  content: "• • •";
+  content: "⎯";
   display: block;
   color: var(--grey);
   margin: var(--gap-xxs) 0 var(--gap-m) 0;
