@@ -1,0 +1,20 @@
+{
+  "name": "oliverroick.github.io",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oliverroick/oliverroick.github.io.git"
+  },
+  "author": "Oliver Roick",
+  "bugs": {
+    "url": "https://github.com/oliverroick/oliverroick.github.io/issues"
+  },
+  "homepage": "https://oliverroick.de",
+  "dependencies": {
+    "netlify-plugin-minify-html": "^0.2.3"
+  }
+}
