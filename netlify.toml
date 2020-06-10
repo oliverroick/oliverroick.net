@@ -15,3 +15,13 @@
   [plugins.inputs.minifierOptions]
     removeComments = true
     collapseInlineTagWhitespace = false
+
+[[plugins]]
+    package = "@netlify/plugin-local-install-core"
+
+[[plugins]]
+  package = "./netlify-plugins/netlify-plugin-validate-html"
+
+  [plugins.inputs]
+    ext = "html"
+    config = ".htmlvalidate.json"
