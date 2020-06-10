@@ -57,4 +57,4 @@ request('/some/url/').
   )
 {% endhighlight %}
 
-So I went ahead and built [`better-fetch`](https:/github.com/oliverroick/better-fetch). It’s a tiny library that behaves as described above. Consider it as an experiment for now, as I have yet to use this approach in production.
+So I went ahead and built [`better-fetch`](https://github.com/oliverroick/better-fetch). It’s a tiny library that behaves as described above. Consider it as an experiment for now, as I have yet to use this approach in production.
