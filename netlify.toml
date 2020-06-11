@@ -17,10 +17,7 @@
     collapseInlineTagWhitespace = false
 
 [[plugins]]
-    package = "@netlify/plugin-local-install-core"
-
-[[plugins]]
-  package = "./netlify-plugins/netlify-plugin-validate-html"
+  package = "netlify-plugin-html-validate"
 
   [plugins.inputs]
     ext = "html"
