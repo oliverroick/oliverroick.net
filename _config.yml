@@ -4,3 +4,14 @@ highlighter: rouge
 permalink: /:categories/:year/:title.html
 excerpt_separator: "====="
 source: src
+plugins:
+  - jekyll-sitemap
+defaults:
+  - scope:
+      path: "files/**/*"
+    values:
+      sitemap: false
+  - scope:
+      path: "404.html"
+    values:
+      sitemap: false
