@@ -28,3 +28,9 @@
   from = "/django-skivvy"
   to = "https://oliverroick.github.io/django-skivvy/"
   status = 301
+
+[[redirects]]
+  from = "https://oliverroick.de/*"
+  to = "https://oliverroick.net/:splat"
+  status = 301
+  force = true
