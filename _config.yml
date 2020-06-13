@@ -6,6 +6,7 @@ excerpt_separator: "====="
 source: src
 plugins:
   - jekyll-sitemap
+  - ./_plugins/post_update
 defaults:
   - scope:
       path: "files/**/*"

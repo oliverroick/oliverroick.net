@@ -7,9 +7,9 @@ highlight_code: true
 body_id: blog
 ---
 
-<div class="update">
-  <b>Update:</b> The solution discussed here uses Raven, Sentry's discontinued JavaScript SDK. Since I published the post, <a href="https://www.npmjs.com/package/@sentry/node">@sentry/node</a> has been released, which <a href="https://docs.sentry.io/platforms/node/serverless/">makes logging on AWS Lambda</a> a lot simpler. 
-</div>
+{% post_update %}
+**Update:** The solution discussed here uses Raven, Sentry's discontinued JavaScript SDK. Since I published the post, [@sentry/node](https://www.npmjs.com/package/@sentry/node) has been released, which [makes logging on AWS Lambda](https://docs.sentry.io/platforms/node/serverless/) a lot simpler.
+{% endpost_update %}
 
 Every unhandled exception is a bug in your software. Things will go wrong in your Lambda function, and you want to know about it. 
 
