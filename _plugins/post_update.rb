@@ -3,7 +3,7 @@ require 'kramdown'
 module Jekyll
   class PostUpdate < Liquid::Block
     def render(context)
-      text = super
+      text = "**Update:** #{super}"
       "<div class=\"update\">#{Kramdown::Document.new(text).to_html}</div>"
     end
   end
