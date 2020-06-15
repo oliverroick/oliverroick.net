@@ -7,6 +7,10 @@ highlight_code: true
 body_id: blog
 ---
 
+{% post_update %}
+The solution discussed here uses Raven, Sentry's discontinued JavaScript SDK. Since I published the post, [@sentry/node](https://www.npmjs.com/package/@sentry/node) has been released, which [makes logging on AWS Lambda](https://docs.sentry.io/platforms/node/serverless/) a lot simpler.
+{% endpost_update %}
+
 Every unhandled exception is a bug in your software. Things will go wrong in your Lambda function, and you want to know about it. 
 
 AWS provides extensive logging for Lambda functions via [Cloudwatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html), but it is a cumbersome job to sift through all the logs, identify the exceptions and group similar errors for a bug report. [Sentry](https://sentry.io/) makes this job easier. Setting up Sentry error logging for a Lambda function is not as straightforward as, say, using a Django middleware. This post explores how we have set up error logging with Sentry for a JavaScript Lambda handler. 

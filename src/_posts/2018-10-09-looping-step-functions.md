@@ -7,6 +7,10 @@ highlight_code: true
 body_id: blog
 ---
 
+{% post_update %}
+[Iterating a Loop Using Lambda](https://docs.aws.amazon.com/step-functions/latest/dg/tutorial-create-iterate-pattern-section.html) is a tutorial from the official AWS Step Functions documentation, which describes a similar pattern.
+{% endpost_update %}
+
 I recently started tinkering with [Step Functions](https://aws.amazon.com/step-functions/) for a pet project, [Nea](https://github.com/oliverroick/nea). For performance reasons, I wanted to download and process individual feeds in parallel using instances of the same Lambda function. This isn't currently possible using Step Functions building blocks, so I implemented a workaround by designing a loop into my Step Functions state machine. 
 
 =====

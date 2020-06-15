@@ -28,3 +28,4 @@ _site
 
 # Local Netlify folder
 .netlify
+_config_netlify.yml

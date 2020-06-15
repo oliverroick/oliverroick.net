@@ -1,3 +1,6 @@
+[build]
+  command = "make build"
+
 [build.processing.css]
   bundle = true
   minify = true
@@ -22,3 +25,19 @@
   [plugins.inputs]
     ext = "html"
     config = ".htmlvalidate.json"
+
+[[redirects]]
+  from = "/wheredoyougo"
+  to = "https://oliverroick.github.io/wheredoyougo/"
+  status = 301
+
+[[redirects]]
+  from = "/django-skivvy"
+  to = "https://oliverroick.github.io/django-skivvy/"
+  status = 301
+
+[[redirects]]
+  from = "https://oliverroick.de/*"
+  to = "https://oliverroick.net/:splat"
+  status = 301
+  force = true

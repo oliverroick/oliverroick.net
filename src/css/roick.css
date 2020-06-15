@@ -285,6 +285,18 @@ article > time {
   margin-bottom: var(--gap-s);
 }
 
+article > .update {
+  border: 1px solid var(--vanilla);
+  border-left-width: var(--border-size);
+  padding: var(--base-size);
+  font-family: var(--sans-serif);
+  font-size: var(--font-s);
+}
+
+article > .update > p {
+  margin: 0;
+}
+
 /*
  * SPECIFICS
  */
