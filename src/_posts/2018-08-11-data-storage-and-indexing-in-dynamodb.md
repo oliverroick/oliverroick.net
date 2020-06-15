@@ -39,10 +39,10 @@ The other option is a composite primary key, a composition of a partition key an
     <caption>Partition A</caption>
     <thead>
         <tr>
-            <th class="pk">organisation_id</th>
-            <th class="sk">name</th>
-            <th>owner</th>
-            <th>last_updated</th>
+            <th scope="col" class="pk">organisation_id</th>
+            <th scope="col" class="sk">name</th>
+            <th scope="col">owner</th>
+            <th scope="col">last_updated</th>
         </tr>
     </thead>
     <tbody>
@@ -65,10 +65,10 @@ The other option is a composite primary key, a composition of a partition key an
     <caption>Partition B</caption>
     <thead>
         <tr>
-            <th class="pk">organisation_id</th>
-            <th class="sk">name</th>
-            <th>owner</th>
-            <th>last_updated</th>
+            <th scope="col" class="pk">organisation_id</th>
+            <th scope="col" class="sk">name</th>
+            <th scope="col">owner</th>
+            <th scope="col">last_updated</th>
         </tr>
     </thead>
     <tbody>
@@ -107,9 +107,9 @@ A local secondary index only changes the order inside a partition but not the pa
     <caption>Partition A</caption>
     <thead>
         <tr>
-            <th class="pk">organisation_id</th>
-            <th class="sk">last_updated</th>
-            <th>name</th>
+            <th scope="col" class="pk">organisation_id</th>
+            <th scope="col" class="sk">last_updated</th>
+            <th scope="col">name</th>
         </tr>
     </thead>
     <tbody>
@@ -130,9 +130,9 @@ A local secondary index only changes the order inside a partition but not the pa
     <caption>Partition B</caption>
     <thead>
         <tr>
-            <th class="pk">organisation_id</th>
-            <th class="sk">last_updated</th>
-            <th>name</th>
+            <th scope="col" class="pk">organisation_id</th>
+            <th scope="col" class="sk">last_updated</th>
+            <th scope="col">name</th>
         </tr>
     </thead>
     <tbody>
@@ -157,9 +157,9 @@ Global secondary indexes, on the other hand, change the partition where DynamoDB
     <caption>Partition A</caption>
     <thead>
         <tr>
-            <th class="pk">owner</th>
-            <th>organisation_id</th>
-            <th>name</th>
+            <th scope="col" class="pk">owner</th>
+            <th scope="col">organisation_id</th>
+            <th scope="col">name</th>
         </tr>
     </thead>
     <tbody>
@@ -185,9 +185,9 @@ Global secondary indexes, on the other hand, change the partition where DynamoDB
     <caption>Partition B</caption>
     <thead>
         <tr>
-            <th class="pk">owner</th>
-            <th>organisation_id</th>
-            <th>name</th>
+            <th scope="col" class="pk">owner</th>
+            <th scope="col">organisation_id</th>
+            <th scope="col">name</th>
         </tr>
     </thead>
     <tbody>
