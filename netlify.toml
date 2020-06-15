@@ -19,6 +19,13 @@
     removeComments = true
     collapseInlineTagWhitespace = false
 
+[[plugins]]
+  package = "netlify-plugin-html-validate"
+
+  [plugins.inputs]
+    ext = "html"
+    config = ".htmlvalidate.json"
+
 [[redirects]]
   from = "/wheredoyougo"
   to = "https://oliverroick.github.io/wheredoyougo/"

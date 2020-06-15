@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "html-validate:standard",
+    "html-validate:document"
+  ],
+  "rules": {
+    "require-sri": 0
+  }
+}
