@@ -4,6 +4,8 @@ highlighter: rouge
 permalink: /:categories/:year/:title.html
 excerpt_separator: "====="
 source: src
+collections:
+  - work
 plugins:
   - jekyll-sitemap
   - ./_plugins/post_update
