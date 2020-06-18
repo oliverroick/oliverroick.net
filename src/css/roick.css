@@ -310,6 +310,18 @@ article > .update > p {
   margin-bottom: var(--grid-gap);
 }
 
+.archive > li > h2 {
+  font-size: var(--base-size);
+  font-family: var(--serif);
+  font-weight: normal;
+  text-transform: none;
+  margin-bottom: 0;
+}
+
+.archive > li > p {
+  margin-top: 0;
+}
+
 body#writing .archive {
   text-align: center;
   list-style-position: inside;
@@ -336,10 +348,6 @@ body#work .archive span.description:before {
 body#work .archive a:hover,
 body#work .archive a:focus {
   border-bottom-color: var(--yellow);
-}
-
-body#work .archive p {
-  margin-top: 0;
 }
 
 table.db {
