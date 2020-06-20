@@ -3,7 +3,7 @@ layout: default
 ---
 <article>
     <h1>{{ page.title }}</h1>
-    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="published">{{ page.date | date_to_long_string }}</time>
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time>
 
     {{ content | replace: '=====', '' }}
 </article>
