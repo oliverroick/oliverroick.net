@@ -7,7 +7,7 @@ body_id: blog
 description: 
 ---
 
-At last year's company summer party, one of the higher-ups took me aside and asked, What is your passion, Oliver? Three beers in, I mumbled something about building great products and something about maps and helping people understand data.
+At last year's company summer party, one of the higher-ups took me aside and asked, What is your passion, Oliver? Three beers in, I mumbled something about building great products and something about maps and helping people understand data or so.
 
 I had never really thought about it.
 

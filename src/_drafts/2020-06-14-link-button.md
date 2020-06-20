@@ -7,9 +7,13 @@ body_id: blog
 description: 
 ---
 
-Designers tend to design call to actions to look like buttons even though clicking on them just opens a new page. To submit forms, you place a button at the bottom of the form. These buttons may look the same but they behave in a different way when you click them: One opens a new page, the other executes a certain functionality. 
+When I was young, we started building websites without table layouts and [`marquee` elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/marquee). [Semantic HTML](https://en.wikipedia.org/wiki/Semantic_HTML) was a cornerstone of that movement. It meant to use HTML, so the resulting markup only describes the structure of a page. Any presentational elements are removed, and the visual presentation of the content would be in the realm of CSS. 
 
-Engineers strive to optimise their code and remove duplication as much as as possible. With today's front-end frameworks we abstract functionality into components and reuse it wherever you see fit. Both the link and the button look the same so we implement it in a `Button` component. How it behaves is defined by the properties you pass. Provide a URL to open a new page, pass an `onClick` handler and it executes some JavaScript code. 
+With the advent of JavaScript frameworks in the last couple of years, we seem to have forgotten about this approach. 
+
+Here is an example: The designer designs a call-to-action to look like a button even though clicking on it just opens a new page. On the same page, we have form, including a submit button. These buttons may look the same but they behave in different ways: One opens a new page, the submits the form. 
+
+Engineers strive to optimise their code and remove duplication as much as as possible. A website is abstracted into a series of components. Both the link and the button look the same so we implement it in a `Button` component. How it behaves is defined by the properties you pass. Provide a URL to open a new page, pass an `onClick` handler and it executes some JavaScript code. 
 
 Imagine you are a lawyer and decided to wear a checked flannel shirt and overalls to court instead of a suit. What do you call yourself? A lumberjack that does lawyer work or a lawyer in a lumberjack outfit?
 
