@@ -322,6 +322,7 @@ article > .update > p {
   margin-top: 0;
 }
 
+body#til .archive,
 body#writing .archive {
   text-align: center;
   list-style-position: inside;

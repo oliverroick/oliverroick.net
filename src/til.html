@@ -1,0 +1,15 @@
+---
+layout: default
+title: Today I learned
+body_id: til
+description: Notes of things I learned and don't want to forget
+---
+<h2 class="index-page-header">Today I learned</h2>
+<ol class="archive" reversed>
+	{% for learning in site.til %}
+	<li>
+		<a href="{{ learning.url }}">{{ learning.title }}</a>
+		<time datetime="{{ learning.date | date_to_xmlschema }}">{{ learning.date | date_to_long_string }}</time>
+	</li>
+	{% endfor %}
+</ol>
