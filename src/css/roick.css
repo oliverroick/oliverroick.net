@@ -310,7 +310,7 @@ article > .update > p {
   margin-bottom: var(--grid-gap);
 }
 
-.archive > li > h2 {
+.archive > li > h3 {
   font-size: var(--base-size);
   font-family: var(--serif);
   font-weight: normal;
@@ -339,11 +339,6 @@ body#work .archive a {
 
 body#work .archive span.time {
   display: inline;
-}
-
-body#work .archive span.description:before {
-  content: "\A";
-  white-space: pre;
 }
 
 body#work .archive a:hover,

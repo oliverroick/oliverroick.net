@@ -8,10 +8,10 @@ description: Overview of Oliver Roick's work and projects.
 <ul class="archive" reversed>
     {% for project in site.work %}
     <li>
-        <h2>
+        <h3>
             <a href="{{ project.link }}">{{ project.title }}</a>
             {% if project.time %}<span class="time">({{ project.time }})</span>{% endif %}
-        </h2>
+        </h3>
         {{ project.content }}
     </li>
     {% endfor %}
