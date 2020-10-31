@@ -217,6 +217,10 @@ body#home header h1 a {
   border-bottom: var(--border-size) solid var(--vanilla);
 }
 
+body#home header h1 a:focus {
+  border-bottom: var(--border-size) solid var(--dark);
+}
+
 body#writing header li#li_writing > a:link,
 body#blog header li#li_writing > a:link,
 body#work header li#li_work > a:link {
