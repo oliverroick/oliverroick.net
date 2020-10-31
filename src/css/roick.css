@@ -59,6 +59,14 @@ a:hover {
   text-decoration: none;
 }
 
+a:focus {
+  color: var(--dark);
+  background-color: var(--yellow);
+  text-decoration: none;
+  border-bottom: 3px solid var(--dark);
+  outline: none;
+}
+
 img {
   max-width: 100%;
 }
@@ -191,9 +199,12 @@ header a:visited {
   text-decoration: none;
 }
 
-header a:hover,
-header a:focus {
+header a:hover {
   border-bottom: var(--border-size) solid var(--yellow);
+}
+
+header a:focus {
+  border-bottom: var(--border-size) solid var(--dark);
 }
 
 header nav a,
@@ -207,10 +218,16 @@ body#home header h1 a {
   border-bottom: var(--border-size) solid var(--vanilla);
 }
 
-body#writing header li#li_writing > a,
-body#blog header li#li_writing > a,
-body#work header li#li_work > a {
+body#writing header li#li_writing > a:link,
+body#blog header li#li_writing > a:link,
+body#work header li#li_work > a:link {
   border-bottom: var(--border-size) solid var(--vanilla);
+}
+
+body#writing header li#li_writing > a:focus,
+body#blog header li#li_writing > a:focus,
+body#work header li#li_work > a:focus {
+  border-bottom-color: var(--dark);
 }
 
 /*
@@ -242,6 +259,10 @@ footer a {
 footer a:hover {
   color: var(--yellow);
   text-decoration: underline;
+}
+
+footer a:focus {
+  border-bottom-color: var(--vanilla);
 }
 
 /*
