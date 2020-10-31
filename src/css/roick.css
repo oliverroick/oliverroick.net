@@ -131,6 +131,22 @@ hr:after {
   margin: var(--grid-gap) 0;
 }
 
+a.skip-link {
+  display: block;
+  font-family: var(--sans-serif);
+  color: var(--vanilla);
+  background-color: var(--dark);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: absolute;
+  left: 0;
+  top: -100rem;
+}
+
+a.skip-link:focus {
+  top: 0;
+}
+
 /*
  * HEADER
  */
@@ -241,7 +257,7 @@ main {
 main h1,
 main h2.index-page-header {
   text-align: center;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5rem;
   font-size: var(--font-l);
 }
 
