@@ -142,17 +142,16 @@ hr:after {
 a.skip-link {
   display: block;
   font-family: var(--sans-serif);
-  color: var(--vanilla);
-  background-color: var(--dark);
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 0.5rem;
   position: absolute;
   left: 0;
+  right: 0;
   top: -100rem;
 }
 
 a.skip-link:focus {
   top: 0;
+  border-bottom-width: 5px;
 }
 
 /*
