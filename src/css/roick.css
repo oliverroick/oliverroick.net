@@ -481,7 +481,7 @@ table.db .sk {
   font-weight: bold;
 } /* Comment.Preproc */
 .highlight .c1 {
-  color: #999988;
+  color: #776;
   font-style: italic;
 } /* Comment.Single */
 .highlight .cs {
@@ -549,7 +549,7 @@ table.db .sk {
   color: var(--red);
 } /* Literal.String */
 .highlight .nb {
-  color: #0086b3;
+  color: #007faa;
 } /* Name.Builtin */
 .highlight .nc {
   color: #445588;
@@ -648,5 +648,5 @@ table.db .sk {
   color: #990073;
 } /* Literal.String.Symbol */
 .highlight .bp {
-  color: #999999;
+  color: #767676;
 } /* Name.Builtin.Pseudo */
