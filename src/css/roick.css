@@ -381,9 +381,12 @@ body#work .archive span.time {
   display: inline;
 }
 
-body#work .archive a:hover,
-body#work .archive a:focus {
+body#work .archive a:hover {
   border-bottom-color: var(--yellow);
+}
+
+body#work .archive a:focus {
+  border-bottom-color: var(--dark);
 }
 
 table.db {
