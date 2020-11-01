@@ -17,5 +17,8 @@
   "dependencies": {
     "netlify-plugin-html-validate": "0.2.0",
     "netlify-plugin-minify-html": "^0.2.3"
+  },
+  "devDependencies": {
+    "pa11y-ci": "^2.4.0"
   }
 }

@@ -1,0 +1,31 @@
+name: "Pa11y"
+
+on: ['pull_request']
+
+jobs:
+  pa11y:
+    name: Pa11y
+    runs-on: ubuntu-latest
+    steps:
+    - name: Setup node 14
+      uses: actions/setup-node@v1
+      with:
+        node-version: 14
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 2
+    - run: git checkout HEAD^2
+      if: ${{ github.event_name == 'pull_request' }}
+    - name: Waiting for Netlify Preview
+      uses: kamranayub/wait-for-netlify-action@2.0.0
+      id: netflify-preview
+      with:
+        site_name: "oliverroick"
+        max_timeout: 60
+      env:
+        NETLIFY_TOKEN: ${{secrets.NETLIFY_TOKEN}}
+    - name: Run pa11y
+      run: |
+        npm ci
+        ./node_modules/.bin/pa11y-ci --sitemap ${{ steps.netflify-preview.outputs.url }}/sitemap.xml --sitemap-exclude pdf
