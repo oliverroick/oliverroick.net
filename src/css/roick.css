@@ -222,7 +222,10 @@ body#home header h1 a:focus {
 
 body#writing header li#li_writing > a:link,
 body#blog header li#li_writing > a:link,
-body#work header li#li_work > a:link {
+body#work header li#li_work > a:link,
+body#writing header li#li_writing > a:visited,
+body#blog header li#li_writing > a:visited,
+body#work header li#li_work > a:visited {
   border-bottom: var(--border-size) solid var(--vanilla);
 }
 
