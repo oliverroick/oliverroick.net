@@ -128,7 +128,6 @@ td {
 
 hr {
   border: 0;
-  text-align: center;
 }
 
 hr:after {
@@ -159,11 +158,11 @@ a.skip-link:focus {
  */
 
 header {
-  text-align: center;
   font-size: var(--font-s);
   letter-spacing: 2px;
   font-weight: 700;
-  margin-top: var(--gap-s);
+  margin: var(--gap-s) auto 0 auto;
+  max-width: var(--main-width);
 }
 
 header:after {
@@ -273,15 +272,12 @@ footer a:focus {
  */
 
 main {
-  margin: var(--gap-s);
   max-width: var(--main-width);
   margin: auto;
 }
 
 main h1,
 main h2.index-page-header {
-  text-align: center;
-  margin-bottom: 0.5rem;
   font-size: var(--font-l);
 }
 
@@ -321,8 +317,7 @@ time,
 }
 
 article > time {
-  text-align: center;
-  margin-bottom: var(--gap-s);
+  margin-top: var(--gap-s);
 }
 
 article > .update {
@@ -364,7 +359,6 @@ article > .update > p {
 
 body#til .archive,
 body#writing .archive {
-  text-align: center;
   list-style-position: inside;
 }
 
