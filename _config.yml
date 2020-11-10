@@ -15,7 +15,7 @@ plugins:
   - ./_plugins/post_update
 defaults:
   - scope:
-      path: "files/**/*"
+      path: "src/files/**/*"
     values:
       sitemap: false
   - scope:
