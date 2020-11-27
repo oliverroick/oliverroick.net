@@ -158,8 +158,10 @@ a.skip-link:focus {
  */
 
 header {
+  font-family: var(--sans-serif);
   font-size: var(--font-s);
   letter-spacing: 2px;
+  text-transform: uppercase;
   font-weight: 700;
   margin: var(--gap-s) auto 0 auto;
   max-width: var(--main-width);
@@ -172,17 +174,8 @@ header:after {
   margin: var(--gap-xxs) 0 var(--gap-m) 0;
 }
 
-header > h1 {
-  font-size: var(--font-s);
-}
-
-header > h1 > a {
-  color: var(--dark);
-}
-
 header > nav {
   font-family: var(--sans-serif);
-  text-transform: uppercase;
 }
 
 header > nav > ul {
@@ -210,14 +203,8 @@ header nav a:visited {
   color: var(--blue);
 }
 
-
-body#home header h1 a {
-  text-decoration: none;
+body#home header span#name {
   border-bottom: var(--border-size) solid var(--vanilla);
-}
-
-body#home header h1 a:focus {
-  border-bottom: var(--border-size) solid var(--dark);
 }
 
 body#writing header li#li_writing > a:link,
@@ -279,8 +266,7 @@ main {
   margin: auto;
 }
 
-main h1,
-main h2.index-page-header {
+main h1 {
   font-size: var(--font-l);
 }
 
@@ -348,7 +334,7 @@ article > .update > p {
   margin-bottom: var(--grid-gap);
 }
 
-.archive > li > h3 {
+.archive > li > h2 {
   font-size: var(--base-size);
   font-family: var(--serif);
   font-weight: normal;
@@ -408,7 +394,6 @@ table.db .sk {
     --base-size: 20px;
   }
 
-  header > h1,
   header > nav,
   header > nav > ul,
   header > nav > ul > li {
