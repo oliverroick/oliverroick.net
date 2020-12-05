@@ -2,7 +2,8 @@
 layout: post
 title:  "Testing code to understand code"
 date:   2017-02-15 17:00:00+02:00
-category: "thoughts"
+image: thoughts
+category: writing
 body_id: blog
 ---
 

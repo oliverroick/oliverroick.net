@@ -2,7 +2,8 @@
 layout: post
 title:  "Retiring a project"
 date:   2019-11-20 20:30:00+00:00
-category: "thoughts"
+image: thoughts
+category: writing
 body_id: blog
 description: Nobody uses your project, you should retire it
 ---

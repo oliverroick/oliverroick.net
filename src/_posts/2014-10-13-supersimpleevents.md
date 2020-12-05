@@ -2,7 +2,8 @@
 layout: post
 title:  "Introducing SuperSimpleEvents"
 date:   2014-10-12 10:00:00
-category: code
+image: code
+category: writing
 highlight_code: true
 ---
 

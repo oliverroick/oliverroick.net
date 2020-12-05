@@ -2,7 +2,8 @@
 layout: post
 title:  "Open Source is not free"
 date:   2020-01-04 13:30:00+00:00
-category: "thoughts"
+image: thoughts
+category: writing
 body_id: blog
 description: Open-source software is often free. Using it is not
 ---

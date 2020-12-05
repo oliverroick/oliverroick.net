@@ -2,7 +2,8 @@
 layout: post
 title:  "Advice for the Django novice"
 date:   2015-04-30 10:00:00
-category: thoughts
+image: thoughts
+category: writing
 body_id: blog
 ---
 

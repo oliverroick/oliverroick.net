@@ -2,7 +2,8 @@
 layout: post
 title:  "Deflating Polygons in Leaflet"
 date:   2015-04-22 10:00:00
-category: "code"
+image: code
+category: writing
 highlight_code: true
 body_id: blog
 ---

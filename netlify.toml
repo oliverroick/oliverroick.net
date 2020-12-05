@@ -41,3 +41,27 @@
   to = "https://oliverroick.net/:splat"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/thoughts/*"
+  to = "/writing/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/code/*"
+  to = "/writing/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/conferences/*"
+  to = "/writing/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/talks/*"
+  to = "/writing/:splat"
+  status = 301
+  force = true

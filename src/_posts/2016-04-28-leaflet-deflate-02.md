@@ -2,7 +2,8 @@
 layout: post
 title:  "Leaflet.Deflate 0.2"
 date:   2016-04-28 08:00:00+02:00
-category: "code"
+image: code
+category: writing
 highlight_code: true
 body_id: blog
 ---

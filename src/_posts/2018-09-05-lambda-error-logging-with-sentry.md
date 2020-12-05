@@ -2,7 +2,8 @@
 layout: post
 title:  "Lambda Error Logging with Sentry"
 date:   2018-09-06 19:30:00+02:00
-category: "code"
+image: code
+category: writing
 highlight_code: true
 body_id: blog
 ---

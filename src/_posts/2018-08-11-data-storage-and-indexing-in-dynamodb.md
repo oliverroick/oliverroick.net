@@ -2,7 +2,8 @@
 layout: post
 title:  "Data Storage and Indexing in DynamoDB"
 date:   2018-08-11 15:30:00+02:00
-category: "code"
+image: code
+category: writing
 body_id: blog
 ---
 
