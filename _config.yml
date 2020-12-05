@@ -7,9 +7,6 @@ source: src
 collections:
   work:
     output: false
-  til:
-    output: true
-    permalink: /:collection/:year/:title.html
 plugins:
   - jekyll-sitemap
   - ./_plugins/post_update
