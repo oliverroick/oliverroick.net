@@ -2,7 +2,8 @@
 layout: post
 title:  "Speeding up tests in Django"
 date:   2015-07-23 10:00:00
-category: "code"
+image: code
+category: writing
 highlight_code: true
 body_id: blog
 ---

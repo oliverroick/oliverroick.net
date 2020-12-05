@@ -2,7 +2,8 @@
 layout: post
 title:  "Deploying Docbox to Github pages"
 date:   2017-01-09 18:00:00+02:00
-category: "code"
+image: code
+category: writing
 body_id: blog
 ---
 

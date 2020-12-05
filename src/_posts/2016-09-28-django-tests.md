@@ -2,7 +2,8 @@
 layout: post
 title:  "Testing Django — Lessons Learned"
 date:   2016-09-29 09:00:00+02:00
-category: "code"
+image: code
+category: writing
 highlight_code: true
 body_id: blog
 ---

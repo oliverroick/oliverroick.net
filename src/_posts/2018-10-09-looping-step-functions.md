@@ -2,7 +2,8 @@
 layout: post
 title:  "Looping AWS Step Functions"
 date:   2018-10-09 16:30:00+02:00
-category: "code"
+image: code
+category: writing
 highlight_code: true
 body_id: blog
 ---

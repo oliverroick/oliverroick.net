@@ -2,7 +2,8 @@
 layout: post
 title:  "Working remotely"
 date:   2020-04-13 10:00:00+00:00
-category: "thoughts"
+image: thoughts
+category: writing
 body_id: blog
 description: Thoughts on how COVID-19 impacts businesses' and workers' perception of remote work. 
 ---

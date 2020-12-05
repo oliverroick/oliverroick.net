@@ -2,7 +2,8 @@
 layout: post
 title:  "Leaflet.Deflate 1.2"
 date:   2020-01-19 20:00:00+00:00
-category: "code"
+image: code
+category: writing
 body_id: blog
 description: Announcing the release Leaflet.Deflate 1.2
 ---

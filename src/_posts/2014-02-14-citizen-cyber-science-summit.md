@@ -3,6 +3,8 @@ layout: post
 title:  "Citizen Cyberscience Summit"
 date:   2014-02-13 22:00:00
 category: news
+image: news
+body_id: blog
 ---
 
 The [Citizen Cyberscience Summit](http://cybersciencesummit.org/), bringing together an interdisciplinary group of researchers, hackers and citizens to discuss and share ideas on all things citizen science, will be held in London next week from 20th to 22nd February.

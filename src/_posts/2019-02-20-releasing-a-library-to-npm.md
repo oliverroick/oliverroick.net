@@ -2,7 +2,8 @@
 layout: post
 title:  "Releasing a Library to NPM"
 date:   2019-02-20 18:30:00+02:00
-category: "code"
+image: code
+category: writing
 body_id: blog
 description: Automating releases to NPM
 ---

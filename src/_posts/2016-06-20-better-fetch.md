@@ -2,7 +2,8 @@
 layout: post
 title:  "A better fetch"
 date:   2016-06-17 20:00:00+02:00
-category: "code"
+image: code
+category: writing
 highlight_code: true
 body_id: blog
 ---

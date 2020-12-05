@@ -2,9 +2,10 @@
 layout: post
 title:  "When to Refactor?"
 date:   2020-11-19 19:00:00+00:00
-category: "thoughts"
+image: thoughts
+category: writing
 body_id: blog
-description: Is the ever a good time for refactoring?
+description: Is there ever a good time for refactoring?
 ---
 
 It depends on who you ask. 

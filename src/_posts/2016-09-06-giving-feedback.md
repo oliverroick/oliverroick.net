@@ -2,7 +2,8 @@
 layout: post
 title:  "Giving Feedback"
 date:   2016-09-06 09:30:00+02:00
-category: "thoughts"
+image: thoughts
+category: writing
 highlight_code: true
 body_id: blog
 ---

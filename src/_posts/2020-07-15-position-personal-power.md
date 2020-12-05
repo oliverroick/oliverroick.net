@@ -2,7 +2,8 @@
 layout: post
 title:  "Position power, personal power and new managers"
 date:   2020-07-15 19:00:00+01:00
-category: "thoughts"
+image: thoughts
+category: writing
 body_id: blog
 description: How do forms of influence affect a new manager's ability to lead.
 ---

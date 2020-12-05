@@ -2,7 +2,8 @@
 layout: post
 title:  "Performance Testing with Lighthouse CI"
 date:   2019-12-02 21:00:00+00:00
-category: "code"
+image: code
+category: writing
 body_id: blog
 description: Automating website-performance testing with LighthouseCI
 ---
