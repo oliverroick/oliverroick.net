@@ -9,7 +9,7 @@ description: A list of all articles posted to Oliver Roick's blog.
 	{% for post in site.posts %}
 	{% if post.category != 'news' %}
 	<li>
-		<a href="{{ post.url }}">{{ post.title }}</a>
+		<a href="{{ post.url }}">{{ post.title }}</a>{% if post.author %} by {{ post.author }}{% endif %}
 		<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>
 	</li>
 	{% endif %}
