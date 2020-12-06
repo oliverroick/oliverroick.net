@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<article itemscope itemtype="http://schema.org/Review">
+    <h1>
+        {{ page.title }}
+        <span class="author">by {{ page.author }}</span>
+    </h1>
+    <div itemprop="reviewBody">
+        {{ content }}
+        <p class="when">I read {{ page.title }} by {{ page.author }} in {{ page.date | date: "%Y" }}.</p>
+    </div>
+
+    <h2>Book details</h2>
+    <ul itemprop="itemReviewed" itemscope itemtype="http://schema.org/Book">
+        <li>
+            <span itemprop="name">{{ page.title }}</span> by 
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <span itemprop="name">{{ page.author }}</span>
+            </span>
+        </li>
+        <li>
+            ISBN:
+            <span itemprop="isbn">{{ page.isbn| default: 'This book does not have an ISBN' }}</span>
+            {% if page.isbn %}(<a href="https://worldcat.org/isbn/{{ page.isbn }}">Look up with WorldCat</a>){% endif %}
+        </li>
+    </ul>
+    <div itemprop="author publisher" itemscope itemtype="http://schema.org/Person">
+        <meta content="Oliver Roick" itemprop="name">
+    </div>
+    <meta content="{{ page.url }}" itemprop="url">
+    <meta content="{{ page.description }}" itemprop="description">
+    <meta content="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+</article>

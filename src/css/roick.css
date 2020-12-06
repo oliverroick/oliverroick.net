@@ -321,6 +321,20 @@ article > .update > p {
   margin: 0;
 }
 
+article > h1 > .author {
+  font-style: italic;
+  font-size: var(--base-size);
+  font-family: var(--serif);
+  font-weight: normal;
+  text-transform: none;
+  display: block;
+  margin-top: var(--gap-xxs);
+}
+
+article .when {
+  font-style: italic;
+}
+
 /*
  * SPECIFICS
  */
