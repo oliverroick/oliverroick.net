@@ -5,5 +5,12 @@
   ],
   "rules": {
     "require-sri": 0
-  }
+  },
+  "elements": [
+    "html5",
+    {
+      "article": { "permittedContent": ["@flow", "meta"]},
+      "div": { "permittedContent": ["@flow", "dt", "dd", "meta"]}
+    }
+  ]
 }
