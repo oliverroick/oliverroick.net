@@ -8,9 +8,7 @@ highlight_code: true
 body_id: blog
 ---
 
-{% post_update %}
-The solution discussed here uses Raven, Sentry's discontinued JavaScript SDK. Since I published the post, [@sentry/node](https://www.npmjs.com/package/@sentry/node) has been released, which [makes logging on AWS Lambda](https://docs.sentry.io/platforms/node/serverless/) a lot simpler.
-{% endpost_update %}
+{% include update.html u="The solution discussed here uses Raven, Sentry's discontinued JavaScript SDK. Since I published the post, [@sentry/node](https://www.npmjs.com/package/@sentry/node) has been released, which [makes logging on AWS Lambda](https://docs.sentry.io/platforms/node/serverless/) a lot simpler." %}
 
 Every unhandled exception is a bug in your software. Things will go wrong in your Lambda function, and you want to know about it. 
 

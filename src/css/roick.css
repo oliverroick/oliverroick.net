@@ -268,6 +268,7 @@ main {
 
 main h1 {
   font-size: var(--font-l);
+  max-width: calc(var(--main-width) / 3 * 2);
 }
 
 main h2 {
@@ -309,16 +310,10 @@ article > time {
   margin-top: var(--gap-s);
 }
 
-article > .update {
-  border: 1px solid var(--vanilla);
-  border-left-width: var(--border-size);
-  padding: var(--base-size);
-  font-family: var(--sans-serif);
+article .update {
   font-size: var(--font-s);
-}
-
-article > .update > p {
-  margin: 0;
+  font-style: italic;
+  max-width: calc(var(--main-width) / 3 * 2);
 }
 
 article > h1 > .author {

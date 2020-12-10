@@ -9,7 +9,6 @@ collections:
     output: false
 plugins:
   - jekyll-sitemap
-  - ./_plugins/post_update
 defaults:
   - scope:
       path: "files/**/*"

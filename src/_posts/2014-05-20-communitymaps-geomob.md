@@ -11,9 +11,7 @@ Last week, I introduced Community Maps 2.0 to the [London #geomob](http://geomob
 
 =====
 
-{% post_update %}
-The original version of this post included the slides of the talk embedded from Speakerdeck. The embedded snippet was not compliant with accessibilty standards so I decided to remove it from this page. You can still [view the slides on Speakerdeck](https://speakerdeck.com/oliverroick/community-maps-2-dot-0).
-{% endpost_update %}
+{% include update.html u="The original version of this post included the slides of the talk embedded from Speakerdeck. The embedded snippet was not compliant with accessibilty standards so I decided to remove it from this page. You can still [view the slides on Speakerdeck](https://speakerdeck.com/oliverroick/community-maps-2-dot-0)." %}
 
 ## What is Community Maps?
 
