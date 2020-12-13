@@ -18,6 +18,7 @@
   [plugins.inputs.minifierOptions]
     removeComments = true
     collapseInlineTagWhitespace = false
+    removeOptionalTags = false
 
 [[plugins]]
   package = "netlify-plugin-html-validate"
