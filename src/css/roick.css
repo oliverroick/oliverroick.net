@@ -210,15 +210,18 @@ body#home header span#name {
 body#writing header li#li_writing > a:link,
 body#blog header li#li_writing > a:link,
 body#work header li#li_work > a:link,
+body#about header li#li_about > a:link,
 body#writing header li#li_writing > a:visited,
 body#blog header li#li_writing > a:visited,
-body#work header li#li_work > a:visited {
+body#work header li#li_work > a:visited,
+body#about header li#li_about > a:visited {
   border-bottom: var(--border-size) solid var(--vanilla);
 }
 
 body#writing header li#li_writing > a:focus,
 body#blog header li#li_writing > a:focus,
-body#work header li#li_work > a:focus {
+body#work header li#li_work > a:focus,
+body#about header li#li_about > a:focus {
   border-bottom-color: var(--dark);
 }
 
@@ -341,6 +344,21 @@ article .when {
 
 .archive > li {
   margin-bottom: var(--grid-gap);
+}
+
+.publications ul {
+  list-style: none;
+  padding: 0;
+}
+
+.publications ul li {
+  text-indent: calc(var(--gap-s) * -1);
+  padding-left: var(--gap-s);
+  margin-bottom: 1rem;
+}
+
+.authors {
+  font-variant: small-caps;
 }
 
 .archive > li > h2 {
