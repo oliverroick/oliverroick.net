@@ -16,14 +16,14 @@ To keep updated with my work follow me on [GitHub](https://github.com/oliverroic
 
 ## Projects
 
-- [Leaflet.Deflate](https://github.com/oliverroick/Leaflet.Deflate), a small library to improve readability of feature-heavy large-scale LeafletJS maps.
+- [Leaflet.Deflate](https://github.com/oliverroick/Leaflet.Deflate), a small library to the improve readability of feature-heavy large-scale LeafletJS maps.
 - [Cadasta Platform](https://github.com/Cadasta/cadasta-platform) was a web portal to document land and property rights.
-- [GeoKey](http://geokey.org.uk/) is a platform for participatory mapping that enables citizens to collect, share and discuss local knowledge on the Web.
+- [GeoKey](http://geokey.org.uk/) is a platform for participatory mapping that enables citizens to collect, share, and discuss local knowledge on the Web.
 - [OpenRouteService](https://openrouteservice.org/) OpenRouteService is an online route-planning application based on OpenStreetMap. I helped build an earlier version of its front-end.
 - [OSMatrix](https://wiki.openstreetmap.org/wiki/OSMatrix) was a tool for visual exploration of OpenStreetMap mapping progress and quality metrics. 
 - [django-skivvy](https://github.com/oliverroick/django-skivvy) helps you write faster integration tests for Django views with less code.
 
-## Publications {#pubs}
+## Publications
 
 I wrote and published papers on community mapping and volunteered geographic information.
 
