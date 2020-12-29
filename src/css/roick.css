@@ -138,6 +138,10 @@ hr:after {
   margin: var(--grid-gap) 0;
 }
 
+blockquote {
+  font-style: italic;
+}
+
 a.skip-link {
   display: block;
   font-family: var(--sans-serif);
@@ -331,6 +335,33 @@ article > h1 > .author {
 
 article .when {
   font-style: italic;
+}
+
+
+.footnotes {
+  font-size: var(--font-s);
+}
+
+.footnotes:before {
+  content: "⎯";
+  display: block;
+  color: var(--grey);
+  font-size: 1rem;
+}
+
+.footnotes ol {
+  margin-top: 0;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.footnotes ol li {
+  list-style-position: inside;
+}
+
+.footnotes li p {
+  margin: 0;
+  display: inline;
 }
 
 /*
