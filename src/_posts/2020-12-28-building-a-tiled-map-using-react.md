@@ -2,7 +2,6 @@
 layout: post
 title:  "Building a tiled map using React"
 date:   2020-12-28 10:00:00+00:00
-image: schema-org
 category: writing
 body_id: blog
 description: An utterly pointless side project
