@@ -239,16 +239,22 @@ header {
 }
 
 header:after {
+  font-family: var(--serif);
   content: "⎯";
   display: block;
   color: var(--dark-800);
   margin: var(--gap-xs) 0 var(--gap-l) 0;
 }
 
-header > nav > ul {
+header nav ul {
   margin: 0 0 0 0;
   padding: 0;
-  list-style: none;
+}
+
+header nav ul li {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
 }
 
 @media (min-width: 450px) {
@@ -259,11 +265,11 @@ header > nav > ul {
   }
 
   header > nav {
-    margin-left: var(--base-size);
+    margin-left: var(--gap-m);
   }
 
   header nav a {
-    margin-left: var(--gap-xxs);
+    margin-left: var(--gap-s);
   }
 }
 
