@@ -1,13 +1,12 @@
 ---
 layout: post
 title:  "Building a tiled map using React"
+alternate: An utterly pointless side project
 date:   2020-12-28 10:00:00+00:00
 category: writing
 body_id: blog
 description: An utterly pointless side project
 ---
-
-_Alternate title: An utterly pointless side project_
 
 There is a version of [Murphy's Law](https://en.wikipedia.org/wiki/Murphy%27s_law) that goes like this: 
 

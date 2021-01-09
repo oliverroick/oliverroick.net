@@ -3,6 +3,7 @@ layout: default
 ---
 <article itemscope itemtype ="http://schema.org/BlogPosting">
     <h1 itemprop="name headline">{{ page.title }}</h1>
+    {% if page.alternate %}<p class="article__alternate_title">{{ page.alternate }}</p>{% endif %}
     <div itemprop="articleBody">
         {{ content | replace: '=====', '' }}
     </div>
