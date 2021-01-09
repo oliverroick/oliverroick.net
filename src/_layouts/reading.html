@@ -2,13 +2,11 @@
 layout: default
 ---
 <article itemscope itemtype="http://schema.org/Review">
-    <h1>
-        {{ page.title }}
-        <span class="author">by {{ page.author }}</span>
-    </h1>
+    <h1>{{ page.title }}</h1>
+    <p class="article__book_authors">by {{ page.author }}</p>
     <div itemprop="reviewBody">
         {{ content }}
-        <p class="when">I read {{ page.title }} by {{ page.author }} in {{ page.date | date: "%Y" }}.</p>
+        <p class="article__book_when">I read {{ page.title }} by {{ page.author }} in {{ page.date | date: "%Y" }}.</p>
     </div>
 
     <h2>Book details</h2>
