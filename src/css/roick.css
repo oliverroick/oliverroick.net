@@ -8,6 +8,7 @@
        url('/fonts/SourceSerifPro-Regular.otf.woff') format('woff'),
        url('/fonts/SourceSerifPro-Regular.otf') format('opentype'),
        url('/fonts/SourceSerifPro-Regular.ttf') format('truetype');
+  unicode-range: U+000-5FF;
 }
 
 @font-face{
@@ -20,6 +21,7 @@
        url('/fonts/SourceSerifPro-It.otf.woff') format('woff'),
        url('/fonts/SourceSerifPro-It.otf') format('opentype'),
        url('/fonts/SourceSerifPro-It.ttf') format('truetype');
+  unicode-range: U+000-5FF;
 }
 
 @font-face{
@@ -32,6 +34,7 @@
        url('/fonts/SourceSerifPro-Bold.otf.woff') format('woff'),
        url('/fonts/SourceSerifPro-Bold.otf') format('opentype'),
        url('/fonts/SourceSerifPro-Bold.ttf') format('truetype');
+  unicode-range: U+000-5FF;
 }
 
 @font-face{
@@ -44,6 +47,7 @@
        url('/fonts/SourceSerifPro-BoldIt.otf.woff') format('woff'),
        url('/fonts/SourceSerifPro-BoldIt.otf') format('opentype'),
        url('/fonts/SourceSerifPro-BoldIt.ttf') format('truetype');
+  unicode-range: U+000-5FF;
 }
 
 :root {
