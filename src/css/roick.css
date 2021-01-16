@@ -183,9 +183,16 @@ figure {
 table {
   border-spacing: 0;
   margin-bottom: var(--gap-s);
+  margin-left: auto;
+  margin-right: auto;
+  font-family: sans-serif;
+  font-size: calc(var(--base-size) * .9);
 }
 
 caption {
+  font-size: var(--font-s);
+  font-weight: bold;
+  color: var(--dark-700);
   text-align: left;
   margin-bottom: var(--gap-xs);
 }
@@ -193,6 +200,14 @@ caption {
 th {
   border-bottom: 2px solid var(--dark-400);
   border-left: 1px solid var(--dark-400);
+}
+
+tfoot td {
+  border-top: 2px solid var(--dark-400);
+}
+
+tr:nth-child(2n) {
+  background-color: var(--dark-100);
 }
 
 th:first-child {
@@ -404,6 +419,10 @@ article > time {
 table.db {
   font-family: var(--mono);
   font-size: var(--mono-font-size);
+}
+
+table.db tr {
+  background-color: #fff;
 }
 
 table.db .pk {
