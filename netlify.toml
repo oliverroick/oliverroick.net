@@ -13,21 +13,6 @@
   compress = true
 
 [[plugins]]
-  package = "netlify-plugin-minify-html"
-
-  [plugins.inputs.minifierOptions]
-    removeComments = true
-    collapseInlineTagWhitespace = false
-    removeOptionalTags = false
-
-[[plugins]]
-  package = "netlify-plugin-html-validate"
-
-  [plugins.inputs]
-    ext = "html"
-    config = ".htmlvalidate.json"
-
-[[plugins]]
    package = "netlify-plugin-inline-critical-css"
 
    # All inputs are optional, so you can omit this section.
@@ -47,6 +32,21 @@
      [[plugins.inputs.dimensions]]
        width = 1920
        height = 1080
+
+[[plugins]]
+  package = "netlify-plugin-minify-html"
+
+  [plugins.inputs.minifierOptions]
+    removeComments = true
+    collapseInlineTagWhitespace = false
+    removeOptionalTags = false
+
+[[plugins]]
+  package = "netlify-plugin-html-validate"
+
+  [plugins.inputs]
+    ext = "html"
+    config = ".htmlvalidate.json"
 
 [[redirects]]
   from = "/wheredoyougo"
