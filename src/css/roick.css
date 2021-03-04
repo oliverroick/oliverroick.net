@@ -38,17 +38,17 @@
   --white: rgb(255, 255, 255);
 
   /* Sizing */
-  --base-size: 18px;
-  --max-width: calc(var(--base-size) * 40);
+  --base-size: 14px;
+  --font-l: calc(var(--base-size) * 2);
+  --font-s: 12px;
+  --max-width: calc(var(--base-size) * 35);
   --gap-xs: calc(var(--base-size) * 0.5);
   --gap-s: var(--base-size);
   --gap-m: calc(var(--base-size) * 2);
   --gap-l: calc(var(--base-size) * 4);
   --gap-xl: calc(var(--base-size) * 8);
   --border-size: calc(var(--base-size) / 4);
-  --font-l: calc(var(--base-size) * 2);
-  --font-s: calc(var(--base-size) * 0.75);
-  --mono-font-size: calc(var(--base-size) - 3px);
+  --mono-font-size: calc(var(--base-size));
 }
 
 body {
@@ -63,11 +63,7 @@ body {
 main, header {
   max-width: var(--max-width);
   margin: auto;
-  padding: 0 var(--gap-s);
-}
-
-main {
-  font-family: var(--serif);
+  padding: 0 var(--gap-m);
 }
 
 a {
@@ -131,6 +127,7 @@ ul li {
 
 blockquote {
   font-style: italic;
+  font-family: var(--serif);
 }
 
 time, .time {
@@ -248,28 +245,33 @@ a.skip-link:focus {
 header {
   letter-spacing: 2px;
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: calc(var(--base-size) - 2px);
   margin-top: var(--gap-m);
+  margin-bottom: var(--gap-l);
+  font-weight: 700;
+  display: flex;
+  align-items: flex-start;
 }
 
-header:after {
-  font-family: var(--serif);
-  content: "⎯";
-  display: block;
-  color: var(--dark-800);
-  margin: var(--gap-xs) 0 var(--gap-l) 0;
+header span#name {
+  background-color: var(--yellow-900);
+  padding: var(--gap-xs) var(--gap-s);
+}
+
+header nav {
+  width: 50%;
+  display: inline-block;
 }
 
 header nav ul {
-  margin: 0 0 0 0;
+  margin: 0;
   padding: 0;
 }
 
 header nav ul li {
   padding: 0;
-  list-style-type: none;
   margin: 0;
+  list-style-type: none;
+  text-align: right;
 }
 
 @media (min-width: 450px) {
@@ -305,10 +307,6 @@ header a:focus {
 header nav a,
 header nav a:visited {
   color: var(--blue-900);
-}
-
-body#home header span#name {
-  border-bottom: var(--border-size) solid var(--yellow-300);
 }
 
 body#writing header li#li_writing > a:link,
