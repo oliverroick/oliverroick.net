@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<article class="link" itemscope itemtype ="http://schema.org/BlogPosting">
+    <h1 itemprop="name headline">
+        <a href="{{ page.link }}">{{ page.title }}</a>
+    </h1>
+    <div itemprop="articleBody">
+        {{ content | replace: '=====', '' }}
+    </div>
+    <time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time>
+</article>
