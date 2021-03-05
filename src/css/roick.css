@@ -259,7 +259,7 @@ header {
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-top: var(--gap-m);
-  margin-bottom: var(--gap-l);
+  margin-bottom: var(--gap-xl);
   font-weight: 700;
   display: flex;
   align-items: flex-start;
