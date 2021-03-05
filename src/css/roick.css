@@ -369,6 +369,7 @@ article.link h2.h1 {
 article h1 > a.link__permalink,
 article h2.h1 > a.link__permalink {
   text-decoration: none;
+  margin-left: var(--gap-xs);
 }
 
 article:not(.link) h1 > a,
