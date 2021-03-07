@@ -6,20 +6,20 @@ body_id: about
 
 # About {#about-h1}
 
-I'm a software developer. I live and work in London, UK.
+I'm a geographer who writes code. Previously, I have build software to document and report on land rights, to support community and participatory mapping, and to analyse and visualise crowd-sourced geographic information. I now lead the front-end team at [Citizens Advice](https://www.citizensadvice.org.uk/).
 
-For the bigger part of my life, I have build software to document and report on land rights, to support community mapping efforts, and to analyse and visualise crowd-sourced geographic information. 
+I live and work on London, UK.
 
-I now lead the front-end team at [Citizens Advice](https://www.citizensadvice.org.uk/) in London.
+To keep updated with my work follow me on [GitHub](https://github.com/oliverroick), where almost all of my code lives, or subscribe to this site with [Atom](/atom.xml) or [RSS](/rss.xml). I also post updates to this website on [Twitter](https://twitter.com/oliverroick), although I often forget.
 
-To keep updated with my work follow me on [GitHub](https://github.com/oliverroick), where almost all of my code lives, or subscribe to this site with [Atom](/atom.xml) or [RSS](/rss.xml).
+The best way to get in touch is via email: <a href="mailto:hi@oliverroick.net">hi@oliverroick.net</a>
 
 ## Projects
 
 - [Leaflet.Deflate](https://github.com/oliverroick/Leaflet.Deflate), a small library to the improve readability of feature-heavy large-scale LeafletJS maps.
 - [Cadasta Platform](https://github.com/Cadasta/cadasta-platform) was a web portal to document land and property rights.
 - [GeoKey](http://geokey.org.uk/) is a platform for participatory mapping that enables citizens to collect, share, and discuss local knowledge on the Web.
-- [OpenRouteService](https://openrouteservice.org/) OpenRouteService is an online route-planning application based on OpenStreetMap. I helped build an earlier version of its front-end.
+- [OpenRouteService](https://openrouteservice.org/) is an online route-planning application based on OpenStreetMap. I helped build an earlier version of its front-end.
 - [OSMatrix](https://wiki.openstreetmap.org/wiki/OSMatrix) was a tool for visual exploration of OpenStreetMap mapping progress and quality metrics. 
 - [django-skivvy](https://github.com/oliverroick/django-skivvy) helps you write faster integration tests for Django views with less code.
 
