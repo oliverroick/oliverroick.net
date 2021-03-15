@@ -6,10 +6,9 @@ layout: default
     <p class="article__book_authors">by {{ page.author }}</p>
     <div itemprop="reviewBody">
         {{ content }}
-        <p class="article__book_when">I read {{ page.title }} by {{ page.author }} in {{ page.date | date: "%Y" }}.</p>
     </div>
 
-    <h2>Book details</h2>
+    <h2 class="h2__article__book_details">Book details</h2>
     <ul itemprop="itemReviewed" itemscope itemtype="http://schema.org/Book">
         <li>
             <span itemprop="name">{{ page.title }}</span> by 
@@ -28,5 +27,6 @@ layout: default
     </div>
     <meta content="{{ page.url }}" itemprop="url">
     <meta content="{{ page.description }}" itemprop="description">
-    <meta content="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+
+    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date_to_long_string }}</time>
 </article>
