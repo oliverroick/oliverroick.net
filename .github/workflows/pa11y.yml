@@ -22,7 +22,7 @@ jobs:
       id: netflify-preview
       with:
         site_name: "oliverroick"
-        max_timeout: 60
+        max_timeout: 300
       env:
         NETLIFY_TOKEN: ${{secrets.NETLIFY_TOKEN}}
     - name: Run pa11y
