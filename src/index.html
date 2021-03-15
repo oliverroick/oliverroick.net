@@ -17,6 +17,7 @@ num_posts: 2
             <a href="{{ post.url }}">{{ post.title }}</a>
         {% endif %}
     </h2>
+    {% if post.author %}<p class="article__book_authors">by {{ post.author }}</p>{% endif %}
     {% if post.alternate %}<p class="article__alternate_title">{{ post.alternate }}</p>{% endif %}
     {{ post.content | replace: '=====', '' }}
     <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>
