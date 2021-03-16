@@ -125,8 +125,17 @@ ul li {
 }
 
 blockquote {
-  font-style: italic;
-  font-family: var(--serif);
+  border-left: 1px solid var(--dark-200);
+  padding: var(--gap-xs) var(--gap-s);
+  margin-left: 0;
+}
+
+blockquote p:first-child {
+  margin-top: 0;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
 }
 
 time, .time {
