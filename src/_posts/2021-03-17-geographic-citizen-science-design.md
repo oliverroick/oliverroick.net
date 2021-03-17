@@ -4,7 +4,6 @@ title: "Geographic Citizen Science Design: No one left behind"
 link: https://www.uclpress.co.uk/products/125702
 date:   2021-03-17 07:00:00+00:00
 category: links
-description: A new release of the netlify plugin netlify-plugin-html-validate is out. 
 ---
 
 My former colleagues at University College London, Artemis Skarlatidou and Muki Haklay, have edited and published a new book:
