@@ -126,8 +126,9 @@ ul li {
 
 blockquote {
   border-left: 1px solid var(--dark-200);
-  padding: var(--gap-xs) var(--gap-s);
-  margin-left: 0;
+  padding: 0 var(--gap-s);
+  margin-left: var(--gap-xs);
+  margin-right: var(--gap-xs);
 }
 
 blockquote p:first-child {
