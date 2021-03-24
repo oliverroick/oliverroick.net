@@ -139,7 +139,7 @@ blockquote p:last-child {
   margin-bottom: 0;
 }
 
-time, .time {
+time {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: var(--font-s);
@@ -374,12 +374,6 @@ article.link h2.h1 {
   margin-bottom: var(--gap-xs);
 }
 
-article h1 > a.link__permalink,
-article h2.h1 > a.link__permalink {
-  text-decoration: none;
-  margin-left: var(--gap-xs);
-}
-
 article:not(.link) h1 > a,
 article:not(.link) h2.h1 > a {
   color: var(--dark);
@@ -416,8 +410,18 @@ h2.h2__article__book_details {
   margin-top: var(--gap-m);
 }
 
-article > time {
+.article__meta {
   margin-top: var(--gap-m);
+}
+
+.article__meta time {
+  display: inline;
+}
+
+.article__meta a {
+  text-decoration: none;
+  margin-left: var(--gap-xs);
+  color: var(--dark-800);
 }
 
 .footnotes {

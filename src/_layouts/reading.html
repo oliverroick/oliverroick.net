@@ -27,6 +27,7 @@ layout: default
     </div>
     <meta content="{{ page.url }}" itemprop="url">
     <meta content="{{ page.description }}" itemprop="description">
-
-    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date_to_long_string }}</time>
+    <div class="article__meta">
+        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date_to_long_string }}</time>
+    </div>
 </article>

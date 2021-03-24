@@ -12,7 +12,6 @@ num_posts: 3
     <h2 class="h1">
         {% if post.layout == 'link' %}
             <a href="{{ post.link }}">{{ post.title }}</a>
-            <a href="{{ post.url }}" class="link__permalink" title="Permalink for {{ post.title }}">◆</a>
         {% else %}
             <a href="{{ post.url }}">{{ post.title }}</a>
         {% endif %}
@@ -20,6 +19,9 @@ num_posts: 3
     {% if post.author %}<p class="article__book_authors">by {{ post.author }}</p>{% endif %}
     {% if post.alternate %}<p class="article__alternate_title">{{ post.alternate }}</p>{% endif %}
     {{ post.content | replace: '=====', '' }}
-    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>
+    <div class="article__meta">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>
+        <a href="{{ post.url }}" class="link__permalink" title="Permalink for {{ post.title }}">◆</a>
+    </div>
 </article>
 {% endfor %}
