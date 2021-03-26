@@ -16,7 +16,7 @@ The best way to get in touch is via email: <a href="mailto:hi@oliverroick.net">h
 
 ## Projects
 
-- [Leaflet.Deflate](https://github.com/oliverroick/Leaflet.Deflate), a small library to the improve readability of feature-heavy large-scale LeafletJS maps.
+- [Leaflet.Deflate](https://github.com/oliverroick/Leaflet.Deflate) is a small library to improve the readability of feature-heavy large-scale LeafletJS maps.
 - [Cadasta Platform](https://github.com/Cadasta/cadasta-platform) was a web portal to document land and property rights.
 - [GeoKey](http://geokey.org.uk/) is a platform for participatory mapping that enables citizens to collect, share, and discuss local knowledge on the Web.
 - [OpenRouteService](https://openrouteservice.org/) is an online route-planning application based on OpenStreetMap. I helped build an earlier version of its front-end.
