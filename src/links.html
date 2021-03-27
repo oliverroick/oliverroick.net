@@ -1,0 +1,24 @@
+---
+layout: default
+title: links
+body_id: links
+description: A list of all links posted to Oliver Roick's blog.
+---
+
+<h1>Links</h1>
+{% for post in site.posts %}
+{% if post.category == 'links' %}
+
+<article class="{{ post.layout }}">
+    <h2 class="h1">
+        <a href="{{ post.link }}">{{ post.title }}</a>
+    </h2>
+    {{ post.content }}
+    <div class="article__meta">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>
+        <a href="{{ post.url }}" class="link__permalink" title="Permalink for {{ post.title }}">◆</a>
+    </div>
+</article>
+
+{% endif %}
+{% endfor %}
