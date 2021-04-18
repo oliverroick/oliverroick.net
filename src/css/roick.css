@@ -141,7 +141,7 @@ blockquote p:last-child {
 
 time {
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 0.1rem;
   font-size: var(--font-s);
   font-family: var(--sans-serif);
   color: var(--grey);
@@ -264,7 +264,7 @@ a.skip-link:focus {
 }
 
 header {
-  letter-spacing: 2px;
+  letter-spacing: 0.1rem;
   text-transform: uppercase;
   margin-top: var(--gap-m);
   margin-bottom: var(--gap-xl);
