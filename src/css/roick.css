@@ -404,6 +404,11 @@ article:not(.link) h2.h1 > a:focus {
   background-color: var(--yellow-100);
 }
 
+.article__update b {
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
 h2.h2__article__book_details {
   font-size: var(--font-m);
   margin-bottom: var(--gap-xs);
