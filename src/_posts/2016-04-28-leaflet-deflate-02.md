@@ -19,9 +19,9 @@ var map = L.map("map");
 L.Deflate({minSize: 10}).addTo(map);
 {% endhighlight %}
 
-Big thanks to [Lindsey Jacks](http://linzjax.github.io/), who helped with this.
+Big thanks to [Lindsey Jacks](https://linzjax.github.io/), who helped with this.
 
-Then, you can apply Leaflet.Deflate to selected features by adding the features to a [`FeatureGroup`](http://leafletjs.com/reference.html#featuregroup) and then appying Leaflet.Deflate to that `FeatureGroup`. Here's how:
+Then, you can apply Leaflet.Deflate to selected features by adding the features to a [`FeatureGroup`](https://leafletjs.com/reference.html#featuregroup) and then appying Leaflet.Deflate to that `FeatureGroup`. Here's how:
 
 {% highlight javascript %}
 var map = L.map("map");
