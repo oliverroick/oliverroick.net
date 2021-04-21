@@ -19,7 +19,7 @@ For instance, the following packages have been extremely valuable for me:
 
 - [django-allauth](https://github.com/pennersr/django-allauth) introduces email verification, multiple emails per account, it simplifies password changes and provides everything needed for third-party authentication via Twitter, Facebook, Google and the like.
 - [django-model-utils](https://django-model-utils.readthedocs.org/en/latest/) extends Django models and managers with time stamps, status fields or model inheritance. It provides essential functionality that you're very likely going to need.
-- [django-rest-framework](http://www.django-rest-framework.org/). Are you building a Web API? Use Django Rest Framework! DRF provides views, parsers, serialisers, and, and, and. It's pretty much the one library you'll need when building a Web API.
+- [django-rest-framework](https://www.django-rest-framework.org/). Are you building a Web API? Use Django Rest Framework! DRF provides views, parsers, serialisers, and, and, and. It's pretty much the one library you'll need when building a Web API.
 - [django-oauth-toolkit](https://github.com/evonove/django-oauth-toolkit) is what you should use, if you plan to implement OAuth for your API. It handles all tokens and implements all API endpoints needed for the infamous OAuth dance.
 - [factory-boy](http://factoryboy.readthedocs.org/en/latest/) let's you build easy-to-use factories to create model instances that you can use in your tests.
 
@@ -37,7 +37,7 @@ Class-based views can save you heaps of time if you create, update and delete yo
 
 Function-based views can be an equally good option. They are easy to implement, easy to understand for other developers and are usually a lot less complex than class-based views.
 
-If you think class-based views are the better choice for your case, have a look at [Luke Plant's approach to class-based views](http://lukeplant.me.uk/blog/posts/my-approach-to-class-based-views/); there are a lot of good ideas in his article.
+If you think class-based views are the better choice for your case, have a look at [Luke Plant's approach to class-based views](https://lukeplant.me.uk/blog/posts/my-approach-to-class-based-views/); there are a lot of good ideas in his article.
 
 ## Setup a CI environment right from the start
 
@@ -49,7 +49,7 @@ tools out there that integrate with Travis and help keeping the code quality at 
 
 - [Requires.io](https://requires.io/) checks your requirements (either in requirements.txt or setup.py) and tells you whether your packages are up-to-date, outdated or insecure. You can also sign up for an email alert, that notifies you as soon as something changes.
 - [coveralls.io](https://coveralls.io/) checks the test coverage of your code. It is basically the same thing  [coverage](http://nedbatchelder.com/code/coverage/) does in the command line, but it checks all commits to your repository and it automatically comments on a pull request about changes in code test coverage.
-- [landscape.io](https://landscape.io/) provides code quality measures for your Python code. It checks for coding errors, styling flaws and code smells (things that aren't really wrong, but look like they could need some improvements) and therefore helps you keep your code neat and clean.
+- [landscape.io](https://web.archive.org/web/20150324200933/https://landscape.io/) provides code quality measures for your Python code. It checks for coding errors, styling flaws and code smells (things that aren't really wrong, but look like they could need some improvements) and therefore helps you keep your code neat and clean.
 
 ## Package from the start if you intend to make releases
 
