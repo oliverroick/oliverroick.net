@@ -7,6 +7,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Fix links
-        uses: oliverroick/notfoundbot@v2.0.3
+        uses: oliverroick/notfoundbot@custom-directory
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
