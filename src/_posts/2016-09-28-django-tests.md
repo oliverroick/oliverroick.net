@@ -41,7 +41,7 @@ Database requests slow down test execution, and there is nothing more annoying t
 
 ## Don’t use iterator factories
 
-Factory boy’s [`Iterator`](http://factoryboy.readthedocs.io/en/latest/reference.html#iterator) is very convenient if you can’t decide which value to provide for a field. But they also make tests non-deterministic, which means a test might fail randomly even though the code is not broken.
+Factory boy’s [`Iterator`](https://factoryboy.readthedocs.io/en/latest/reference.html#iterator) is very convenient if you can’t decide which value to provide for a field. But they also make tests non-deterministic, which means a test might fail randomly even though the code is not broken.
 
 Consider this example: You have a model and want to test that a field has not been updated, e.g. the model should not be updated when the user is not authorized to do the change. The test tries to update the model to a particular value and then check that the model has not been updated to that value. If the original value for that field has been set randomly, there is a chance this value is the same that I want to apply to the model. The test then fails randomly, depending on the number of tests that were executed before. 
 
