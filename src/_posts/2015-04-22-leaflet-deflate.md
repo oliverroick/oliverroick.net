@@ -20,7 +20,7 @@ The new Leaflet plugin [Leaflet.Deflate](https://github.com/oliverroick/Leaflet.
 
 The (slighlty) tricky part is to determine when a feature actually is too small, as it depends on both the geographical size of the feature and the scale of the map. A scale-independent unit, which also happens to be the universal unit on computer screens, is the pixel. Hence, calculating the pixel size of the polygon on the screen and switching between marker and polygon display when the pixel size falls below a certain threshold is the approach that was implemented in the plugin.
 
-The good thing is, [Leaflet](http://leafletjs.com/) already provides us with all the basic functionality necessary to implement this approach.
+The good thing is, [Leaflet](https://leafletjs.com/) already provides us with all the basic functionality necessary to implement this approach.
 
 ## Identifying the threshold zoom level
 
@@ -42,7 +42,7 @@ function isCollapsed (path, zoom) {
 Here's how it works:
 
 1. Get the bounding box of the feature. Using the bounding box makes calculations a lot simpler when compared to complex geometries.
-2. The [`Bounds`](http://leafletjs.com/reference.html#bounds) object provides the coordinates of its north-east and south-west corners. Using [`Map.project(<LatLng>, zoom)`](http://leafletjs.com/reference.html#map-project) we can get the pixel coordinates of both corners.
+2. The [`Bounds`](https://leafletjs.com/reference.html#bounds) object provides the coordinates of its north-east and south-west corners. Using [`Map.project(<LatLng>, zoom)`](https://leafletjs.com/reference.html#map-project) we can get the pixel coordinates of both corners.
 3. Now its possible to calculate the bounding box's width and height in pixels.
 4. Finally, all we need is to compare the dimensions against a pre-set threshold value (the `minSize` option). For simplicity, the function just checks if both `width` and `hight` exceed the threshold value.
 5. The function returns `true` if one of the values is lower than the threshold.
