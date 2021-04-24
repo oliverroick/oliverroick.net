@@ -1,5 +1,7 @@
 name: notfoundbot
-on: ['push']
+on:
+  schedule:
+    - cron: "0 7 * * 1"
 
 jobs:
   check:
