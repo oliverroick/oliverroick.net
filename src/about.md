@@ -6,11 +6,11 @@ body_id: about
 
 # About {#about-h1}
 
-I'm a geographer who writes code. Previously, I have built software to document and report on land rights, to support community and participatory mapping, and to analyse and visualise crowd-sourced geographic information. I now lead the front-end team at [Citizens Advice](https://www.citizensadvice.org.uk/).
+I'm a geographer who writes code. Previously, I have built software to document and report on land rights, to support community and participatory mapping, and to analyse and visualise crowd-sourced geographic information.
 
 I live and work in London, UK.
 
-To keep updated with my work, follow me on [GitHub](https://github.com/oliverroick), where almost all of my code lives, or subscribe to this site with [Atom](/atom.xml) or [RSS](/rss.xml). I also post updates to this website on [Twitter](https://twitter.com/oliverroick), although I often forget.
+To keep updated with my work, follow me on [GitHub](https://github.com/oliverroick), where almost all of my code lives, or subscribe to this site with [Atom](/atom.xml) or [RSS](/rss.xml). I also post updates to this website on [Twitter](https://twitter.com/oliverroick).
 
 The best way to get in touch is via email: <a href="mailto:hi@oliverroick.net">hi@oliverroick.net</a>
 
