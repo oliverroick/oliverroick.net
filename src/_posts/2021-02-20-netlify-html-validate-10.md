@@ -18,3 +18,5 @@ Thanks to [Chris Buckley](https://cmbuckley.co.uk) for contributing to this rele
 This release is not yet available on Netlify's plugin directory for installation via the Netlify UI. Netlify's plugin system cannot handle breaking changes to plugins gracefully at this point. Their engineers are actively working on a solution. You can add the latest release to your build using [file-based plugin configuration](https://docs.netlify.com/configure-builds/build-plugins/#file-based-installation).
 
 Follow the [pull request to update netlify-plugin-html-validate](https://github.com/netlify/plugins/pull/223) for updates on the matter.
+
+{% include update.html u="The release is now available in Netlify's plugin directory to install via the Netlify UI." %}
