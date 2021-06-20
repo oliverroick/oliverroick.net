@@ -7,14 +7,3 @@ source: src
 collections:
   work:
     output: false
-plugins:
-  - jekyll-sitemap
-defaults:
-  - scope:
-      path: "files/**/*"
-    values:
-      sitemap: false
-  - scope:
-      path: "404.html"
-    values:
-      sitemap: false
