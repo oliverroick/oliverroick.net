@@ -49,6 +49,16 @@
     ext = "html"
     config = ".htmlvalidate.json"
 
+[[plugins]]
+  package = "@netlify/plugin-sitemap"
+
+  [plugins.inputs]
+  prettyURLs = true
+  exclude = [
+    'files/**/*',
+    '404'
+  ]
+
 [[redirects]]
   from = "/wheredoyougo"
   to = "https://oliverroick.github.io/wheredoyougo/"
