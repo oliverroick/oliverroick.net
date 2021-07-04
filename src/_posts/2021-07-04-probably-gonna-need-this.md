@@ -9,7 +9,7 @@ description:
 link: https://simonwillison.net/2021/Jul/1/pagnis/
 ---
 
-There is work that looks like overhead for a personal project or seems to hold you back at the beginning of a professional project but will pay off later in the product lifecycle. Simon Willison calls them PAGNIs — probably are gonna need this. 
+There is work that looks like overhead for a personal project or seems to hold you back at the beginning of a professional project but will pay off later in the product lifecycle. Simon Willison calls them PAGNIs — probably are gonna need it.
 
 > When should you over-ride YAGNI? When the cost of adding something later is so dramatically expensive compared with the cost of adding it early on that it’s worth taking the risk. On [sic] when you know from experience that an initial investment will pay off many times over.
 
