@@ -6,7 +6,7 @@ body_id: about
 
 # About {#about-h1}
 
-I'm a geographer who writes code. Previously, I have built software to document and report on land rights, to support community and participatory mapping, and to analyse and visualise crowd-sourced geographic information.
+I'm a geographer who writes code. Previously, I have built software to document and report on land rights, to support community and participatory mapping, and to analyse and visualise crowd-sourced geographic information. I now work at [Development Seed](https://developmentseed.org).
 
 I live and work in London, UK.
 
