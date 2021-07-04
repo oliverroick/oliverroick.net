@@ -28,4 +28,4 @@ jobs:
     - name: Run pa11y
       run: |
         npm ci
-        ./node_modules/.bin/pa11y-ci --sitemap ${{ steps.netflify-preview.outputs.url }}/sitemap.xml --sitemap-exclude pdf
+        ./node_modules/.bin/pa11y-ci --sitemap ${{ steps.netflify-preview.outputs.url }}/sitemap.xml --sitemap-exclude pdf --sitemap-find https://oliverroick.net --sitemap-replace ${{ steps.netflify-preview.outputs.url }}
