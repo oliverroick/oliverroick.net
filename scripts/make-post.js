@@ -48,7 +48,7 @@ body_id: ${postConfig.body_id}
 date: ${y}-${m}-${d} ${hh}:${mm}:00${offset < 0 ? '+' : '-'}${offsetHours}:00
 highlight_code: true
 title: ${title}
-description: 
+description: ${link ? `"Link: ${link}"` : ''}
 ${link ? `link: ${link}` : ''}
 ${isbn ? `isbn: ${isbn}` : ''}
 ${author ? `author: ${author}` : ''}
