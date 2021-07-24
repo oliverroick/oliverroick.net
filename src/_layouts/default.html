@@ -13,8 +13,10 @@
     {% endif %}
     {% if page.image %}
     <meta property="og:image" content="{{ site.url }}/img/socialmedia/{{ page.image }}.png">
-    <meta name="twitter:card" content="summary_large_image">
+    {% else %}
+    <meta property="og:image" content="{{ site.url }}/img/socialmedia/default.png">
     {% endif %}
+    <meta name="twitter:card" content="summary_large_image">
     <meta content="hi@oliverroick.net" property="og:email">
     <meta content="oliverroick.net" property="og:site_name">
     <meta content="blog" property="og:type">
