@@ -269,18 +269,22 @@ header {
   margin-top: var(--gap-m);
   margin-bottom: var(--gap-xl);
   font-weight: 700;
-  display: flex;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--gap-m);
+}
+
+@media (min-width: 450px) {
+  header {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 header span#name {
   background-color: var(--yellow-900);
   padding: var(--gap-xs) var(--gap-s);
-}
-
-header nav {
-  width: 50%;
-  display: inline-block;
+  align-self: start;
+  justify-self: start;
 }
 
 header nav ul {
@@ -292,23 +296,6 @@ header nav ul li {
   padding: 0;
   margin: 0;
   list-style-type: none;
-  text-align: right;
-}
-
-@media (min-width: 450px) {
-  header > nav,
-  header > nav > ul,
-  header > nav > ul > li {
-    display: inline;
-  }
-
-  header > nav {
-    margin-left: var(--gap-m);
-  }
-
-  header nav a {
-    margin-left: var(--gap-s);
-  }
 }
 
 header a,
