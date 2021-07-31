@@ -15,13 +15,35 @@ layout: null
     <lastBuildDate>{% for post in site.posts limit:1 %}{{ post.date | date_to_rfc822 }}{% endfor %}</lastBuildDate>
 
     {% for post in site.posts %}
-      {% if post.category != 'links' %}
+      {% if post.category == 'links' %}
+        {% if post.tweet %}
+        <item>
+          <title>{{ post.title }}</title>
+          <dc:creator>Oliver Roick</dc:creator>
+          <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+          <link>{{ site.url }}{{ post.id }}</link>
+          <guid isPermaLink="true">{{ site.url }}{{ post.id }}</guid>
+          <description>
+            {{ post.tweet }} {{ post.link }}
+          </description>
+        </item>
+        {% break %}
+        {% endif %}
+      {% else %}
       <item>
         <title>{{ post.title }}</title>
         <dc:creator>Oliver Roick</dc:creator>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
         <link>{{ site.url }}{{ post.id }}</link>
         <guid isPermaLink="true">{{ site.url }}{{ post.id }}</guid>
+        <description>
+          {% if post.tweet %}
+          {{ post.tweet }}
+          {% else %}
+          New blog: {{ post.title }}
+          {% endif %}
+          {{ site.url }}{{ post.id }}
+        </description>
       </item>
       {% break %}
       {% endif %}
