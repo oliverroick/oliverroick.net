@@ -5,7 +5,7 @@ body_id: blog
 date: 2021-07-26 17:16:00+01:00
 highlight_code: true
 title: In Defence of the Pull Request
-description: 
+description: Yes, pull requests slow down delivery, but they also will make your team better and the code you ship.
 ---
 
 Code reviews aren’t the developer’s primary responsibility, and often there is more than one round of changes to review. There’s always one person in the way to wrap up work, leaving snarky comments. Pull requests take time, resulting in long-lived feature branches and violation of continuous-integration principles. And, despite thorough reviews, bugs still make their way into production. Pull requests are neither efficient nor effective; they slow down delivery and contribute to toxic environments. 
@@ -26,6 +26,6 @@ Read the code; all of the changes. Review from the perspective of someone who ha
 
 The pull request review isn’t a place to argue about whether to add a trailing comma after the last key-value pair in a JSON object, you’ve got a linter for this, or whether to use a `for` loop or a `map` to process an array, although it might be worth having the discussion in certain situations. The review ensures that suggested changes fit in with the greater scheme of things in your application and make sure other developers understand them. 
 
-Of course, if you’re working alone, if you’re just experimenting, or if it’s just two blokes in their mum’s attic, code reviews get in the way of moving quickly and getting things done. But from a particular team size on, pull requests will make your team better and code you ship. Software development is a team sport, the unit of delivery is the team. You’re accountable as a team for what you deliver. Code reviews are a way to share that accountability.
+Of course, if you’re working alone, if you’re just experimenting, or if it’s just two blokes in their mum’s attic, code reviews get in the way of moving quickly and getting things done. But from a particular team size on, pull requests will make your team better and the code you ship. Software development is a team sport, the unit of delivery is the team. You’re accountable as a team for what you deliver. Code reviews are a way to share that accountability.
 
 If you feel that pull requests contribute to a low-trust, even toxic, environment, you might want to have a word with your team. It’s not the pull request that creates the culture; it’s the people interacting with each other. If your team isn’t integrating often enough, if branches are long-lived and pull requests have too many changes, try breaking down work into small junks and open a series of pull requests. Even better, break down the work into smaller tickets before developers pick them up. 
