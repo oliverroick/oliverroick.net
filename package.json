@@ -15,7 +15,7 @@
   },
   "homepage": "https://oliverroick.de",
   "dependencies": {
-    "netlify-plugin-html-validate": "^1.1.0",
+    "netlify-plugin-html-validate": "^1.1.1",
     "netlify-plugin-minify-html": "0.3.1"
   },
   "devDependencies": {
