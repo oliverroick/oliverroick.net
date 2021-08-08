@@ -9,6 +9,8 @@ description: "Link: https://blog.placemark.io/2021/07/19/issues-only-management.
 link: https://blog.placemark.io/2021/07/19/issues-only-management.html
 ---
 
+Tom MacWright:
+
 > I started my career at  [Development Seed](https://developmentseed.org/), and was part of the team that spun out and became  [Mapbox](https://www.mapbox.com/). And back in the day, *everything* was GitHub issues.
 > * The company internal blog was an issue-only repository. Blog posts were issues, you’d comment on them with comments on issues.
 > * Sales deals were tracked with issue threads.
