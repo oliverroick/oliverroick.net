@@ -6,6 +6,12 @@ body_id: about
 
 # About {#about-h1}
 
+<picture>
+  <source srcset="/img/profile/oliver.webp, /img/profile/oliver@2x.webp 2x" type="image/webp">
+  <source srcset="/img/profile/oliver.png, /img/profile/oliver@2x.png 2x" type="image/jpeg"> 
+  <img src="/img/profile/oliver@2x.png" alt="Portait of Oliver Roick">
+</picture>
+
 I'm a geographer who writes code. Previously, I have built software to document and report on land rights, to support community and participatory mapping, and to analyse and visualise crowd-sourced geographic information. I now work at [Development Seed](https://developmentseed.org).
 
 I live and work in London, UK.
