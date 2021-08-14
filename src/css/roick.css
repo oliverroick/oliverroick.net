@@ -169,6 +169,12 @@ img {
   max-width: 100%;
 }
 
+figcaption {
+  font-style: italic;
+  text-align: right;
+  font-size: var(--font-s)
+}
+
 hr {
   border: 0;
 }
