@@ -22,7 +22,13 @@ The best way to get in touch is via email: <a href="mailto:hi@oliverroick.net">h
 
 ## Projects
 
+I'm actively maintaining:
+
 - [Leaflet.Deflate](https://github.com/oliverroick/Leaflet.Deflate) is a small library to improve the readability of feature-heavy large-scale LeafletJS maps.
+- [netlify-plugin-html-validate](https://github.com/oliverroick/netlify-plugin-html-validate) is a Netlify plugin for post-build HTML validation.
+
+Older projects I stopped supporting, either because I changed jobs or because I found the projects were no longer useful, include:
+
 - [Cadasta Platform](https://github.com/Cadasta/cadasta-platform) was a web portal to document land and property rights.
 - [GeoKey](http://geokey.org.uk/) is a platform for participatory mapping that enables citizens to collect, share, and discuss local knowledge on the Web.
 - [OpenRouteService](https://openrouteservice.org/) is an online route-planning application based on OpenStreetMap. I helped build an earlier version of its front-end.
