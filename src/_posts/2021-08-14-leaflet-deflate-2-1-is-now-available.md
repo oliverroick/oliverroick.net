@@ -20,9 +20,7 @@ The following animation illustrates the behaviour:
     <figcaption>Background tiles: © <a href="https://www.mapbox.com/feedback/">Mapbox</a>. Map data: © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors.</figcaption>
 </figure>
 
-The <b>top polygon</b> collapses when one of the sides' length is bolow the threshold. This is the default behaviour. With <code>greedyCollapse: false</code>, the <b>bottom polygon</b> collapses at a lower zoom level when both sides' length are below the threshold.
-
-
+The <b>top polygon</b> collapses when one of the sides' length is below the threshold. This is the default behaviour. With <code>greedyCollapse: false</code>, the <b>bottom polygon</b> collapses at a lower zoom level when both sides' length are below the threshold.
 
 ---
 
