@@ -3,6 +3,8 @@ layout: reading
 title: Radical Candor
 author: Kim Scott
 isbn: 1529038340
+year: 2017
+publisher: St. Martin's Press
 date: 2019-09-01 12:00:00+01:00
 category: reading
 image: reading
