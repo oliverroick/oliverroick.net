@@ -8,6 +8,8 @@ title: The Visual Display of Quantitative Information
 description: Book review
 isbn: 9780961392147
 author: Edward R. Tufte
+year: 2001
+publisher: Graphics Press
 image: tufte
 ---
 

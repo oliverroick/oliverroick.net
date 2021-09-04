@@ -2,6 +2,8 @@
 layout: reading
 title: Accessibility for Everyone
 author: Laura Kalbag
+year: 2017
+publisher: A Book Apart 
 isbn: 1937557618
 date: 2021-03-14 17:45:00+01:00
 category: reading

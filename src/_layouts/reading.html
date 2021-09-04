@@ -16,6 +16,7 @@ layout: default
                 <span itemprop="name">{{ page.author }}</span>
             </span>
         </li>
+        <li>Published in {{ page.year }} by {{ page.publisher }}</li>
         <li>
             ISBN:
             <span itemprop="isbn">{{ page.isbn| default: 'This book does not have an ISBN' }}</span>
