@@ -61,4 +61,4 @@ So take two or three hours right at the beginning, [look into what is required](
 
 Documenting code is a boring task, I don't know anyone who actually enjoys doing it. But it's equally important, especially, when you work in a team.
 
-Choose a documentation convention early on and stick to it. I personally like the [Numpy convention](https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt) because it's easy to read. Using [Sphinx](http://sphinx-doc.org/), you can create HTML docs from the inline documentation that can serve as a reference for fellow developers.
+Choose a documentation convention early on and stick to it. I personally like the [Numpy convention](https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt) because it's easy to read. Using [Sphinx](https://web.archive.org/web/20150428041054/http://sphinx-doc.org:80/), you can create HTML docs from the inline documentation that can serve as a reference for fellow developers.
