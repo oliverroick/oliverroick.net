@@ -102,6 +102,8 @@ h2:not(.h1), h3 {
   margin-bottom: var(--gap-xs);
   padding: calc(1em * .25) 0;
   line-height: 1.3;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
 }
 
 h2:not(.h1) + p, h3 + p {
@@ -399,9 +401,21 @@ article:not(.link) h2.h1 > a:focus {
   background-color: var(--yellow-100);
 }
 
+.article__note {
+  padding: 1em var(--gap-s);
+  border: 1px solid var(--dark-200);
+  border-width: 1px 0;
+  background-color: var(--dark-100);
+}
+
+.article__note strong,
 .article__update b {
   letter-spacing: 0.1rem;
   text-transform: uppercase;
+}
+
+.top-2 {
+  margin-top: 2em;
 }
 
 h2.h2__article__book_details {
