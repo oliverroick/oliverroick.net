@@ -28,4 +28,4 @@ But non-conformal projections, in large scales, distort shapes towards the edges
 
 The new map projections open up new possibilities for interactive thematic mapping, especially for maps of continents or the whole world.
 
-[^1]: I created an [Observable notebook](https://observablehq.com/@oliverroick/mapboxgl-custom-projections) to demonstrate different projections, their configuration, and how a map transitions between projects while zooming. 
+[^1]: I created an [Observable notebook](https://observablehq.com/@oliverroick/mapboxgl-custom-projections) to demonstrate different projections, their configuration, and how a map transitions between projections while zooming. 
