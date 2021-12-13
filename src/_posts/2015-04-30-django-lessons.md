@@ -55,7 +55,7 @@ tools out there that integrate with Travis and help keeping the code quality at 
 
 If you plan to release your project as an open-source library or application prepare your code base for packaging right from the start. It's easy to start coding at first, not worrying about releases and versioning at first — but trust me, it requires a great deal of refactoring work to turn your project into something you can package and release via [PyPI](https://pypi.python.org/pypi).
 
-So take two or three hours right at the beginning, [look into what is required](https://packaging.python.org/en/latest/distributing.html) to create a package and create the structure to do it early on.
+So take two or three hours right at the beginning, [look into what is required](https://web.archive.org/web/20150404203955/https://packaging.python.org/en/latest/distributing.html) to create a package and create the structure to do it early on.
 
 ## Don't forget about documentation
 
