@@ -16,7 +16,7 @@ I'm a geographer who writes code. Previously, I have built software to document 
 
 I live and work in London, UK.
 
-To keep updated with my work, follow me on [GitHub](https://github.com/oliverroick), where almost all of my code lives, or subscribe to this site with [Atom](/atom.xml) or [RSS](/rss.xml). I also post updates to this website on [Twitter](https://twitter.com/oliverroick).
+To keep updated with my work, follow me on [GitHub](https://github.com/oliverroick), where almost all of my code lives, or subscribe to this site with [Atom](/atom.xml) or [RSS](/rss.xml).
 
 The best way to get in touch is via email: <a href="mailto:hi@oliverroick.net">hi@oliverroick.net</a>
 
