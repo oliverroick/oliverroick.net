@@ -11,18 +11,6 @@
     <meta name="twitter:description" content="{{ page.description }}">
     <meta property="og:description" content="{{ page.description }}">
     {% endif %}
-    {% if page.image %}
-    <meta property="og:image" content="{{ site.url }}/img/socialmedia/{{ page.image }}.png">
-    <meta name="twitter:card" content="summary_large_image">
-    {% else %}
-        {% if page.category == 'links' %}
-        <meta property="og:image" content="{{ site.url }}/img/socialmedia/default-sq.png">
-        <meta name="twitter:card" content="summary">
-        {% else %}
-        <meta property="og:image" content="{{ site.url }}/img/socialmedia/default.png">
-        <meta name="twitter:card" content="summary_large_image">
-        {% endif %}
-    {% endif %}
     <meta content="hi@oliverroick.net" property="og:email">
     <meta content="oliverroick.net" property="og:site_name">
     <meta content="blog" property="og:type">
