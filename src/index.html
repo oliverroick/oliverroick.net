@@ -20,7 +20,8 @@ num_posts: 3
     {% if post.alternate %}<p class="article__alternate_title">{{ post.alternate }}</p>{% endif %}
     {{ post.content
         | replace: '=====', ''
-        | replace: "h2", "h3"
+        | replace: '<h2', '<h3 class="h2"'
+        | replace: '</h2>', '</h3>'
     }}
     <div class="article__meta">
         <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>

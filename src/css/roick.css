@@ -97,6 +97,7 @@ h1, h2.h1 {
 }
 
 h2:not(.h1), h3 {
+  font-size: var(--font-m);
   font-family: var(--sans-serif);
   font-weight: 500;
   margin-bottom: var(--gap-xs);
@@ -104,6 +105,12 @@ h2:not(.h1), h3 {
   line-height: 1.3;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
+}
+
+h3:not(.h2) {
+  font-size: var(--base-size);
+  color: var(--dark-700);
+  font-weight: bold;
 }
 
 h2:not(.h1) + p, h3 + p {
