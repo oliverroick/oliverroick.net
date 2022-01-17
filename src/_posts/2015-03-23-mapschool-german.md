@@ -7,4 +7,4 @@ image: news
 body_id: blog
 ---
 
-[mapschool.io](https://mapschool.io/) is an excellent free introduction to all things geo by [Tom MacWright](http://www.macwright.org/). I contributed a [German translation](https://mapschool.io/index.de.html), which is now online for your reading pleasure.
+[mapschool.io](https://web.archive.org/web/20150320202106/http://mapschool.io/) is an excellent free introduction to all things geo by [Tom MacWright](http://www.macwright.org/). I contributed a [German translation](https://mapschool.io/index.de.html), which is now online for your reading pleasure.
