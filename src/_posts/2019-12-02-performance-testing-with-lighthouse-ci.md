@@ -5,7 +5,7 @@ date:   2019-12-02 21:00:00+00:00
 image: code
 category: writing
 body_id: blog
-description: Automating website-performance testing with LighthouseCI
+description: Automating website-performance testing with Lighthouse CI
 ---
 
 Today's websites are slow. They are dynamic and complex applications. Pages are rendered on the fly in the browser using content downloaded from APIs. They are implemented using JavaScript and CSS frameworks, and they rely on external dependencies, such as fonts, trackers, and other crap we put on websites today. 
@@ -20,7 +20,7 @@ Lighthouse CI is a set of commands that allow running Lighthouse in a continuous
 
 ---
 
-Setting up LighthouseCI is straightforward. I have used it on CircleCI; the example below outlines a setup for CircleCI. LighthouseCI’s documentation provides [examples for other environments](https://github.com/GoogleChrome/lighthouse-ci/blob/master/docs/getting-started.md#collect-lighthouse-results).
+Setting up Lighthouse CI is straightforward. I have used it on CircleCI; the example below outlines a setup for CircleCI. Lighthouse CI’s documentation provides [examples for other environments](https://github.com/GoogleChrome/lighthouse-ci/blob/master/docs/getting-started.md#collect-lighthouse-results).
 
 I wanted to run Lighthouse against a production-like environment (unlike a local development server, as many examples suggest). The workflow runs unit tests and code lint first, then deployment to a staging environment, and finally, Lighthouse against that staging service. The CircleCI config looks like the following:
 
@@ -84,7 +84,11 @@ The config is a JSON document, which specifies what URLs to test, the test crite
 
 Specifying an upload target all enables notifications to GitHub, and you'll get a helpful report on test statuses in your pull request. 
 
-![Lighthouse CI notifications](/img/lighthouse-ci.png)
+<picture>
+  <source srcset="/img/lighthouse-ci.webp, /img/lighthouse-ci@2x.webp 2x" type="image/webp">
+  <source srcset="/img/lighthouse-ci.jpg, /img/lighthouse-ci@2x.jpg 2x" type="image/jpeg"> 
+  <img src="/img/lighthouse-ci@2x.jpg" class="overlap" alt="A screen shot from GitHub's user interfaces showing failing tests using Lighthouse CI.">
+</picture>
 
 ---
 

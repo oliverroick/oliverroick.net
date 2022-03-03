@@ -5,7 +5,7 @@ body_id: blog
 date: 2021-07-26 17:16:00+01:00
 highlight_code: true
 title: In Defence of the Pull Request
-description: Yes, pull requests slow down delivery, but they also will make your team better and the code you ship.
+description: Yes, pull requests slow down delivery. But they also make your team better and the code you ship.
 ---
 
 Code reviews aren’t the developer’s primary responsibility, and often there is more than one round of changes to review. There’s always one person in the way to wrap up work, leaving snarky comments. Pull requests take time, resulting in long-lived feature branches and violation of continuous-integration principles. And, despite thorough reviews, bugs still make their way into production. Pull requests are neither efficient nor effective; they slow down delivery and contribute to toxic environments. 

@@ -5,7 +5,7 @@ body_id: blog
 date: 2021-12-28 10:35:00-00:00
 highlight_code: true
 title: My Problem With Twitter
-description: Twitter is only of 280-character hot takes.
+description: I loved Twitter as a place where you could connect with new ideas. Now it’s all 280-character hot takes.
 ---
 
 I came back to Twitter earlier this year after a prolonged absence. I signed off a couple of years ago when I noticed that heated, undifferentiated, and shallow arguments disguised as political discourse had taken over. But, I came back last summer hoping to reconnect with a community I had left behind, a community of smart people working in the geospatial sector, sharing the things they had built, discovered, or written. 

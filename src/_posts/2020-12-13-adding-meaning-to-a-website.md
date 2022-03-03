@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Adding meaning to a website"
+title:  "Adding Meaning to a Website"
 date:   2020-12-13 10:00:00+00:00
 image: schema-org
 category: writing
 body_id: blog
-description: Enriching Web documents with semantic data
+description: Enriching web documents with semantic data helps computers make sense if its content.
 ---
 
 HTML gives documents on the Web a logical structure. It describes what the parts of a page are: Navigation, main content, a headline, list, or simple text. A browser, with the help of CSS, uses the structure to render the page.

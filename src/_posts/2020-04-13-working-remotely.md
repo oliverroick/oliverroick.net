@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Working remotely"
+title:  "Working Remotely"
 date:   2020-04-13 10:00:00+00:00
 image: thoughts
 category: writing

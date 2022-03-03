@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Advice for the Django novice"
+title:  "Advice for the Django Novice"
 date:   2015-04-30 10:00:00
 image: thoughts
 category: writing

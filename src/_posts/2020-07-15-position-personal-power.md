@@ -5,7 +5,7 @@ date:   2020-07-15 19:00:00+01:00
 image: thoughts
 category: writing
 body_id: blog
-description: How do forms of influence affect a new manager's ability to lead.
+description: How do forms of influence affect a new manager's ability to lead?
 ---
 
 In Leadership theory, power is the ability to influence and affect other people's actions to produce a particular outcome. There are two types of power:

@@ -5,7 +5,7 @@ body_id: blog
 date: 2021-09-13 10:30:00+01:00
 highlight_code: true
 title: First You Write a Sentence
-description: If you read one book on writing, read First You Write a Sentence by Joe Moran
+description: If you read one book on writing, read First You Write a Sentence by Joe Moran.
 isbn: 9780241978511
 author: Joe Moran
 year: 2019

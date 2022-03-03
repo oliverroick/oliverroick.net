@@ -3,32 +3,16 @@ layout: default
 ---
 <article itemscope itemtype="http://schema.org/Review">
     <h1>{{ page.title }}</h1>
-    <p class="article__book_authors">by {{ page.author }}</p>
+    {% if page.description %}<p class="article_lead">{{ page.description }}</p>{% endif %}
+    <div class="article__meta">
+        <time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time>
+    </div>
     <div itemprop="reviewBody">
         {{ content }}
     </div>
 
-    <h2 class="h2__article__book_details">Book details</h2>
-    <ul itemprop="itemReviewed" itemscope itemtype="http://schema.org/Book">
-        <li>
-            <span itemprop="name">{{ page.title }}</span> by 
-            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                <span itemprop="name">{{ page.author }}</span>
-            </span>
-        </li>
-        <li>Published in {{ page.year }} by {{ page.publisher }}</li>
-        <li>
-            ISBN:
-            <span itemprop="isbn">{{ page.isbn| default: 'This book does not have an ISBN' }}</span>
-            {% if page.isbn %}(<a href="https://worldcat.org/isbn/{{ page.isbn }}">Look up with WorldCat</a>){% endif %}
-        </li>
-    </ul>
-    <div itemprop="author publisher" itemscope itemtype="http://schema.org/Person">
-        <meta content="Oliver Roick" itemprop="name">
-    </div>
-    <meta content="{{ page.url }}" itemprop="url">
-    <meta content="{{ page.description }}" itemprop="description">
-    <div class="article__meta">
-        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date_to_long_string }}</time>
+    <div class="book_details">
+        <h2>Book details</h2>
+        <p>{{ page.title }} by {{ page.author }} was published in {{ page.year }} by {{ page.publisher }}{% if page.isbn %}; <a href="https://worldcat.org/isbn/{{ page.isbn }}">ISBN {{ page.isbn }}</a>{% endif %}.</p>
     </div>
 </article>

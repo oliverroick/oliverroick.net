@@ -8,7 +8,7 @@ isbn: 1937557618
 date: 2021-03-14 17:45:00+01:00
 category: reading
 body_id: blog
-description: A brief review of a brief introduction to web accessibility
+description: Laura Kalbag's primer on web accessibility provides a starting point to build more accessible web sites.
 ---
 
 Inaccessible websites exclude people from crucial government services or from making business with you. Accessibility is a critical aspect of every software project. Not only is building accessible services morally just; it also is a legal obligation.

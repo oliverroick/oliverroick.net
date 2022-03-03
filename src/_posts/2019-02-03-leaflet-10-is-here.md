@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Leaflet.Deflate 1.0 is here"
+title:  "Leaflet.Deflate 1.0 Is Here"
 date:   2019-02-03 15:00:00+02:00
 image: code
 category: writing

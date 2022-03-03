@@ -1,13 +1,11 @@
 ---
 layout: default
 ---
-<article itemscope itemtype ="http://schema.org/BlogPosting">
-    <h1 itemprop="name headline">{{ page.title }}</h1>
-    {% if page.alternate %}<p class="article__alternate_title">{{ page.alternate }}</p>{% endif %}
-    <div itemprop="articleBody">
-        {{ content | replace: '=====', '' }}
-    </div>
+<article>
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}<p class="article_lead">{{ page.description }}</p>{% endif %}
     <div class="article__meta">
-        <time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time>
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time>
     </div>
+    {{ content | replace: '=====', '' }}
 </article>

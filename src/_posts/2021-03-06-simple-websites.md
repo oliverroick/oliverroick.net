@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Simple websites"
+title:  "Simple Websites"
 date:   2021-03-06 14:00:00+00:00
 category: writing
 body_id: blog

@@ -4,7 +4,7 @@ category: writing
 body_id: blog
 date: 2021-06-15 20:00:00+01:00
 highlight_code: true
-title: Remote work doesn’t need new tools
+title: Remote Work Doesn’t Need New Tools
 description: Change the way you work not the software you use.
 ---
 
