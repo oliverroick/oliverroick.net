@@ -4,8 +4,8 @@ category: writing
 body_id: blog
 date: 2021-10-31 18:20:00-00:00
 highlight_code: true
-title: Notes from last week’s GitHub Universe
-description: Notes and observations from GitHub Universe 2021
+title: Notes From Last Week’s GitHub Universe
+description: GitHub introduces Code Spaces and new issues-management capabilities amongst other new features.
 ---
 
 ## Code Spaces
@@ -49,4 +49,4 @@ Automating release notes based on conventional commits has been around for a whi
 [Merge queues](https://github.blog/changelog/2021-10-27-pull-request-merge-queue-limited-beta/) extend auto merging pull requests. Adding a pull request to the merge queue will run all status checks with changes from any pull request ahead in the queue. There is no need to require branches to be up-to-date with the main branch and no endless merging or rebasing in high-activity repositories.
 
 __Note:__ For a complete list of announcements, read [Everything new from Universe 2021](https://GitHub.blog/2021-10-27-everything-new-from-universe-2021/) or rewatch the keynote and other sessions at [githubuniverse.com](https://www.githubuniverse.com/).
-{: .article__note .top-2 }
+{: .article__note }

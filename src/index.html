@@ -16,16 +16,22 @@ num_posts: 1
             <a href="{{ post.url }}">{{ post.title }}</a>
         {% endif %}
     </h2>
-    {% if post.author %}<p class="article__book_authors">by {{ post.author }}</p>{% endif %}
-    {% if post.alternate %}<p class="article__alternate_title">{{ post.alternate }}</p>{% endif %}
+    {% if post.description %}<p class="article_lead">{{ post.description }}</p>{% endif %}
+    {% if post.layout != 'link' %}
+    <div class="article__meta">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>
+    </div>
+    {% endif %}
     {{ post.content
         | replace: '=====', ''
         | replace: '<h2', '<h3 class="h2"'
         | replace: '</h2>', '</h3>'
     }}
+    {% if post.layout == 'link' %}
     <div class="article__meta">
         <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>
         <a href="{{ post.url }}" class="link__permalink" title="Permalink for {{ post.title }}">◆</a>
     </div>
+    {% endif %}
 </article>
 {% endfor %}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Building a tiled map using React"
+title:  "Building a Tiled Map Using React"
 alternate: An utterly pointless side project
 date:   2020-12-28 10:00:00+00:00
 category: writing

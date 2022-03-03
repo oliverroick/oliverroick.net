@@ -5,7 +5,7 @@ date:   2020-11-19 19:00:00+00:00
 image: thoughts
 category: writing
 body_id: blog
-description: Is there ever a good time for refactoring?
+description: Is there ever a good time for refactoring? Yes — the time is now.
 ---
 
 It depends on who you ask. 

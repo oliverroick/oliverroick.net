@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Open Source is not free"
+title:  "Open Source Is Not Free"
 date:   2020-01-04 13:30:00+00:00
 image: thoughts
 category: writing
 body_id: blog
-description: Open-source software is often free. Using it is not
+description: Open-source software is often free. Using it is not.
 ---
 
 Almost all open-source software is free, available from package registries, ready for immediate use. Non-technical leaders — the donors in a non-profit organization’s board or the C-level executives in businesses — often confuse that with getting a product for a low budget. Products built using open-source software are rarely cheap and never free. 

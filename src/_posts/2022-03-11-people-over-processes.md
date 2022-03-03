@@ -5,7 +5,7 @@ body_id: blog
 date: 2022-03-11 16:10:00-00:00
 highlight_code: true
 title: People Over Processes
-description: 
+description: Dysfunctional project management often leads to stricter processes. Time to remember that agile is about people. 
 ---
 
 The [Manifesto for Agile Software Development](https://agilemanifesto.org) responds to cumbersome and bureaucratic approaches to software project management. _Individuals and interactions over processes and tools_ is one of the principles that have since become the foundation for modern-day software development.

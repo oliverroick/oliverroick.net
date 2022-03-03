@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Speeding up tests in Django"
+title:  "Speeding up Tests in Django"
 date:   2015-07-23 10:00:00
 image: code
 category: writing

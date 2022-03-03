@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Benchmarking web-font loading"
+title:  "Benchmarking Web-font Loading"
 date:   2021-01-16 10:00:00+00:00
 category: writing
 body_id: blog
-description: Figuring out how to add a web font and make a page load fast
+description: You can have a web fonts on a site and make it load fast. Here are the numbers. 
 ---
 
 This website is optimised for performance. I want it to load quickly no matter where you are and what device you are using. Its design is simple; partly because I’m not a designer, partly intentional to keep its footprint small. Over the years, I removed third-party trackers and other external resources, decorative images, and even the smallest amount of JavaScript. The site now is a set of static HTML pages rendered using a [static page generator](https://jekyllrb.com/) and some CSS. It is [boring technology](https://mcfunley.com/choose-boring-technology). I use [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) to benchmark changes, maintaining a perfect 100 for a couple of years now. 

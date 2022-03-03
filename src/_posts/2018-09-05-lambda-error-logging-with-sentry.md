@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Lambda Error Logging with Sentry"
+title:  "Lambda Error Logging With Sentry"
 date:   2018-09-06 19:30:00+02:00
 image: code
 category: writing
@@ -8,7 +8,8 @@ highlight_code: true
 body_id: blog
 ---
 
-{% include update.html u="The solution discussed here uses Raven, Sentry's discontinued JavaScript SDK. Since I published the post, [@sentry/node](https://www.npmjs.com/package/@sentry/node) has been released, which [makes logging on AWS Lambda](https://web.archive.org/web/20200226072641/https://docs.sentry.io/platforms/node/serverless/) a lot simpler." %}
+__Update:__ The solution discussed here uses Raven, Sentry's discontinued JavaScript SDK. Since I published the post, [@sentry/node](https://www.npmjs.com/package/@sentry/node) has been released, which [makes logging on AWS Lambda](https://web.archive.org/web/20200226072641/https://docs.sentry.io/platforms/node/serverless/) a lot simpler.
+{: .article__note }
 
 Every unhandled exception is a bug in your software. Things will go wrong in your Lambda function, and you want to know about it. 
 

@@ -5,7 +5,7 @@ body_id: blog
 date: 2021-04-10 15:20:00+01:00
 highlight_code: true
 title: The Visual Display of Quantitative Information
-description: Book review
+description: Edward R. Tufte's classic on data visualisation is still a good read. 
 isbn: 9780961392147
 author: Edward R. Tufte
 year: 2001
