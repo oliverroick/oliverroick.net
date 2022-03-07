@@ -42,7 +42,7 @@ function isCollapsed (path, zoom) {
 Here's how it works:
 
 1. Get the bounding box of the feature. Using the bounding box makes calculations a lot simpler when compared to complex geometries.
-2. The [`Bounds`](https://leafletjs.com/reference.html#bounds) object provides the coordinates of its north-east and south-west corners. Using [`Map.project(<LatLng>, zoom)`](https://leafletjs.com/reference.html#map-project) we can get the pixel coordinates of both corners.
+2. The [`Bounds`](https://web.archive.org/web/20150420183605/http://leafletjs.com:80/reference.html) object provides the coordinates of its north-east and south-west corners. Using [`Map.project(<LatLng>, zoom)`](https://web.archive.org/web/20150420183605/http://leafletjs.com:80/reference.html) we can get the pixel coordinates of both corners.
 3. Now its possible to calculate the bounding box's width and height in pixels.
 4. Finally, all we need is to compare the dimensions against a pre-set threshold value (the `minSize` option). For simplicity, the function just checks if both `width` and `hight` exceed the threshold value.
 5. The function returns `true` if one of the values is lower than the threshold.
