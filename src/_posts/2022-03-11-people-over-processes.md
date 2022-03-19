@@ -8,7 +8,7 @@ title: People Over Processes
 description: 
 ---
 
-The [Manifesto for Agile Software Development](https://agilemanifesto.org) responds to cumbersome and bureaucratic approaches to software project management. _People over processes_ is one of the principles that have since become the foundation for modern-day software development.
+The [Manifesto for Agile Software Development](https://agilemanifesto.org) responds to cumbersome and bureaucratic approaches to software project management. _Individuals and interactions over processes and tools_ is one of the principles that have since become the foundation for modern-day software development.
 
 Today, we often forget these principles in discussions about improving teamwork. The answer to a dysfunctional process is often more process, more bureaucracy, more red tape. We propose templates for tickets when the requirements don’t carry enough detail, hoping the structure will nudge authors to add more detail. We create a checklist when reviewers forget to check out and test changes in a pull request. When there is no planning process at all or when it isn’t aligned across different teams in the organisation, a motivated manager steps in and instructs engineering leads to standardise the process and write extensive documentation, so teams never deviate.
 
