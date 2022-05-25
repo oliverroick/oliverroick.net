@@ -150,7 +150,9 @@ article h1, article h2.h1 {
 }
 
 article.link h1,
-article.link h2.h1 {
+article.link h2.h1,
+article.short h1,
+article.short h2.h1 {
   font-family: var(--display);
   font-size: var(--font-m);
   font-weight: normal;
