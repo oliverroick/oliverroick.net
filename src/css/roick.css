@@ -155,9 +155,9 @@ article.short h1,
 article.short h2.h1 {
   font-family: var(--display);
   font-size: var(--font-m);
-  font-weight: normal;
+  font-weight: 600;
   line-height: var(--lh-base);
-  letter-spacing: 1px;
+  letter-spacing: 0;
   margin-bottom: var(--gap-xs);
 }
 
