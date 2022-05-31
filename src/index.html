@@ -3,7 +3,7 @@ layout: default
 title: Home
 body_id: home
 description: The blog and work of Oliver Roick 
-num_posts: 2
+num_posts: 3
 ---
 
 <h1 class="sr-only">Oliver Roick Homepage</h1>
@@ -16,8 +16,8 @@ num_posts: 2
             <a href="{{ post.url }}">{{ post.title }}</a>
         {% endif %}
     </h2>
-    {% if post.description %}<p class="article_lead">{{ post.description }}</p>{% endif %}
     {% if post.layout == 'post' %}
+    {% if post.description %}<p class="article_lead">{{ post.description }}</p>{% endif %}
     <div class="article__meta">
         <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>
     </div>
