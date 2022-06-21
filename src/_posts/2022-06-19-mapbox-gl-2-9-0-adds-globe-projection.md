@@ -15,7 +15,7 @@ Mapbox GL JS’ latest release (v2.9.0) adds a new globe projection, which enabl
   <picture>
     <source srcset="/img/blog/globe.webp, /img/blog/globe@2x.webp 2x" type="image/webp">
     <source srcset="/img/blog/globe.jpg, /img/blog/globe@2x.jpg 2x" type="image/jpeg"> 
-    <img src="/img/blog/globe@2x.jpg" alt="Portait of Oliver Roick">
+    <img src="/img/blog/globe@2x.jpg" alt="A globe rendered with Mapboc GL JS, showing Africa in the center.">
   </picture>
   <figcaption>
     <cite>Background tiles: © Mapbox. Map data: © OpenStreetMap contributors.</cite>
