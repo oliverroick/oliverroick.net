@@ -38,4 +38,4 @@ Another aim was to create a user-friendly interface to help users to easily set-
 
 A first alpha version will be released soon. You can use the instance of Community Maps we will be running on our servers or download the code and deploy it yourself. The whole back-end will be open-sourced on [Github](https://github.com/ExCiteS/opencommunitymaps). We encourage you to contribute by forking the code or submitting issues. 
 
-Also, get in touch with us via [Twitter](https://twitter.com/ucl_excites) or subscribe to [our user list](https://groups.google.com/forum/#!forum/opencommunitymaps) to stay up-to-date. 
+Also, get in touch with us via [Twitter](https://web.archive.org/web/20140812061746/https://twitter.com/UCL_ExCiteS) or subscribe to [our user list](https://groups.google.com/forum/#!forum/opencommunitymaps) to stay up-to-date. 
