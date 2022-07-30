@@ -2,9 +2,7 @@
 layout: default
 ---
 <article class="link">
-    <h1 itemprop="name headline">
-        <a href="{{ page.link }}">{{ page.title }}</a>
-    </h1>
+    <h1><a href="{{ page.link }}">{{ page.title }}</a></h1>
     {{ content | replace: '=====', '' }}
     <div class="article__meta">
         <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time>
