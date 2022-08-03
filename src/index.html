@@ -8,7 +8,7 @@ num_posts: 5
 
 <h1 class="sr-only">Oliver Roick Homepage</h1>
 {% for post in site.posts limit:page.num_posts %}
-{% if post.layout == 'link' %}
+{% if post.layout == 'link' and post.worklog != true %}
     {% continue %}
 {% endif %}
 <article class="{{ post.layout }}">
