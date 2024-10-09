@@ -1,5 +1,5 @@
 ---
-layout: reading
+layout: post
 title: The DevOps Handbook
 author: Gene Kim, Patrick Debois, John Willis
 isbn: 1942788002

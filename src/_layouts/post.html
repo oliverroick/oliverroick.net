@@ -1,11 +1,14 @@
 ---
 layout: default
 ---
-<article>
-    <h1>{{ page.title }}</h1>
-    {% if page.description %}<p class="article_lead">{{ page.description }}</p>{% endif %}
-    <div class="article__meta">
+
+<div class="main">
+    <section class="lead">
+        <h1>{{ page.title }}</h1>
+        {% if page.description %}<p>{{ page.description }}</p>{% endif %}
         <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time>
-    </div>
-    {{ content | replace: '=====', '' }}
-</article>
+    </section>
+    <section class="archive">
+        <div>{{ content | replace: '=====', '' }}</div>
+    </section>
+</div>

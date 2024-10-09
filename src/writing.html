@@ -1,17 +1,32 @@
 ---
 layout: default
 title: Writing
-body_id: writing
 description: A list of all articles posted to Oliver Roick's blog.
 ---
-<h1>Writing</h1>
-<ol class="archive" reversed>
-	{% for post in site.posts %}
-	{% if post.category == 'writing' or post.category == 'reading' %}
-	<li>
-		<a href="{% if post.link %}{{ post.link }}{% else %}{{ post.url }}{% endif %}">{{ post.title }}</a>{% if post.author %} by {{ post.author }}{% endif %}
-		<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>
-	</li>
-	{% endif %}
-	{% endfor %}
-</ol>
+
+<div class="main">
+  <section class="lead">
+    <div>
+        <h1>Writing</h1>
+        <p>
+          Thinking out loud, book reviews and announcements.
+        </p>
+    </div>
+  </section>
+  <div class="writing">
+    <article>
+      {% for post in site.posts %}
+      {% if post.layout == 'link' %}
+        {% continue %}
+      {% endif %}
+      <div class="entry_header">
+        <h2>
+          <a href="{% if post.link %}{{ post.link }}{% else %}{{ post.url }}{% endif %}">{{ post.title }}</a>{% if post.author %} by {{ post.author }}{% endif %}
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>
+        </h2>
+        {% if post.description %}<p>{{ post.description }}</p>{% endif %}
+      </div>
+      {% endfor %}
+    </article>
+</div>
+

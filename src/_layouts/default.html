@@ -1,51 +1,47 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>{{ page.title }} | Oliver Roick</title>
-    <meta property="og:title" content="{{ page.title }}">
-    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-    <meta name="twitter:title" content="{{ page.title }}">
-    {% if page.description %}
-    <meta name="description" content="{{ page.description }}">
-    <meta name="twitter:description" content="{{ page.description }}">
-    <meta property="og:description" content="{{ page.description }}">
-    {% endif %}
-    <meta content="hi@oliverroick.net" property="og:email">
-    <meta content="oliverroick.net" property="og:site_name">
-    <meta content="blog" property="og:type">
-    <meta name="author" content="Oliver Roick">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/roick.css">
-    <link href="{{ site.url }}/atom.xml" rel="alternate" type="application/atom+xml">
-    <link href="{{ site.url }}/rss.xml" rel="alternate" type="application/rss+xml">
-    <link href="{{ site.url }}{{ page.url }}" rel="canonical">
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-</head>
-<body{% if page.body_id %} id="{{ page.body_id }}"{% endif %}>
-    <a href="#main_content" class="skip-link">Skip to main content</a>
-    <div class="page">
-        <header>
-            <span id="name">Oliver Roick</span>
-            <nav>
-                <ul>
-                    {% if page.body_id != 'home' %}
-                    <li><a href="/">Home</a></li>
-                    {% endif %}
-                    <li id="li_writing"><a href="/writing.html">Writing</a></li>
-                    <li id="li_about"><a href="/about.html">About</a></li>
-                </ul>
-            </nav>
-        </header>
 
-        <main id="main_content">
-            {{ content }}
-        </main>
-    </div>
-    <div class="footer"></div>
-</body>
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }} | Oliver Roick</title>
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta name="twitter:title" content="{{ page.title }}">
+  {% if page.description %}
+  <meta name="description" content="{{ page.description }}">
+  <meta name="twitter:description" content="{{ page.description }}">
+  <meta property="og:description" content="{{ page.description }}">
+  {% endif %}
+  <meta content="hi@oliverroick.net" property="og:email">
+  <meta content="oliverroick.net" property="og:site_name">
+  <meta content="blog" property="og:type">
+  <meta name="author" content="Oliver Roick">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/roick2025.css">
+  <link href="{{ site.url }}/atom.xml" rel="alternate" type="application/atom+xml">
+  <link href="{{ site.url }}/rss.xml" rel="alternate" type="application/rss+xml">
+  <link href="{{ site.url }}{{ page.url }}" rel="canonical">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+<body{% if page.body_id %} id="{{ page.body_id }}" {% endif %}>
+  <a href="#main_content" class="skip-link">Skip to main content</a>
+  <div class="page">
+    <header>
+      <span>Oliver Roick</span>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/portfolio/">Portfolio</a></li>
+          <li><a href="/writing/">Writing</a></li>
+          <li><a href="/about/">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    {{ content }}
+  </div>
+  </body>
 
 </html>
