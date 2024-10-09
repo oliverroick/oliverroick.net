@@ -4,6 +4,7 @@ highlighter: rouge
 permalink: /:categories/:year/:title.html
 excerpt_separator: "====="
 source: src
+collections_dir: collections
 collections:
-  work:
-    output: false
+  portfolio:
+    output: true

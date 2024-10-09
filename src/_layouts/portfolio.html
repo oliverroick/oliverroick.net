@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="main">
+  <section class="lead">
+    <div>
+        <h1>{{ page.title }}</h1>
+        <p>{{ page.summary }}</p>
+    </div>
+  </section>
+  <div>{{ content | replace: '=====', '' }}</div>
+</div>
+
+<div class="aside">
+  <img src="{{ page.preview }}" />
+
+  <h2>Client</h2>
+  <p>{{ page.client }}</p>
+
+  {% if page.links %}
+  <h2>Links</h2>
+  <ul>
+    {% for link in page.links %}
+    <li><a href="{{ link.href }}">{{ link.label }}</a></li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  {% if page.tech %}
+  <h2>Tech</h2>
+  <ul class="tech">
+    {% for t in page.tech %}
+    <li>{{ t }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</div>

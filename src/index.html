@@ -2,39 +2,70 @@
 layout: default
 title: Home
 body_id: home
-description: The blog and work of Oliver Roick 
-num_posts: 1
+description: The blog and work of Oliver Roick
+num_posts: 10
 ---
 
-<h1 class="sr-only">Oliver Roick Homepage</h1>
-{% for post in site.posts limit:page.num_posts %}
-{% if post.layout == 'link' and post.worklog != true %}
-    {% continue %}
-{% endif %}
-<article class="{{ post.layout }}">
-    <h2 class="h1">
-        {% if post.layout == 'link' %}
-            <a href="{{ post.link }}">{{ post.title }}</a>
-        {% else %}
+<div class="main">
+  <h1 class="sr-only">Oliver Roick Homepage</h1>
+  <section class="lead">
+    <div>
+      <p class="big">
+        I'm a software engineer based in Melbourne, Australia. I enjoy building geospatial web applications for
+        science and non-profit communities.
+      </p>
+      <p>
+        I currently work at Development Seed. In the past, I delivered projects for Google, The Nature Conservancy,
+        NASA, The World Bank, Citizens Advice and many others.
+      </p>
+    </div>
+  </section>
+
+  <section class="writing">
+    <div class="posts">
+      <h2>Latest posts</h2>
+
+      {% for post in site.posts limit:page.num_posts %}
+      {% if post.layout == 'link' %}
+      {% continue %}
+      {% endif %}
+      <article>
+        <div class="entry_header">
+          <h3>
             <a href="{{ post.url }}">{{ post.title }}</a>
-        {% endif %}
-    </h2>
-    {% if post.layout == 'post' or post.layout == 'reading'  %}
-    {% if post.description %}<p class="article_lead">{{ post.description }}</p>{% endif %}
-    <div class="article__meta">
-        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>
+          </h3>
+          {% if post.description %}<p class="entry_lead">{{ post.description }}</p>{% endif %}
+        </div>
+        {{ post.content }}
+      </article>
+      {% endfor %}
     </div>
-    {% endif %}
-    {{ post.content
-        | replace: '=====', ''
-        | replace: '<h2', '<h3 class="h2"'
-        | replace: '</h2>', '</h3>'
-    }}
-    {% if post.layout != 'post' and post.layout != 'reading' %}
-    <div class="article__meta">
-        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>
-        <a href="{{ post.url }}" class="link__permalink" title="Permalink for {{ post.title }}">◆</a>
+  </section>
+</div>
+
+<div class="aside">
+  <section class="portfolio">
+    <h2>From the Portfolio</h2>
+    {% for project in site.portfolio %}
+    {% if project.featured != true %}{% continue %}{% endif%}
+    <div class="project">
+      <img src="{{ project.preview }}">
+      <div>
+        <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
+        <p>{{ project.summary }}</p>
+      </div>
     </div>
-    {% endif %}
-</article>
-{% endfor %}
+    {% endfor %}
+  </section>
+</div>
+
+<script>
+  const projects = document.getElementsByClassName("project");
+
+  for (let i = 0, len = projects.length; i < len; i++) {
+    projects.item(i).addEventListener("click", (e) => {
+      const projectHref = e.currentTarget.querySelector("h3 a").getAttribute("href");
+      window.location.assign(projectHref);
+    });
+  }
+</script>

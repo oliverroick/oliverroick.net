@@ -89,7 +89,7 @@
     --lh-xs: 20px;
   }
 }
-  
+
 body {
   background-color: var(--white);
   color: var(--dark-800);
@@ -312,6 +312,11 @@ blockquote p:last-child {
 /**
  * CODE
  */
+
+.highlight: {
+  overflow: scroll;
+  max-width: 100%;
+}
 
 pre {
   border-left: var(--border-size) solid var(--yellow-300);
