@@ -16,9 +16,9 @@ tech:
   - MapLibre GL
 ---
 
-[SpatioTemporal Asset Catalog (STAC)](https://stacspec.org/en) is a standard crucial for publication, exploration, and search of geo-spatial data. Backend implementations are available with APIs to ingest and manage data, but updating data often requires technical expertise process and ingest using semi-automated scripts. Casual users rely on software engineers to run these updates, work they could do themselves if there was a user-interface to update STAC meta data via a web form.
+[SpatioTemporal Asset Catalog (STAC)](https://stacspec.org/en) defines a standardised APU publication, exploration, and search of geo-spatial data. Backend implementations are available with APIs to ingest and manage data, but updating data often requires technical expertise to process and ingest meta data using semi-automated scripts. Casual users rely on software engineers to run these updates, work they could do themselves if there was a user-interface to update STAC meta data via a web form.
 
-We built a React-based prototype application showcasing how an admin interface for STAC catalogs could look. Limited in scope, the interface allows users to browse existing collections and items and search for items by geographic area, collection ID, and data. Common properties of individual collections and items can be edited via web forms.
+We built a React-based prototype application showcasing how an admin interface for STAC catalogs could look. Limited in scope, the interface allows users to browse existing collections and items and search for items by geographic area, collection ID, and date. Common properties of individual collections and items can be edited via web forms.
 
 The application is built and tested against instances of [eoAPI](https://eoapi.dev) with the [STAC Transaction extension](https://github.com/stac-api-extensions/transaction) enabled. The heavy lifting for browsing collections and items is done with stac-react.
 

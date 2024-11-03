@@ -18,7 +18,7 @@ tech:
 featured: true
 ---
 
-The Australian Acoustic Observatory runs a network of sound recorders in Australia to track sightings of animal species across the country. The resulting data is crucial understand animal habitats and migration; and how climate change affects both. The recorders produce hours of sound that have to be manually review by humans to identify relevant bird calls.
+The Australian Acoustic Observatory runs a network of sound recorders in Australia to track sightings of animal species. The resulting data is crucial understand animal habitats and migration; and how climate change affects both. The recorders produce hours of sound that have to be manually reviewed by humans to identify relevant bird calls.
 
 To simplify this process Google have trained a machine-learning model, which separates bird calls from other sounds. Based on this model, we implemented a web application allowing users to upload a recording and find similar bird calls in A2O's vast archive of field recordings.
 
