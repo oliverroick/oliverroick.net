@@ -17,7 +17,7 @@ tech:
 
 STAC (Spatio-temporal Asset Catalog) is a standard crucial for publication, exploration, and search of geo-spatial data. While there are several open-source libraries supporting the implementation for STAC-conformant APIs, corresponding front-end implementations are often built from scratch, with developers re-implementing common functionality, such as composing search queries and displaying search results as item lists and on interactive maps.
 
-STAC-React is a small TypeScript library that supports developers in building front-end applications for STAC-APIs. It provides building blocks to compose item searches, execute queries to a STAC API, handle server responses and manage application state. Specifically, STAC-React four modules:
+STAC-React is a small TypeScript library that supports developers in building front-end applications for STAC-APIs. It provides building blocks to compose item searches, execute queries to a STAC API, handle server responses and manage application state.
 
 We designed STAC-React so it’s agnostic to UI-component libraries or frameworks you may use to build forms. It’s a simple layer that sits between the user-facing components of your application and the STAC backend. Instead of writing and maintaining code to compose complex queries, you can focus on crafting user-friendly interfaces to make geographic data more accessible over the Web.
 
@@ -25,5 +25,5 @@ We designed STAC-React so it’s agnostic to UI-component libraries or framework
 
 - Design and implementation of a React context to manage query state and corresponding hooks to access the state and retrieve data from STAC APIs.
 - Unit testing using Jest and React Testing Library.
-- Library packaging with Rollup, producing CJS and ESM modules, type definititions.
+- Library packaging with Rollup, producing CJS and ESM modules, and TypeScript definititions.
 - Documentation writing.
