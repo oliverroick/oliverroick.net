@@ -56,6 +56,6 @@ ${author ? `author: ${author}` : ''}
 `.replaceAll(/^\s*$(?:\r\n?|\n)/gm, '');
 
 const slug = title.replaceAll(/[\.\, ]/g, '-').toLowerCase();
-const fileName = `./src/_posts/${y}-${m}-${d}-${slug}.md`;
+const fileName = `./src/collections/_posts/${y}-${m}-${d}-${slug}.md`;
 
 fs.writeFileSync(fileName, preamble);
