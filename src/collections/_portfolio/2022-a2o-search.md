@@ -22,6 +22,8 @@ The Australian Acoustic Observatory runs a network of sound recorders in Austral
 
 To simplify this process Google have trained a machine-learning model, which separates bird calls from other sounds. Based on this model, we implemented a web application allowing users to upload a recording and find similar bird calls in A2O's vast archive of field recordings.
 
+<img src="/img/portfolio/a2o-search-screen.webp">
+
 ## Work delivered
 
 - Implemented an audio player and audio spectrogram visualisation using [Wavesurfer.js](https://wavesurfer.xyz).

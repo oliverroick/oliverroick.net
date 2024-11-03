@@ -454,7 +454,7 @@ ul.publications li {
 .aside .portfolio .project img {
   width: 5rem;
   height: 5rem;
-  border: .25rem solid var(--dark-50);
+  border: .25rem solid var(--dark-100);
   object-fit: cover;
 }
 
@@ -466,6 +466,6 @@ ul.publications li {
 .main .portfolio .project img {
   width: 8rem;
   height: 8rem;
-  border: .5rem solid var(--dark-50);
+  border: .5rem solid var(--dark-100);
   object-fit: cover;
 }
