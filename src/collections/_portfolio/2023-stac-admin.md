@@ -22,6 +22,8 @@ We built a React-based prototype application showcasing how an admin interface f
 
 The application is built and tested against instances of [eoAPI](https://eoapi.dev) with the [STAC Transaction extension](https://github.com/stac-api-extensions/transaction) enabled. The heavy lifting for browsing collections and items is done with stac-react.
 
+<img src="/img/portfolio/stac-admin-screen.webp">
+
 ## Work delivered
 
 - Idea and strategic direction.
