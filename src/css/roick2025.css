@@ -469,3 +469,7 @@ ul.publications li {
   border: .5rem solid var(--dark-100);
   object-fit: cover;
 }
+
+.main.portfolio img {
+  border: .5rem solid var(--dark-100);
+}
