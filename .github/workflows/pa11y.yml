@@ -7,10 +7,10 @@ jobs:
     name: Pa11y
     runs-on: ubuntu-latest
     steps:
-    - name: Setup node 14
+    - name: Setup node 20
       uses: actions/setup-node@v1
       with:
-        node-version: 14
+        node-version: 20
     - name: Checkout repository
       uses: actions/checkout@v2
       with:
