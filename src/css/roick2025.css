@@ -59,7 +59,7 @@ table {
 
 :root {
   --f-main: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+  --f-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
 
   --f-sm: 12px;
   --f-m: 14px;
@@ -161,6 +161,35 @@ b {
   font-weight: bold;
 }
 
+/**
+ * TABLE
+ */
+
+table {
+  width: 100%;
+  margin: 1rem 0;
+  font-family: var(--f-mono);
+  font-size: var(--f-sm);
+}
+
+table caption {
+  font-weight: bold;
+  font-family: var(--f-main);
+  margin-bottom: .5rem;
+}
+
+table thead th {
+  padding-bottom: .5rem;
+}
+
+table tfoot td {
+  padding-top: .5rem;
+}
+
+table thead th {
+  font-weight: bold;
+  text-align: left;
+}
 
 /**
  * BLOCKQUOTE
