@@ -431,6 +431,11 @@ time {
   display: inline;
 }
 
+.entry_header h2:after,
+.entry_header h3:after {
+  content: " ";
+}
+
 .entry_lead {
   color: var(--dark-600);
   font-size: var(--f-xl);
