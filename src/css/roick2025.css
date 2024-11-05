@@ -249,8 +249,7 @@ pre {
 }
 
 code {
-  font-family: var(--mono);
-  font-size: var(--mono-font-size);
+  font-family: var(--f-mono);
   color: var(--dark-800);
   text-decoration-line: underline;
   text-decoration-color: var(--yellow-400);
@@ -451,7 +450,7 @@ time {
 }
 
 ul.tech {
-  font-family: var(--mono);
+  font-family: var(--f-mono);
   padding: 0;
 }
 
