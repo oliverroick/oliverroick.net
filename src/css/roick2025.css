@@ -141,7 +141,11 @@ article:not(:last-child) {
 }
 
 p {
-  margin-bottom: 1rem;
+  margin: 1rem 0;
+}
+
+p:first-of-type {
+  margin-top: 0;
 }
 
 ul, ol {
@@ -245,7 +249,6 @@ blockquote p:last-child {
 pre {
   border-left: 3px solid var(--yellow-400);
   padding-left: 1rem;
-  margin-bottom: 1rem;
 }
 
 code {
@@ -260,7 +263,16 @@ pre > code {
   line-height: 1;
 }
 
-.highlight { overflow-x: auto; line-height: 1.5;}
+div.highlight {
+  margin: 1rem 0;
+}
+
+pre.highlight {
+  margin: 1rem 0;
+  overflow-x: auto;
+}
+
+.highlight { line-height: 1.5;}
 .highlight .err { color: #dc2626; background-color: var(--yellow-500) } /* Error */
 .highlight .na { color: var(--sky-700) }
 .highlight .s { color: #dc2626 }
