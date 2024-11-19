@@ -13,21 +13,21 @@ description: A list of all articles posted to Oliver Roick's blog.
         </p>
     </div>
   </section>
-  <div class="writing">
+  <section class="writing">
     {% for post in site.posts %}
     {% if post.layout == 'link' %}
     {% continue %}
     {% endif %}
-      <article>
+      <article class="list">
       <div class="entry_header">
         <h2>
           <a href="{% if post.link %}{{ post.link }}{% else %}{{ post.url }}{% endif %}">{{ post.title }}</a>{% if post.author %} by {{ post.author }}{% endif %}
-          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>
         </h2>
-        {% if post.description %}<p>{{ post.description }}</p>{% endif %}
+        {% if post.description %}<p class="entry_lead">{{ post.description }}</p>{% endif %}
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>
       </div>
     </article>
     {% endfor %}
-  </div>
+  </section>
 </div>
 
