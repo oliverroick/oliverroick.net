@@ -67,17 +67,16 @@ table {
   --f-l: 1.25rem;
   --f-xl: 1.563rem;
 
-  --dark-50: #fafafa;
-  --dark-100: #f4f4f5;
-  --dark-200: #e4e4e7;
-  --dark-300: #d4d4d8;
-  --dark-400: #a1a1aa;
-  --dark-500: #71717a;
-  --dark-600: #52525b;
-  --dark-700: #3f3f46;
-  --dark-800: #27272a;
-  --dark-900: #18181b;
-  --dark-950: #09090b;
+  --dark-50: rgb(249, 249, 249);
+  --dark-100: rgb(242, 242, 243);
+  --dark-200: rgb(224, 224, 226);
+  --dark-300: rgb(201, 201, 204);
+  --dark-400: rgb(164, 164, 169);
+  --dark-500: rgb(141, 141, 147);
+  --dark-600: rgb(99, 99, 105);
+  --dark-700: rgb(99, 99, 105);
+  --dark-800: rgb(75, 75, 79);
+  --dark-900: rgb(57, 57, 60);
 
   --sky-700: #0369a1;
   --sky-800: #075985;
@@ -92,11 +91,14 @@ table {
 
   --green: #15803d;
 
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures contextual;
+  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+  font-size: 0.9rem;
 }
 
 body {
   font-family: var(--f-main);
-  font-size: var(--f-m);
   line-height: 1.5;
   color: var(--dark-900);
   background-color: var(--dark-100);
@@ -470,7 +472,7 @@ article.list .entry_header {
   display: inline;
   text-transform: none;
   letter-spacing: 0;
-  font-size: var(--f-m);
+  font-size: 1rem;
 }
 
 .entry_header h2:after,
