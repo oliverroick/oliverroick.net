@@ -473,6 +473,11 @@ article.list .entry_header {
   font-size: var(--f-m);
 }
 
+.entry_header h2:after,
+.entry_header h3:after {
+  content: " ";
+}
+
 .entry_lead {
   margin-bottom: .25rem;
   display: inline;
