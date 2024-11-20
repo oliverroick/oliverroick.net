@@ -252,6 +252,7 @@ pre {
 
 code {
   font-family: var(--f-mono);
+  font-size: var(--f-m);
   color: var(--dark-800);
   text-decoration-line: underline;
   text-decoration-color: var(--yellow-400);
@@ -401,6 +402,8 @@ section.lead p.big,
 section.lead h1 {
   font-weight: bold;
   margin-bottom: 1rem;
+  font-size: var(--f-l);
+  line-height: 1.3;
 }
 
 .aside {
