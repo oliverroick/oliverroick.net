@@ -6,28 +6,26 @@ description: A list of all articles posted to Oliver Roick's blog.
 
 <div class="main">
   <section class="lead">
-    <div>
-        <h1>Writing</h1>
-        <p>
-          Thinking out loud, book reviews and announcements.
-        </p>
-    </div>
+    <h1 class="big">Writing</h1>
+    <p>
+      Thinking out loud, book reviews and announcements.
+    </p>
   </section>
-  <section class="writing">
-    {% for post in site.posts %}
-    {% if post.layout == 'link' %}
-    {% continue %}
-    {% endif %}
-      <article class="list">
-      <div class="entry_header">
-        <h2>
-          <a href="{% if post.link %}{{ post.link }}{% else %}{{ post.url }}{% endif %}">{{ post.title }}</a>{% if post.author %} by {{ post.author }}{% endif %}
-        </h2>
-        {% if post.description %}<p class="entry_lead">{{ post.description }}</p>{% endif %}
-        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>
-      </div>
-    </article>
-    {% endfor %}
+  <section class="post-list">
+    <ul>
+      {% for post in site.posts %}
+      {% if post.layout == 'link' %}
+      {% continue %}
+      {% endif %}
+      <li>
+        <div aria-label="Writing">&para;</div>
+        <div>
+          <p><a href="{{ post.url }}">{{ post.title }}</a></p>
+          {% if post.description %}<p>{{ post.description }}</p>{% endif %}
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
   </section>
 </div>
-

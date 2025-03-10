@@ -6,67 +6,34 @@ description: The blog and work of Oliver Roick
 num_posts: 10
 ---
 
-<div class="main">
+<main>
   <h1 class="sr-only">Oliver Roick Homepage</h1>
   <section class="lead">
-    <div>
-      <p class="big">
-        I'm a software engineer based in Melbourne, Australia. I enjoy building geospatial web applications for
-        science and non-profit communities.
-      </p>
-      <p>
-        I currently work at Development Seed. In the past, I delivered projects for Google, The Nature Conservancy,
-        NASA, The World Bank, Citizens Advice and many others.
-      </p>
-    </div>
+    <p class="big">
+      I'm a software engineer based in Melbourne, Australia. I enjoy building geospatial web applications for
+      science and non-profit communities.
+    </p>
+    <p>
+      I currently work at Development Seed. In the past, I delivered projects for Google, The Nature Conservancy,
+      NASA, The World Bank, Citizens Advice and many others.
+    </p>
   </section>
 
-  <section class="writing">
-    <div class="posts">
-      <h2>Latest posts</h2>
-
-      {% for post in site.posts limit:page.num_posts %}
+  <section class="post-list">
+    <ul>
+      {% for post in site.posts %}
       {% if post.layout == 'link' %}
       {% continue %}
       {% endif %}
-      <article>
-        <div class="entry_header">
-          <h3>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-          </h3>
-          {% if post.description %}<p class="entry_lead">{{ post.description }}</p>{% endif %}
+      <li>
+        <div aria-label="Writing">&para;</div>
+        <div>
+          <p><a href="{{ post.url }}">{{ post.title }}</a></p>
+          {% if post.description %}<p>{{ post.description }}</p>{% endif %}
           <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>
         </div>
-        {{ post.content }}
-      </article>
+      </li>
       {% endfor %}
-    </div>
+    </ul>
   </section>
-</div>
-
-<div class="aside">
-  <div class="portfolio">
-    <h2>From the Portfolio</h2>
-    {% for project in site.portfolio %}
-    {% if project.featured != true %}{% continue %}{% endif%}
-    <div class="project">
-      <img src="{{ project.preview }}">
-      <div>
-        <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
-        <p>{{ project.summary }}</p>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-</div>
-
-<script>
-  const projects = document.getElementsByClassName("project");
-
-  for (let i = 0, len = projects.length; i < len; i++) {
-    projects.item(i).addEventListener("click", (e) => {
-      const projectHref = e.currentTarget.querySelector("h3 a").getAttribute("href");
-      window.location.assign(projectHref);
-    });
-  }
-</script>
+</main>

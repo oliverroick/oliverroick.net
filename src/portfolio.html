@@ -6,52 +6,23 @@ description: Assorted output; for fun and profit.
 
 <div class="main">
   <section class="lead">
-    <div>
-        <h1>Portfolio</h1>
-        <p>
-          Assorted output; for fun and profit.
-        </p>
-    </div>
+    <h1 class="big">Portfolio</h1>
+    <p>
+      Assorted output; for fun and profit.
+    </p>
   </section>
 
-  <section class="portfolio">
-    <h2>Featured work</h2>
-    {% for project in site.portfolio %}
-    {% if project.featured != true %}{% continue %}{% endif%}
-    <div class="project">
-      <img src="{{ project.preview }}">
-      <div class="entry_header">
-        <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
-        <p class="entry_lead">{{ project.summary }}</p>
-      </div>
-    </div>
-    {% endfor %}
+  <section class="post-list">
+    <ul>
+      {% for project in site.portfolio %}
+      <li>
+        <div aria-label="Portfolio">&#8984;</div>
+        <div>
+          <p><a href="{{ project.url }}">{{ project.title }}</a></p>
+          <p>{{ project.summary }}</p>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
   </section>
 </div>
-
-<div class="aside">
-  <div class="portfolio">
-    <h2>More projects</h2>
-    {% for project in site.portfolio %}
-    {% if project.featured == true %}{% continue %}{% endif%}
-    <div class="project">
-      <img src="{{ project.preview }}">
-      <div>
-        <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
-        <p>{{ project.summary }}</p>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-</div>
-
-<script>
-  const projects = document.getElementsByClassName("project");
-
-  for (let i = 0, len = projects.length; i < len; i++) {
-    projects.item(i).addEventListener("click", (e) => {
-      const projectHref = e.currentTarget.querySelector("h2 a").getAttribute("href");
-      window.location.assign(projectHref);
-    });
-  }
-</script>
