@@ -173,20 +173,25 @@ header {
 
     ul {
       display: flex;
-      margin-left: -1rem;
+      gap: 2rem;
 
       li {
         a {
-          padding: 0.5rem 1rem;
-          display: block;
           font-size: var(--f-sm);
           text-decoration: none;
           text-transform: uppercase;
+          padding-bottom: .1rem;
+
+          &[aria-current="true"] {
+            border-bottom: 3px solid var(--dark-900);
+          }
+
           &:any-link {
             color: var(--dark-900);
           }
+
           &:hover {
-            background-color: var(--yellow-300);
+            border-bottom: 3px solid var(--yellow-400);
           }
         }
       }

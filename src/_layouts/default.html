@@ -1,3 +1,5 @@
+{% assign current = page.url | downcase | split: '/' %}
+
 <!doctype html>
 <html lang="en">
 
@@ -33,10 +35,10 @@
       <span>Oliver Roick</span>
       <nav>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/portfolio/">Portfolio</a></li>
-          <li><a href="/writing/">Writing</a></li>
-          <li><a href="/about/">About</a></li>
+          <li><a href="/" {% if page.url == "/" %}aria-current="true"{% endif %}>Home</a></li>
+          <li><a href="/portfolio/" {% if current[1] == "portfolio" %}aria-current="true"{% endif %}>Portfolio</a></li>
+          <li><a href="/writing/" {% if current[1] == "writing" %}aria-current="true"{% endif %}>Writing</a></li>
+          <li><a href="/about/" {% if current[1] == "about" %}aria-current="true"{% endif %}>About</a></li>
         </ul>
       </nav>
     </header>
