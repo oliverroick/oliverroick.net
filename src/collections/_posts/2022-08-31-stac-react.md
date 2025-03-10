@@ -1,7 +1,8 @@
 ---
 layout: portfolio
+category: portfolio
 title: STAC React
-summary: A library of React components and hooks to simplify building front-ends for STAC APIs.
+description: A library of React components and hooks to simplify building front-ends for STAC APIs.
 client: Research and development at Development Seed.
 dates: since 2022
 preview: /img/portfolio/stac-react.webp

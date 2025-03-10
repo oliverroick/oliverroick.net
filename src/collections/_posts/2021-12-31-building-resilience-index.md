@@ -1,7 +1,9 @@
 ---
 layout: portfolio
+category: portfolio
+date: 2021-12-31 00:00:00-00:00
 title: Building Resilience Index
-summary: Hazard mapping and resilience assessment for building projects and property portfolios.
+description: Hazard mapping and resilience assessment for building projects and property portfolios.
 client: International Finance Corporation. Delivered as part of the team at Development Seed.
 dates: 2021
 preview: /img/portfolio/bri.webp
@@ -13,7 +15,6 @@ tech:
   - Mapbox GL
   - Cypress
   - Jest
-featured: true
 ---
 
 With climate change, natural disasters increase in intensity and frequency disproportionately affecting people in the global south. The Building Resilience Index provides developers, property managers and insurers with a platform to assess building resilience against environmental threats.

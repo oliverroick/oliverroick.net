@@ -1,9 +1,10 @@
 ---
 layout: portfolio
+category: portfolio
 title: STAC Admin
-summary: Updating collections and items in STAC catalogs is hard, so we built a prototype admin interface.
+description: Updating collections and items in STAC catalogs is hard, so we built a prototype admin interface.
 client: Research and development at Development Seed.
-dates: 2024
+dates: 2023
 preview: /img/portfolio/stac-admin.webp
 links:
   - label: Source on GitHub

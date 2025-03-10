@@ -14,12 +14,15 @@ description: Assorted output; for fun and profit.
 
   <section class="post-list">
     <ul>
-      {% for project in site.portfolio %}
+      {% for project in site.posts %}
+      {% if project.layout != 'portfolio' %}
+      {% continue %}
+      {% endif %}
       <li>
         <div aria-label="Portfolio">&#8984;</div>
         <div>
           <p><a href="{{ project.url }}">{{ project.title }}</a></p>
-          <p>{{ project.summary }}</p>
+          <p>{{ project.description }}</p>
         </div>
       </li>
       {% endfor %}

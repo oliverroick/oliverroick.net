@@ -138,7 +138,8 @@
    border-bottom-width: 5px;
  }
 
- time {
+ time,
+ .time {
   font-weight: 500;
   color: var(--dark-500);
   display: block;
@@ -290,5 +291,25 @@ section.post-list {
   pre > code {
     text-decoration: none;
     line-height: 1;
+  }
+
+  hr {
+    border: 0;
+  }
+
+  hr:after {
+    content: "—";
+    display: block;
+    position: relative;
+    color: var(--dark-500);
+    margin-top: var(--margin-15);
+  }
+
+  img {
+    width: 100%;
+    max-width: 60rem;
+    vertical-align: middle;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
   }
 }

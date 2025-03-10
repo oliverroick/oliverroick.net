@@ -26,7 +26,11 @@ num_posts: 10
       {% continue %}
       {% endif %}
       <li>
+        {% if post.category == "portfolio"%}
+        <div aria-label="Portfolio">&#8984;</div>
+        {% else %}
         <div aria-label="Writing">&para;</div>
+        {% endif %}
         <div>
           <p><a href="{{ post.url }}">{{ post.title }}</a></p>
           {% if post.description %}<p>{{ post.description }}</p>{% endif %}

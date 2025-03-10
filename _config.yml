@@ -5,6 +5,3 @@ permalink: /:categories/:year/:title.html
 excerpt_separator: "====="
 source: src
 collections_dir: collections
-collections:
-  portfolio:
-    output: true
