@@ -1,12 +1,12 @@
 ---
-layout: link
+layout: post
 title: Leaflet.Deflate 2.0 is now available
-link: https://github.com/oliverroick/Leaflet.Deflate/releases/tag/v2.0.0
+description: New markercluster options, a smaller package and more documentation.
 date:   2021-03-27 11:00:00+00:00
-category: links
+category: news
 ---
 
-I published a new release of Leaflet.Deflate. Leaflet.Deflate is a plugin for the web-mapping library [Leaflet](https://leafletjs.com). It improves the readability of feature-heavy maps by converting features to markers on smaller zoom levels.
+I published a [new release of Leaflet.Deflate](https://github.com/oliverroick/Leaflet.Deflate/releases/tag/v2.0.0). Leaflet.Deflate is a plugin for the web-mapping library [Leaflet](https://leafletjs.com). It improves the readability of feature-heavy maps by converting features to markers on smaller zoom levels.
 
 Version 2.0 includes a breaking change and a couple of more minor improvements:
 

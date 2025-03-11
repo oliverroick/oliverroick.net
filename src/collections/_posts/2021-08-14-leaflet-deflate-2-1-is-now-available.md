@@ -1,17 +1,15 @@
 ---
-layout: link
-category: links
-body_id: links
+layout: post
+category: news
 date: 2021-08-14 13:00:00+01:00
 highlight_code: true
 title: Leaflet.Deflate 2.1 is now available
-description: "Link: https://github.com/oliverroick/Leaflet.Deflate/releases/tag/v2.1.0"
-link: https://github.com/oliverroick/Leaflet.Deflate/releases/tag/v2.1.0
+description: The latest release introduces the new greedyCollapse option.
 ---
 
-A new release of Leaflet.Deflate is now available. Leaflet.Deflate 2.1 introduces a new option, `greedyCollapse`, to specify when features will collapse. 
+A [new release of Leaflet.Deflate](https://github.com/oliverroick/Leaflet.Deflate/releases/tag/v2.1.0) is now available. Leaflet.Deflate 2.1 introduces a new option, `greedyCollapse`, to specify when features will collapse.
 
-With `greedyCollapse` set to `true`, a feature collapses when either its width or height falls below the specified threshold. This is the default, and it matches the behaviour from previous versions. Set `greedyCollapse` to `false`, and features will collapse only of both width and height fall below the specified threshold. This behaviour comes in handy when you have many “long” features on your map. 
+With `greedyCollapse` set to `true`, a feature collapses when either its width or height falls below the specified threshold. This is the default, and it matches the behaviour from previous versions. Set `greedyCollapse` to `false`, and features will collapse only of both width and height fall below the specified threshold. This behaviour comes in handy when you have many “long” features on your map.
 
 <figure>
     <img src="/img/greedy-deflate.gif" alt="Animation showing the effect of greedyCollapse in Leaflet.Deflate">
@@ -20,4 +18,4 @@ With `greedyCollapse` set to `true`, a feature collapses when either its width o
 
 ---
 
-My thanks to [Simonas Gildutis](https://github.com/simonasdev) for contributing the new feature. 
+My thanks to [Simonas Gildutis](https://github.com/simonasdev) for contributing the new feature.
