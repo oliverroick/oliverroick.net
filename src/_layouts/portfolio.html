@@ -9,10 +9,12 @@ layout: default
     <p class="time">{{ page.dates }}</p>
   </section>
   <section class="project-overview">
+    {% if page.client %}
     <div>
       <h2>Client</h2>
       <p>{{ page.client }}</p>
     </div>
+    {% endif %}
     {% if page.tech %}
     <div>
       <h2>Tech</h2>
