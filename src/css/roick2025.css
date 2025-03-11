@@ -215,6 +215,7 @@ section.post-list {
   ul {
     columns: 20rem auto;
     column-gap: 2rem;
+    column-fill: balance;
 
     li {
       margin-bottom: 1rem;
@@ -239,7 +240,7 @@ section.post-list {
 }
 
 .content {
-  h2, p, ul, ol {
+  h2, p, ul, ol, blockquote {
     max-width: 40rem;
     margin: 1rem 0;
     box-sizing: border-box;
@@ -310,11 +311,45 @@ section.post-list {
     margin-top: var(--margin-15);
   }
 
+  blockquote {
+    padding: 0 2rem;
+    font-style: italic;
+  }
+
   img {
     width: 100%;
     max-width: 60rem;
     vertical-align: middle;
     box-sizing: border-box;
     margin-bottom: 1rem;
+  }
+}
+
+.project-overview {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, 18.6rem);
+  column-gap: 2rem;
+  row-gap: .5rem;
+  max-width: 60rem;
+  font-size: var(--f-sm);
+  margin-bottom: 3rem;
+
+  h2 {
+    font-weight: bold;
+  }
+
+  ul.tech {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      font-family: var(--f-mono);
+    }
+
+    li:not(:first-child)::before {
+      content: "\00a0/\00a0";
+      font-family: var(--f-sans);
+    }
   }
 }

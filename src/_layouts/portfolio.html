@@ -8,30 +8,32 @@ layout: default
     <p>{{ page.description }}</p>
     <p class="time">{{ page.dates }}</p>
   </section>
+  <section class="project-overview">
+    <div>
+      <h2>Client</h2>
+      <p>{{ page.client }}</p>
+    </div>
+    {% if page.tech %}
+    <div>
+      <h2>Tech</h2>
+      <ul class="tech">
+        {% for t in page.tech %}
+        <li>{{ t }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+    {% if page.links %}
+    <div>
+      <h2>Links</h2>
+      <ul>
+        {% for link in page.links %}
+        <li><a href="{{ link.href }}">{{ link.label }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+  </section>
   <section class="content">{{ content | replace: '=====', '' }}</section>
 </div>
-
-<div class="aside">
-  <img src="{{ page.preview }}" />
-
-  <h2>Client</h2>
-  <p>{{ page.client }}</p>
-
-  {% if page.links %}
-  <h2>Links</h2>
-  <ul>
-    {% for link in page.links %}
-    <li><a href="{{ link.href }}">{{ link.label }}</a></li>
-    {% endfor %}
-  </ul>
-  {% endif %}
-
-  {% if page.tech %}
-  <h2>Tech</h2>
-  <ul class="tech">
-    {% for t in page.tech %}
-    <li>{{ t }}</li>
-    {% endfor %}
-  </ul>
-  {% endif %}
 </main>
