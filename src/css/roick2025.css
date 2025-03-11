@@ -148,6 +148,10 @@
   letter-spacing: 1px;
 }
 
+b {
+  font-weight: bold;
+}
+
  /*
   * PAGE LAYOUT
   *
@@ -216,6 +220,7 @@ section.post-list {
     columns: 20rem auto;
     column-gap: 2rem;
     column-fill: balance;
+    margin-top: 1rem;
 
     li {
       margin-bottom: 1rem;
@@ -276,10 +281,6 @@ section.post-list {
 
   .authors {
     text-transform: uppercase;
-  }
-
-  b {
-    font-weight: bold;
   }
 
   pre {
