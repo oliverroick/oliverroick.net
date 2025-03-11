@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "A better fetch"
+description: What if fetch worked differently.
 date:   2016-06-17 20:00:00+02:00
 image: code
 category: writing
@@ -12,7 +13,7 @@ I recently tried to make `Fetch` work with a REST API. Here’s what I found.
 
 =====
 
-The [WHATWG Fetch API](https://developer.mozilla.org/en/docs/Web/API/Fetch_API) is a replacement of `XMLHttpRequest` as the standard to retrieve resources across a network. Compared to `XMLHttpRequest`, `Fetch` provides a simplified and cleaner API that relies on promises instead of callbacks. 
+The [WHATWG Fetch API](https://developer.mozilla.org/en/docs/Web/API/Fetch_API) is a replacement of `XMLHttpRequest` as the standard to retrieve resources across a network. Compared to `XMLHttpRequest`, `Fetch` provides a simplified and cleaner API that relies on promises instead of callbacks.
 
 Its use is straightforward:
 
@@ -28,9 +29,9 @@ fetch('/some/url')
   .then(processResponse)
 {% endhighlight %}
 
-`fetch` returns a Promise containing a [`Response`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch#Response_objects). The `Response` can be evaluated based on its status code. In the example above, we return the response body when the request was successful and the response status if not. 
+`fetch` returns a Promise containing a [`Response`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch#Response_objects). The `Response` can be evaluated based on its status code. In the example above, we return the response body when the request was successful and the response status if not.
 
-In this implementation, however, it is not possible to handle unsuccessful requests _and_ process the response at the same time. When working with REST APIs, the response contains crucial details about the error. These details should be made available to the user. 
+In this implementation, however, it is not possible to handle unsuccessful requests _and_ process the response at the same time. When working with REST APIs, the response contains crucial details about the error. These details should be made available to the user.
 
 Consider a form to register as a new user. The new user attempts to register with an existing username; something you cannot validate on client-side. After submitting the form via the API, the server responds with status code `400`; the response contains details which user input caused the problem:
 
@@ -40,7 +41,7 @@ Content-Type: application/json
 
 {
   "error": {
-    "username": "Another user has already registered 
+    "username": "Another user has already registered
                  with this user name."
   }
 }

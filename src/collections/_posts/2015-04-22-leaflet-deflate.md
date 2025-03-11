@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Deflating Polygons in Leaflet"
+description: How to dynamically replace small polygons with markers in smaller zoom levels.
 date:   2015-04-22 10:00:00
 image: code
 category: writing

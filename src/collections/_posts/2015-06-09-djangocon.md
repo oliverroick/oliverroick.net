@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Takeaways from Djangocon Europe 2015"
+description: Took a trip to Djangocon in Cardiff, this is what I brought back.
 date:   2015-06-09 10:30:00
 image: conferences
 category: writing

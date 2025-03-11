@@ -1,13 +1,14 @@
 ---
 layout: post
 title:  "Introducing SuperSimpleEvents"
+description: Extending JavaScript objects with eventing functionality.
 date:   2014-10-12 10:00:00
 image: code
 category: writing
 highlight_code: true
 ---
 
-Across various personal and professional projects, I needed a simple solution to extend prototypes with eventing functionality in JavaScript that is independent from third-party extensions. [SuperSimpleEvents](https://github.com/oliverroick/SuperSimpleEvents) is my solution — a super simple event emitter for JavaScript. 
+Across various personal and professional projects, I needed a simple solution to extend prototypes with eventing functionality in JavaScript that is independent from third-party extensions. [SuperSimpleEvents](https://github.com/oliverroick/SuperSimpleEvents) is my solution — a super simple event emitter for JavaScript.
 
 =====
 

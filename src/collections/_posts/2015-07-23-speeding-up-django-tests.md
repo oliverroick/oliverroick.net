@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Speeding up Tests in Django"
+description: Making tests in Django faster by avoiding the test client.
 date:   2015-07-23 10:00:00
 image: code
 category: writing

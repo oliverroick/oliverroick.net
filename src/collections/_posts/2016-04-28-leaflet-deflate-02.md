@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Leaflet.Deflate 0.2"
+description: What's new in the latest Leaflet.Deflate release.
 date:   2016-04-28 08:00:00+02:00
 image: code
 category: writing
@@ -38,7 +39,7 @@ var polygon = L.polygon([
 featureGroup.addLayer(polygon);
 {% endhighlight %}
 
-And finally, you can cluster markers using [Leaflet.Markercluster](https://github.com/Leaflet/Leaflet.markercluster) and [Leaflet.Markercluster.LayerSupport](https://github.com/ghybs/Leaflet.MarkerCluster.LayerSupport). 
+And finally, you can cluster markers using [Leaflet.Markercluster](https://github.com/Leaflet/Leaflet.markercluster) and [Leaflet.Markercluster.LayerSupport](https://github.com/ghybs/Leaflet.MarkerCluster.LayerSupport).
 Again, add the features to a `FeatureGroup` and then check-in the `FeatureGroup` with a `MarkerClusterGroup`:
 
 {% highlight javascript %}

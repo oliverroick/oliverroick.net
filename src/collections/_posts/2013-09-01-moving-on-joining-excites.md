@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Moving on: Joining ExCiteS"
+description: Leaving Heidelberg for London.
 date:   2013-09-01 09:00:00
 category: news
 image: news

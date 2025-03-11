@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Talk accepted for FOSS4G-E"
+description: I'm headed to Bremen to discuss the work I've been doing at ExCiteS recently.
 date:   2014-05-16 12:00:00
 category: news
 image: news

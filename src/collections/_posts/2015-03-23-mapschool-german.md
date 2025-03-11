@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "mapschool.io in German"
+description: I translated the excellent Mapschool text book to German.
 date:   2015-03-23 10:00:00
 category: news
 image: news

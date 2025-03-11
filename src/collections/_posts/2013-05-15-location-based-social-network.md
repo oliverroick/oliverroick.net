@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Review Paper: Location Based Social Networks — Definition, Current State of the Art and Research Agenda"
+description: New paper published in Transactions in GIS.
 date:   2013-05-15 09:00:00
 category: news
 image: news

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Advice for the Django Novice"
+description: A couple of things I learned about Django while building GeoKey.
 date:   2015-04-30 10:00:00
 image: thoughts
 category: writing

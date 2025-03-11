@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "New Version of OSMatrix"
+description: Here's what's new in the latest release of OSMatrix.
 date:   2013-05-16 09:00:00
 category: news
 image: news
