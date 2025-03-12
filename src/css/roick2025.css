@@ -331,6 +331,17 @@ section.post-list {
     vertical-align: middle;
     box-sizing: border-box;
   }
+
+  figure {
+    width: 100%;
+    max-width: 60rem;
+    box-sizing: border-box;
+
+    figcaption {
+      margin-top: .25rem;
+      font-size: var(--f-sm);
+    }
+  }
 }
 
 .project-overview {
