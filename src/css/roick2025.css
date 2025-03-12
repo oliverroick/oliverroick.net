@@ -352,6 +352,78 @@ section.post-list {
       font-size: var(--f-sm);
     }
   }
+
+  table {
+    max-width: 60rem;
+    width: 100%;
+    border-spacing: 0;
+    margin: 1rem 0;
+    font-family: var(--f-mono);
+    font-size: var(--f-sm);
+
+    caption {
+      font-family: var(--f-sans);
+      font-weight: bold;
+      color: var(--dark-700);
+      text-align: left;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      margin-bottom: .25rem;
+    }
+
+    tr:nth-child(2n) {
+      background-color: var(--dark-100);
+    }
+
+    th {
+      padding: .25rem .5rem;
+      border-bottom: 1px solid var(--dark-400);
+      text-align: left;
+      font-weight: bold;
+
+      &:first-child {
+        border-left: none;
+        padding-left: 1rem;
+      }
+
+      &:last-child {
+        padding-right: 1rem;
+      }
+    }
+
+    td {
+      padding: .25rem .5rem;
+
+      &:first-child {
+        border-left: none;
+        padding-left: 1rem;
+      }
+
+      &:last-child {
+        padding-right: 1rem;
+      }
+    }
+
+    tfoot td {
+      font-weight: bold;
+      border-top: 1px solid var(--dark-400);
+    }
+  }
+
+  table.db {
+    tr {
+      background-color: #fff;
+    }
+
+    .pk {
+      background-color: var(--dark-200);
+    }
+
+    .sk {
+      background-color: var(--dark-100);
+    }
+  }
+
 }
 
 .project-overview {
