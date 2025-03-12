@@ -18,5 +18,5 @@ This release is not yet available on Netlify's plugin directory for installation
 
 Follow the [pull request to update netlify-plugin-html-validate](https://github.com/netlify/plugins/pull/223) for updates on the matter.
 
-__Update:__ The release is now available in Netlify's plugin directory to install via the Netlify UI.
-{: .article__note }
+**Update:** The release is now available in Netlify's plugin directory to install via the Netlify UI.
+{: .note }
