@@ -1,0 +1,11 @@
+{% if post.category == "portfolio" %}
+<div aria-label="Portfolio">&#8984;</div>
+{% elsif post.category == "news" %}
+<div aria-label="Announcements">&#9733;</div>
+{% elsif post.category == "learnings" %}
+<div aria-label="Learnings">&#8264;</div>
+{% elsif post.category == "reading" %}
+<div aria-label="Reading">&#10078;</div>
+{% else %}
+<div aria-label="Writing">&para;</div>
+{% endif %}

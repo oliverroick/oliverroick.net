@@ -7,18 +7,17 @@ description: A list of all articles posted to Oliver Roick's blog.
 <div class="main">
   <section class="lead">
     <h1 class="big">Writing</h1>
-    <p>
-      Thinking out loud, book reviews and announcements.
-    </p>
+    <p>Thinking out loud, book reviews and announcements.</p>
+    <p class="small">&para; – Writing / &#8264; – Learnings / &#10078; – Reading</p>
   </section>
   <section class="post-list">
     <ul>
       {% for post in site.posts %}
-      {% if post.category != 'writing' %}
+      {% if post.category == 'news' or post.category == 'links' or post.category == 'portfolio' %}
       {% continue %}
       {% endif %}
       <li>
-        <div aria-label="Writing">&para;</div>
+        {% include post-symbol.html %}
         <div>
           <p><a href="{{ post.url }}">{{ post.title }}</a></p>
           {% if post.description %}<p>{{ post.description }}</p>{% endif %}

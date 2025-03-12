@@ -152,6 +152,10 @@ b {
   font-weight: bold;
 }
 
+.small {
+  font-size: var(--f-sm);
+}
+
  /*
   * PAGE LAYOUT
   *

@@ -21,22 +21,14 @@ num_posts: 10
 
   <section class="post-list">
     <p><b>Here's pretty much everything I have been up to since 2013</b></p>
-    <p>&#8984; – Projects / &#9733; – Announcements / &para; – Writing / &#8264; – Learnings</p>
+    <p class="small">&#8984; – Projects / &#9733; – Announcements / &para; – Writing / &#8264; – Learnings / &#10078; – Reading</p>
     <ul>
       {% for post in site.posts %}
       {% if post.layout == 'link' %}
       {% continue %}
       {% endif %}
       <li>
-        {% if post.category == "portfolio" %}
-        <div aria-label="Portfolio">&#8984;</div>
-        {% elsif post.category == "news" %}
-        <div aria-label="Announcements">&#9733;</div>
-        {% elsif post.category == "learnings" %}
-        <div aria-label="Learnings">&#8264;</div>
-        {% else %}
-        <div aria-label="Writing">&para;</div>
-        {% endif %}
+        {% include post-symbol.html %}
         <div>
           <p><a href="{% if post.link %}{{ post.link }}{% else %}{{post.url}}{% endif %}">{{ post.title }}</a></p>
           {% if post.description %}<p>{{ post.description }}</p>{% endif %}
