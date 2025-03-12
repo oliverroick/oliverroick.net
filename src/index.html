@@ -21,7 +21,7 @@ num_posts: 10
 
   <section class="post-list">
     <p><b>Here's pretty much everything I have been up to since 2013</b></p>
-    <p>&#8984; – Projects / &#9733; – Announcements / &para; – Writing</p>
+    <p>&#8984; – Projects / &#9733; – Announcements / &para; – Writing / &#8264; – Learnings</p>
     <ul>
       {% for post in site.posts %}
       {% if post.layout == 'link' %}
@@ -32,6 +32,8 @@ num_posts: 10
         <div aria-label="Portfolio">&#8984;</div>
         {% elsif post.category == "news" %}
         <div aria-label="Announcements">&#9733;</div>
+        {% elsif post.category == "learnings" %}
+        <div aria-label="Learnings">&#8264;</div>
         {% else %}
         <div aria-label="Writing">&para;</div>
         {% endif %}
