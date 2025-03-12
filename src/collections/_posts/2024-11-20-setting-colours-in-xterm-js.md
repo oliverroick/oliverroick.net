@@ -1,6 +1,6 @@
 ---
 layout: post
-category: writing
+category: learnings
 body_id: blog
 date: 2024-11-20 11:01:00+11:00
 highlight_code: true

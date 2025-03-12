@@ -4,7 +4,7 @@ title:  "Leaflet.Deflate 0.2"
 description: What's new in the latest Leaflet.Deflate release.
 date:   2016-04-28 08:00:00+02:00
 image: code
-category: writing
+category: news
 highlight_code: true
 body_id: blog
 ---
