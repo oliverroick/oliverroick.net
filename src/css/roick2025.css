@@ -291,6 +291,11 @@ section.post-list {
     text-transform: uppercase;
   }
 
+  .highlight {
+    max-width: 60rem;
+    overflow-x: auto;
+  }
+
   pre {
     padding-left: 3rem;
   }
