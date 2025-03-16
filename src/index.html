@@ -31,6 +31,11 @@ num_posts: 10
         {% include post-symbol.html %}
         <div>
           <p><a href="{% if post.link %}{{ post.link }}{% else %}{{post.url}}{% endif %}">{{ post.title }}</a></p>
+          {% if post.header_image %}
+          <div class="header-image">
+            <img loading="lazy" src="/img/portfolio/{{ post.header_image }}">
+          </div>
+          {% endif %}
           {% if post.description %}<p>{{ post.description }}</p>{% endif %}
           {% if post.dates %}
           <p class="time">{{ post.dates }}</p>

@@ -22,6 +22,11 @@ description: Assorted output; for fun and profit.
         <div aria-label="Portfolio">&#8984;</div>
         <div>
           <p><a href="{{ project.url }}">{{ project.title }}</a></p>
+          {% if project.header_image %}
+          <div class="header-image">
+            <img loading="lazy" src="/img/portfolio/{{ project.header_image }}">
+          </div>
+          {% endif %}
           <p>{{ project.description }}</p>
           <p class="time">{{ project.dates }}</p>
         </div>

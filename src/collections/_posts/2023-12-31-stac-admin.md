@@ -15,6 +15,7 @@ tech:
   - Chakra UI
   - stac-react
   - MapLibre GL
+header_image: "stac-admin.webp"
 ---
 
 [SpatioTemporal Asset Catalog (STAC)](https://stacspec.org/en) defines a standardised APU publication, exploration, and search of geo-spatial data. Backend implementations are available with APIs to ingest and manage data, but updating data often requires technical expertise to process and ingest meta data using semi-automated scripts. Casual users rely on software engineers to run these updates, work they could do themselves if there was a user-interface to update STAC meta data via a web form.

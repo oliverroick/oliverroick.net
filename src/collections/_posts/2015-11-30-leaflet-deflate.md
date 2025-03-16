@@ -11,6 +11,7 @@ tech:
   - LeafletJS
   - Jest
   - Terser
+header_image: "leaflet-deflate.gif"
 ---
 
 It’s a common problem with interactive dynamic web maps. Zoom the map out too far and features become illegible because their pixel size becomes too small.

@@ -231,7 +231,7 @@ section.post-list {
   ul {
     columns: 20rem auto;
     column-gap: 2rem;
-    column-fill: balance;
+    /* column-fill: balance; */
     margin-top: 1rem;
 
     li {
@@ -250,6 +250,18 @@ section.post-list {
 
         &:hover {
           text-decoration: underline;
+        }
+      }
+
+      .header-image {
+        height: 150px;
+        margin: .25rem 0;
+
+        img {
+          border-radius: 3px;
+          object-fit: cover;
+          height: 150px;
+          width: 100%;
         }
       }
     }
