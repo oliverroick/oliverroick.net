@@ -231,8 +231,20 @@ section.post-list {
   ul {
     columns: 20rem auto;
     column-gap: 2rem;
-    /* column-fill: balance; */
-    margin-top: 1rem;
+    column-fill: balance;
+    column-rule: 1px dotted var(--dark-200);
+    position: relative;
+    margin-top: -1rem;
+
+    &:before {
+      content:"";
+      width:100%;
+      height:1rem;
+      position:absolute;
+      background-color: var(--dark-50);
+      top:0;
+      left:0;
+    }
 
     li {
       margin-bottom: 1rem;
@@ -240,6 +252,14 @@ section.post-list {
       grid-template-columns: 1.5rem 1fr;
       page-break-inside: avoid;
       break-inside: avoid;
+
+      & > div {
+        padding-top: 1rem;
+      }
+
+      & > div:nth-child(2) {
+        border-top: 1px dotted var(--dark-200);
+      }
 
       a {
         &:any-link {
