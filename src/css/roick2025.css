@@ -146,6 +146,7 @@
   font-size: var(--f-sm);
   text-transform: uppercase;
   letter-spacing: 1px;
+  margin-top: .15rem;
 }
 
 b, strong {
