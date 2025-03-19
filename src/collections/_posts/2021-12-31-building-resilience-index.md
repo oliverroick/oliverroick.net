@@ -15,9 +15,14 @@ tech:
   - Mapbox GL
   - Cypress
   - Jest
+header_image: "bri.webp"
 ---
 
 With climate change, natural disasters increase in intensity and frequency disproportionately affecting people in the global south. The Building Resilience Index provides developers, property managers and insurers with a platform to assess building resilience against environmental threats.
+
+<figure>
+  <img src="/img/portfolio/bri-screen.webp">
+</figure>
 
 Based on open data on natural disasters, the application identidies most likely threats at the site location and generates dynamic vulnarability assessment forms to assess the building's resilience against those threats. The result is a resilience score and a report outlining potential changes to the building that will improve its resilience against natural disasters.
 
