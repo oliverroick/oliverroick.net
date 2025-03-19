@@ -14,6 +14,7 @@ tech:
   - React
   - Jest
   - Rollup
+header_image: "stac-react.webp"
 ---
 
 STAC (Spatio-temporal Asset Catalog) is a standard crucial for publication, exploration, and search of geo-spatial data. While there are several open-source libraries supporting the implementation for STAC-conformant APIs, corresponding front-end implementations are often built from scratch, with developers re-implementing common functionality, such as composing search queries and displaying search results as item lists and on interactive maps.
