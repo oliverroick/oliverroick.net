@@ -21,7 +21,9 @@ header_image: "simsearch.webp"
 
 Using self-supervised learning, Similalaity Search allows researchers to select a sample image and to find similar images from am archive of satellite data. Similarity Search's goal is to support scholars in climate-change research to find relevant data about wildfires, oli spills or hurricanes without manually combing through vast troves of archives often spanning several decades.
 
+<figure>
 <img src="/img/portfolio/simsearch-screen.webp">
+</figure>
 
 ## Work delivered
 
